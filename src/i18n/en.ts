@@ -1,5 +1,8 @@
 export const en = {
   htmlLang: "en",
+  brand: {
+    alt: "Serenitech — Serenity beyond the waterline",
+  },
   nav: {
     home: "Home",
     services: "Services",
@@ -21,7 +24,7 @@ export const en = {
     services: {
       title: "Cognitive Services — Serenitech",
       description:
-        "Six cloud-native modules: noise & vibration, vessel identification, siltation intelligence, draft monitoring, structural integrity, APIs and 3D digital twin.",
+        "Six cloud-native modules — noise & vibration, vessel identification, siltation intelligence, draft monitoring, structural integrity, APIs and 3D digital twin — plus tailor-made advisory & consulting.",
     },
     sectors: {
       title: "Sectors — Serenitech Underwater Intelligence",
@@ -46,7 +49,7 @@ export const en = {
   },
   home: {
     eyebrow: "AI COGNITIVE ROBOTICS FOR UNDERWATER MANAGEMENT",
-    h1: "Intelligence beyond the waterline.",
+    h1: "The underwater eyes of your infrastructure.",
     sub: "Serenitech is an AI cognitive robotics company for the underwater management of port infrastructure, offshore platforms, subsea structures and the naval industry. Our cognitive robotic units perceive sub-surface physical phenomena — acoustics, vibration, structural motion, bathymetry, hydrodynamics and magnetics — reason at the edge and act, delivering real-time operational data as a secure cloud service.",
     ctaPrimary: "Request a technical briefing",
     ctaSecondary: "Explore the services",
@@ -77,6 +80,18 @@ export const en = {
           text: "Vessels without AIS, underwater noise limits and environmental reporting are managed without continuous sub-surface evidence.",
         },
       ],
+    },
+    advisory: {
+      eyebrow: "TAILOR-MADE ADVISORY",
+      title:
+        "Consulting engineered for your structure, not for the average port.",
+      text: "Applicability and feasibility studies, environmental impact reviews, structural and operational risk assessments, AI and deep-tech architecture advisory, underwater communications in hostile environments — delivered case by case, at international level, by the team that builds the system.",
+      chips: [
+        "Applicability & feasibility",
+        "Environmental impact review",
+        "AI & deep-tech architecture",
+      ],
+      cta: "See the advisory services",
     },
     signature: {
       eyebrow: "EVERY VESSEL LEAVES A SIGNATURE",
@@ -242,7 +257,7 @@ export const en = {
     eyebrow: "COGNITIVE SERVICES",
     title: "Serenitech Cognitive Services",
     intro:
-      "Serenitech Cognitive Services — the cloud layer of our AI cognitive robotics system: a unified, cloud-native platform that turns high-technology sub-surface physical phenomena into granular, real-time operational data streams. Continuous coverage of the critical domains: access channel, manoeuvring basins, berthing piers — and, for offshore and subsea operators, the structure itself.",
+      "Serenitech Cognitive Services — the cloud layer of our AI cognitive robotics system: a unified, cloud-native platform that turns high-technology sub-surface physical phenomena into granular, real-time operational data streams. Continuous coverage of the critical domains: access channel, manoeuvring basins, berthing piers — and, for offshore and subsea operators, the structure itself. When a situation calls for it, we also deliver tailor-made advisory.",
     mandateLabel: "Architecture mandate",
     mandate:
       "Distinctly moving away from a decentralised, hardware-centric model, the service encapsulates all underlying instrumentation under abstract functional layers, served through low-latency secure APIs to control dashboards, real-time alert systems and a high-fidelity 3D spatial digital twin.",
@@ -322,8 +337,42 @@ export const en = {
           },
         ],
       },
+      {
+        title: "Advisory & Consulting — engineered case by case",
+        measure: "",
+        get: "",
+        matters: "",
+        bullets: [
+          {
+            label: "Applicability & feasibility studies",
+            text: "Can your channel, terminal, platform or subsea asset be perceived continuously, and what for? We map the phenomena that matter, the units and positions required, the expected data quality and the business case — before any deployment.",
+          },
+          {
+            label: "Environmental impact review",
+            text: "Underwater noise and vibration assessments for dredging, piling, construction and traffic; baseline campaigns, monitoring plans and the continuous evidence regulators and licensing bodies require.",
+          },
+          {
+            label: "Structural & operational risk assessment",
+            text: "Berthing and mooring impact studies, dynamic draft and under-keel-clearance policies, siltation and dredging strategy, integrity plans for piers, dolphins, jackets, risers and pipelines.",
+          },
+          {
+            label: "AI & deep-tech architecture advisory",
+            text: "Independent review and design of sensing, edge-AI, cloud and digital-twin architectures; data strategy, integration with VTMIS, SCADA and ERP, cybersecurity and data governance.",
+          },
+          {
+            label: "Underwater communications in hostile environments",
+            text: "Design of acoustic, magneto-inductive and optical links, autonomy and survivability of units in silt-laden, high-traffic and deep-water conditions, deployment and maintenance engineering.",
+          },
+          {
+            label: "Specification, procurement & owner's engineer",
+            text: "Technical specifications, vendor evaluation, acceptance testing and independent supervision of monitoring programmes, to international standards.",
+          },
+        ],
+      },
     ],
     apiLabel: "API sample",
+    advisoryIntro:
+      "Every port, platform and structure is different. Our advisory work is designed case by case by the team that builds the cognitive robotic units, the AI and the underwater links — international-level expertise in AI, deep tech and underwater communications in hostile environments, applied to your situation.",
     headerAlt:
       "Underwater view of a quay wall with cognitive robotic units and 3D readings",
     commercial: {

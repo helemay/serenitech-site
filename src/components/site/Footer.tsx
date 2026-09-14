@@ -4,7 +4,7 @@ import { brand } from "@/content/site";
 import { LanguageSwitch } from "./LanguageSwitch";
 
 export function Footer() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   return (
     <footer className="border-t border-ocean/70 bg-navy/40">
@@ -12,11 +12,11 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-5">
             <img
-              src={brand.logoDark}
-              alt="Serenitech — Underwater Intelligence"
-              className="h-8 w-auto"
-              width={539}
-              height={120}
+              src={lang === "pt" ? brand.logoHorizontalPt : brand.logoHorizontal}
+              alt={t.brand.alt}
+              className="h-16 w-auto md:h-20"
+              width={644}
+              height={127}
               loading="lazy"
             />
             <p className="max-w-xs text-sm text-steel">{t.footer.descriptor}</p>

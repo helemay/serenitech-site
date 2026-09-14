@@ -5,6 +5,7 @@ import { SignatureBand } from "@/components/home/SignatureBand";
 import { SolutionSection } from "@/components/home/SolutionSection";
 import { CognitiveSection } from "@/components/home/CognitiveSection";
 import { ServicesOverview } from "@/components/home/ServicesOverview";
+import { AdvisoryBand } from "@/components/home/AdvisoryBand";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { TwinSection } from "@/components/home/TwinSection";
 import { AiStack } from "@/components/home/AiStack";
@@ -40,6 +41,7 @@ function Home() {
       <SolutionSection />
       <CognitiveSection />
       <ServicesOverview />
+      <AdvisoryBand />
       <HowItWorks />
       <TwinSection />
       <AiStack />

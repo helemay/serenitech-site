@@ -47,7 +47,8 @@ function ServicesPage() {
 
       {t.services.modules.map((m, i) => {
         const Icon = serviceIcons[i]!;
-        const isLast = i === t.services.modules.length - 1;
+        const isLast = i === 5;
+        const isAdvisory = i === 6;
         return (
           <section
             key={m.title}
@@ -71,6 +72,14 @@ function ServicesPage() {
                   {m.title}
                 </h2>
               </Reveal>
+
+              {isAdvisory && (
+                <Reveal delay={0.05}>
+                  <p className="mt-6 max-w-4xl text-base leading-relaxed text-steel md:text-lg">
+                    {t.services.advisoryIntro}
+                  </p>
+                </Reveal>
+              )}
 
               {m.bullets.length > 0 ? (
                 <ul className="mt-6 grid gap-6 md:grid-cols-2">

@@ -28,14 +28,21 @@ export function Header() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-5 py-4 md:px-10">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-5 py-3 md:px-10 md:py-3">
         <Link to="/" className="flex shrink-0 items-center py-1" aria-label="Serenitech — home">
           <img
-            src={brand.logoDark}
-            alt="Serenitech — Underwater Intelligence"
-            className="h-[30px] w-auto md:h-9"
-            width={539}
-            height={120}
+            src={brand.logoWide}
+            alt={t.brand.alt}
+            className="hidden h-[52px] w-auto lg:block"
+            width={1086}
+            height={103}
+          />
+          <img
+            src={brand.logoCompact}
+            alt={t.brand.alt}
+            className="h-9 w-auto lg:hidden"
+            width={570}
+            height={88}
           />
         </Link>
 

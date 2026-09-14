@@ -10,6 +10,7 @@ import {
   Ruler,
   ShieldCheck,
   Cloud,
+  Compass,
   Cpu,
   Atom,
   Network,
@@ -18,7 +19,10 @@ import {
 } from "lucide-react";
 
 export const brand = {
-  logoDark: "/brand/serenitech-logo-horizontal-on-dark.svg",
+  logoWide: "/brand/serenitech-logo-wide-on-dark.svg",
+  logoCompact: "/brand/serenitech-logo-compact-on-dark.svg",
+  logoHorizontal: "/brand/serenitech-logo-horizontal-on-dark.svg",
+  logoHorizontalPt: "/brand/serenitech-logo-horizontal-on-dark-pt.svg",
   logoDarkPng: "/brand/serenitech-logo-horizontal-on-dark.png",
   mark: "/brand/serenitech-mark-on-dark.svg",
   badge: "/brand/serenitech-icon-badge-512.png",
@@ -54,6 +58,7 @@ export const serviceIcons: LucideIcon[] = [
   Ruler,
   ShieldCheck,
   Cloud,
+  Compass,
 ];
 
 export const aiIcons: LucideIcon[] = [Cpu, Atom, Network, RefreshCcw, Lock];

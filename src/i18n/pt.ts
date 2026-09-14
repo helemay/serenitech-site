@@ -2,6 +2,9 @@ import type { Dict } from "./en";
 
 export const pt: Dict = {
   htmlLang: "pt-BR",
+  brand: {
+    alt: "Serenitech — Serenidade além da linha d'água",
+  },
   nav: {
     home: "Início",
     services: "Serviços",
@@ -23,7 +26,7 @@ export const pt: Dict = {
     services: {
       title: "Serviços Cognitivos — Serenitech",
       description:
-        "Seis módulos nativos em nuvem: ruído e vibração, identificação de embarcações, assoreamento preditivo, calado dinâmico, integridade estrutural, APIs e gêmeo digital 3D.",
+        "Seis módulos nativos em nuvem — ruído e vibração, identificação de embarcações, assoreamento preditivo, calado dinâmico, integridade estrutural, APIs e gêmeo digital 3D — mais consultoria e assessoria sob medida.",
     },
     sectors: {
       title: "Setores — Serenitech Inteligência Subaquática",
@@ -48,7 +51,7 @@ export const pt: Dict = {
   },
   home: {
     eyebrow: "ROBÓTICA COGNITIVA COM IA PARA A GESTÃO EMBAIXO D'ÁGUA",
-    h1: "Inteligência além da linha d'água.",
+    h1: "Os olhos subaquáticos da sua infraestrutura.",
     sub: "A Serenitech é uma empresa de robótica cognitiva com IA para a gestão \"embaixo d'água\" de infraestrutura portuária, plataformas offshore, estruturas submarinas e indústria naval. Nossas unidades robóticas cognitivas percebem os fenômenos físicos subaquáticos — acústica, vibração, movimento estrutural, batimetria, hidrodinâmica e magnetismo —, raciocinam na borda e agem, entregando dados operacionais em tempo real como um serviço seguro em nuvem.",
     ctaPrimary: "Solicitar briefing técnico",
     ctaSecondary: "Conhecer os serviços",
@@ -79,6 +82,18 @@ export const pt: Dict = {
           text: "Embarcações sem AIS, limites de ruído subaquático e relatórios ambientais são geridos sem evidência contínua do que ocorre sob a superfície.",
         },
       ],
+    },
+    advisory: {
+      eyebrow: "CONSULTORIA SOB MEDIDA",
+      title:
+        "Consultoria projetada para a sua estrutura, não para o porto médio.",
+      text: "Estudos de aplicabilidade e viabilidade, revisão de impactos ambientais, avaliação de riscos estruturais e operacionais, assessoria em arquitetura de IA e deep tech, comunicações subaquáticas em ambientes hostis — entregues caso a caso, em nível internacional, pela equipe que constrói o sistema.",
+      chips: [
+        "Aplicabilidade e viabilidade",
+        "Revisão de impactos ambientais",
+        "Arquitetura de IA e deep tech",
+      ],
+      cta: "Ver os serviços de consultoria",
     },
     signature: {
       eyebrow: "CADA EMBARCAÇÃO DEIXA UMA ASSINATURA",
@@ -246,7 +261,7 @@ export const pt: Dict = {
     eyebrow: "SERVIÇOS COGNITIVOS",
     title: "Serenitech Cognitive Services",
     intro:
-      "Serenitech Cognitive Services — a camada em nuvem do nosso sistema de robótica cognitiva com IA: plataforma unificada e nativa em nuvem que converte fenômenos físicos subaquáticos de alta tecnologia em fluxos de dados operacionais granulares e em tempo real. Cobertura contínua dos domínios críticos: canal de acesso, bacias de evolução, berços de atracação — e, para operadores offshore e submarinos, a própria estrutura.",
+      "Serenitech Cognitive Services — a camada em nuvem do nosso sistema de robótica cognitiva com IA: plataforma unificada e nativa em nuvem que converte fenômenos físicos subaquáticos de alta tecnologia em fluxos de dados operacionais granulares e em tempo real. Cobertura contínua dos domínios críticos: canal de acesso, bacias de evolução, berços de atracação — e, para operadores offshore e submarinos, a própria estrutura. Quando a situação exige, entregamos também consultoria sob medida.",
     mandateLabel: "Mandato de arquitetura",
     mandate:
       "Afastando-se do modelo descentralizado e centrado em hardware, o serviço encapsula toda a instrumentação sob camadas funcionais abstratas, servidas por APIs seguras de baixa latência a painéis de controle, sistemas de alerta em tempo real e um gêmeo digital espacial 3D de alta fidelidade.",
@@ -326,8 +341,42 @@ export const pt: Dict = {
           },
         ],
       },
+      {
+        title: "Consultoria e Assessoria — projetada caso a caso",
+        measure: "",
+        get: "",
+        matters: "",
+        bullets: [
+          {
+            label: "Estudos de aplicabilidade e viabilidade",
+            text: "Seu canal, terminal, plataforma ou ativo submarino pode ser percebido continuamente, e para quê? Mapeamos os fenômenos que importam, as unidades e posições necessárias, a qualidade de dados esperada e o business case — antes de qualquer implantação.",
+          },
+          {
+            label: "Revisão de impactos ambientais",
+            text: "Avaliações de ruído e vibração subaquáticos para dragagem, cravação de estacas, obras e tráfego; campanhas de linha de base, planos de monitoramento e a evidência contínua exigida por órgãos ambientais e licenciadores.",
+          },
+          {
+            label: "Avaliação de riscos estruturais e operacionais",
+            text: "Estudos de impacto de atracação e amarração, políticas de calado dinâmico e folga sob a quilha, estratégia de assoreamento e dragagem, planos de integridade para píeres, dolfins, jaquetas, risers e dutos.",
+          },
+          {
+            label: "Assessoria em arquitetura de IA e deep tech",
+            text: "Revisão e projeto independentes de arquiteturas de sensoriamento, IA de borda, nuvem e gêmeo digital; estratégia de dados, integração com VTMIS, SCADA e ERP, cibersegurança e governança de dados.",
+          },
+          {
+            label: "Comunicações subaquáticas em ambientes hostis",
+            text: "Projeto de links acústicos, magneto-indutivos e ópticos, autonomia e sobrevivência das unidades em condições de sedimento, alto tráfego e águas profundas, engenharia de implantação e manutenção.",
+          },
+          {
+            label: "Especificação, aquisição e owner's engineer",
+            text: "Especificações técnicas, avaliação de fornecedores, testes de aceitação e supervisão independente de programas de monitoramento, em padrão internacional.",
+          },
+        ],
+      },
     ],
     apiLabel: "Exemplo de API",
+    advisoryIntro:
+      "Cada porto, plataforma e estrutura é diferente. Nossa consultoria é desenhada caso a caso pela equipe que constrói as unidades robóticas cognitivas, a IA e os links subaquáticos — conhecimento de nível internacional em IA, deep tech e comunicações subaquáticas em ambientes hostis, aplicado à sua situação.",
     headerAlt:
       "Vista subaquática de um muro de cais com unidades robóticas cognitivas e leituras 3D",
     commercial: {
