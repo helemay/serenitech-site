@@ -13,7 +13,7 @@ export function HowItWorks() {
           <h2 className="mt-5 text-3xl font-bold md:text-5xl">{t.home.how.title}</h2>
         </Reveal>
 
-        <ol className="relative mt-16 grid gap-10 lg:grid-cols-4 lg:gap-6">
+        <ol className="relative mt-8 grid gap-10 lg:grid-cols-4 lg:gap-6">
           <div
             aria-hidden="true"
             className="absolute top-[7px] right-0 left-0 hidden h-px bg-ocean lg:block"

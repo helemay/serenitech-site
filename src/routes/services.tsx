@@ -68,7 +68,7 @@ function ServicesPage() {
               </Reveal>
 
               {m.bullets.length > 0 ? (
-                <ul className="mt-12 grid gap-6 md:grid-cols-2">
+                <ul className="mt-6 grid gap-6 md:grid-cols-2">
                   {m.bullets.map((b, bi) => (
                     <Reveal as="li" key={b.label} delay={bi * 0.07}>
                       <div className="surface-card h-full p-7">
@@ -81,7 +81,7 @@ function ServicesPage() {
                   ))}
                 </ul>
               ) : (
-                <div className="mt-12 grid gap-6 md:grid-cols-3">
+                <div className="mt-6 grid gap-6 md:grid-cols-3">
                   {(
                     [
                       [t.services.columns.measure, m.measure],

@@ -49,7 +49,7 @@ function TechnologyPage() {
             </h2>
           </Reveal>
 
-          <div className="mt-14 grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
+          <div className="mt-7 grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
             <div className="relative">
               <div
                 aria-hidden="true"
@@ -97,7 +97,7 @@ function TechnologyPage() {
               {t.technology.security.title}
             </h2>
           </Reveal>
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {t.technology.security.items.map((item, i) => (
               <Reveal as="li" key={item} delay={i * 0.06}>
                 <div className="surface-card flex h-full flex-col gap-4 p-6">

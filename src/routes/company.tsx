@@ -41,7 +41,7 @@ function CompanyPage() {
               {t.company.leadershipTitle}
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
             {t.company.leaders.map((p, i) => (
               <Reveal key={p.name} delay={i * 0.1}>
                 <article className="surface-card h-full p-8">
@@ -82,7 +82,7 @@ function CompanyPage() {
             </h2>
           </Reveal>
 
-          <div className="mt-12 grid gap-10 lg:grid-cols-2">
+          <div className="mt-6 grid gap-10 lg:grid-cols-2">
             <Reveal>
               <figure className="surface-card overflow-hidden p-0">
                 <img

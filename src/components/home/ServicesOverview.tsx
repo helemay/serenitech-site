@@ -18,7 +18,7 @@ export function ServicesOverview() {
           </h2>
         </Reveal>
 
-        <ul className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-7 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {t.home.services.items.map((s, i) => {
             const Icon = serviceIcons[i]!;
             return (

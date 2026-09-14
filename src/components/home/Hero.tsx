@@ -11,7 +11,7 @@ export function Hero() {
   const y = useTransform(scrollY, [0, 600], [0, reduced ? 0 : 60]);
 
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden pt-32 pb-20">
+    <section className="relative flex items-start overflow-hidden pt-20 pb-12 md:min-h-[80vh] md:items-center md:pt-28 md:pb-16">
       <motion.img
         style={{ y }}
         src={images.heroPort}

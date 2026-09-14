@@ -16,7 +16,7 @@ export function ProblemSection() {
           </h2>
         </Reveal>
 
-        <ul className="mt-14 grid gap-6 md:grid-cols-3">
+        <ul className="mt-7 grid gap-6 md:grid-cols-3">
           {t.home.problem.items.map((item, i) => (
             <Reveal as="li" key={item.title} delay={i * 0.1}>
               <div className="surface-card h-full p-7">

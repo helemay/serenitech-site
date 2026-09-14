@@ -15,7 +15,7 @@ export function CognitiveSection() {
           </h2>
         </Reveal>
 
-        <ol className="relative mt-16 grid gap-12 lg:grid-cols-3 lg:gap-10">
+        <ol className="relative mt-8 grid gap-12 lg:grid-cols-3 lg:gap-10">
           <div
             aria-hidden="true"
             className="absolute top-[11px] right-0 left-0 hidden h-px bg-gradient-to-r from-cyan/20 via-cyan/60 to-cyan/20 lg:block"

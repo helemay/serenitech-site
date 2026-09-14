@@ -15,7 +15,7 @@ export function PageHeader({
   imageAlt?: string;
 }) {
   return (
-    <header className="relative overflow-hidden border-b border-ocean/60 pt-36 pb-20 md:pt-44 md:pb-28">
+    <header className="relative overflow-hidden border-b border-ocean/60 pt-24 pb-10 md:pt-28 md:pb-14">
       {image ? (
         <>
           <img

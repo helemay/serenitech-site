@@ -16,7 +16,7 @@ export function PresenceSection() {
           </h2>
         </Reveal>
 
-        <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {t.home.presence.items.map((p, i) => (
             <Reveal as="li" key={p.place} delay={i * 0.08}>
               <div className="surface-card h-full p-6">

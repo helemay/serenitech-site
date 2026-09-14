@@ -18,7 +18,7 @@ export function LeadershipTeaser() {
           </h2>
         </Reveal>
 
-        <ul className="mt-12 grid gap-6 md:grid-cols-2">
+        <ul className="mt-6 grid gap-6 md:grid-cols-2">
           {t.home.leadership.people.map((p, i) => (
             <Reveal as="li" key={p.name} delay={i * 0.1}>
               <Link to="/company" className="surface-card group flex h-full gap-5 p-6">

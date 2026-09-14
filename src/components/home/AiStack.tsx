@@ -14,7 +14,7 @@ export function AiStack() {
           <h2 className="mt-5 text-3xl font-bold md:text-5xl">{t.home.ai.title}</h2>
         </Reveal>
 
-        <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+        <ul className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {t.home.ai.items.map((item, i) => {
             const Icon = aiIcons[i]!;
             return (
