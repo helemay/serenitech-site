@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useI18n } from "@/i18n";
 import { en } from "@/i18n/en";
-import { apiSample, serviceIcons } from "@/content/site";
+import { apiSample, images, serviceIcons } from "@/content/site";
 import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBand } from "@/components/site/CtaBand";
 import { ContourLines, Eyebrow } from "@/components/site/Decor";
@@ -29,7 +29,12 @@ function ServicesPage() {
 
   return (
     <>
-      <PageHeader eyebrow={t.services.eyebrow} title={t.services.title}>
+      <PageHeader
+        eyebrow={t.services.eyebrow}
+        title={t.services.title}
+        image={images.quayWall}
+        imageAlt={t.services.headerAlt}
+      >
         <p>{t.services.intro}</p>
         <p className="mt-6 border-l border-cyan/50 pl-5 text-sm md:text-base">
           <span className="font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">

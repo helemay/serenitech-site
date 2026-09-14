@@ -78,6 +78,15 @@ export const en = {
         },
       ],
     },
+    signature: {
+      eyebrow: "EVERY VESSEL LEAVES A SIGNATURE",
+      title:
+        "Perceived at the channel bottom. Judged against the specification.",
+      text: "Our cognitive robotic units capture the acoustic, hydrodynamic and structural interference of every vessel that transits, compare it with the port's specification and flag the ones that exceed it — including the ones that harm fish and marine mammals.",
+      legendOk: "Within specification",
+      legendFlag: "Out of specification — flagged",
+      alt: "Underwater view from the channel bottom: vessel hulls above with acoustic rings, one flagged in amber, dolphins beyond",
+    },
     solution: {
       eyebrow: "THE SOLUTION",
       title: "One cognitive service. Four sub-surface domains.",
@@ -315,6 +324,8 @@ export const en = {
       },
     ],
     apiLabel: "API sample",
+    headerAlt:
+      "Underwater view of a quay wall with cognitive robotic units and 3D readings",
     commercial: {
       eyebrow: "COMMERCIAL MODEL",
       title: "Monitoring-as-a-Service",
@@ -354,14 +365,14 @@ export const en = {
         text: "Shipyards, fleets and naval engineering: underwater radiated noise and acoustic signature measurement of hulls and propellers, signature drift as a condition indicator, basin and dry-dock monitoring, structural instrumentation of hulls and berthing structures.",
         outcome:
           "Measurable acoustic performance and continuous data for design, maintenance and certification support.",
-        alt: "Diagram of concentric acoustic rings around a propeller silhouette",
+        alt: "Propeller of an ultra-large container ship with acoustic rings and 3D wireframe",
       },
     ],
   },
   technology: {
     eyebrow: "TECHNOLOGY",
     title: "From the seabed to the API.",
-    headerAlt: "Subsea pipeline junction on the seabed under a survey grid",
+    headerAlt: "Bathymetric 3D mesh over a port channel bottom",
     headerLine:
       "Serenitech is an AI cognitive robotics system: units that perceive, reason and act, orchestrated by a cloud cognitive engine.",
     layersTitle: "Five layers",

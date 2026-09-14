@@ -35,7 +35,7 @@ function TechnologyPage() {
       <PageHeader
         eyebrow={t.technology.eyebrow}
         title={t.technology.title}
-        image={images.subsea}
+        image={images.channelBottom}
         imageAlt={t.technology.headerAlt}
       >
         <p>{t.technology.headerLine}</p>

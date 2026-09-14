@@ -80,6 +80,14 @@ export const pt: Dict = {
         },
       ],
     },
+    signature: {
+      eyebrow: "CADA EMBARCAÇÃO DEIXA UMA ASSINATURA",
+      title: "Percebida no fundo do canal. Julgada contra a especificação.",
+      text: "Nossas unidades robóticas cognitivas capturam a interferência acústica, hidrodinâmica e estrutural de cada embarcação que trafega, comparam com a especificação do porto e sinalizam as que a excedem — inclusive as que prejudicam peixes e mamíferos marinhos.",
+      legendOk: "Dentro da especificação",
+      legendFlag: "Fora da especificação — sinalizada",
+      alt: "Vista subaquática do fundo do canal: cascos acima com anéis acústicos, um sinalizado em âmbar, golfinhos além",
+    },
     solution: {
       eyebrow: "A SOLUÇÃO",
       title: "Um serviço cognitivo. Quatro domínios subaquáticos.",
@@ -320,6 +328,8 @@ export const pt: Dict = {
       },
     ],
     apiLabel: "Exemplo de API",
+    headerAlt:
+      "Vista subaquática de um muro de cais com unidades robóticas cognitivas e leituras 3D",
     commercial: {
       eyebrow: "MODELO COMERCIAL",
       title: "Monitoramento como Serviço",
@@ -359,14 +369,14 @@ export const pt: Dict = {
         text: "Estaleiros, frotas e engenharia naval: medição de ruído irradiado e assinatura acústica de cascos e hélices, deriva de assinatura como indicador de condição, monitoramento de bacias e docas secas, instrumentação estrutural de cascos e estruturas de atracação.",
         outcome:
           "Desempenho acústico mensurável e dados contínuos para projeto, manutenção e suporte à certificação.",
-        alt: "Diagrama de anéis acústicos concêntricos ao redor da silhueta de um hélice",
+        alt: "Hélice de um navio porta-contêineres de grande porte com anéis acústicos e wireframe 3D",
       },
     ],
   },
   technology: {
     eyebrow: "TECNOLOGIA",
     title: "Do fundo do mar à API.",
-    headerAlt: "Junção de duto submarino no leito marinho sob malha de levantamento",
+    headerAlt: "Malha batimétrica 3D sobre o fundo de um canal portuário",
     headerLine:
       "A Serenitech é um sistema de robótica cognitiva com IA: unidades que percebem, raciocinam e agem, orquestradas por um motor cognitivo em nuvem.",
     layersTitle: "Cinco camadas",

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Hero, TrustStrip } from "@/components/home/Hero";
 import { ProblemSection } from "@/components/home/ProblemSection";
+import { SignatureBand } from "@/components/home/SignatureBand";
 import { SolutionSection } from "@/components/home/SolutionSection";
 import { CognitiveSection } from "@/components/home/CognitiveSection";
 import { ServicesOverview } from "@/components/home/ServicesOverview";
@@ -35,6 +36,7 @@ function Home() {
       <Hero />
       <TrustStrip />
       <ProblemSection />
+      <SignatureBand />
       <SolutionSection />
       <CognitiveSection />
       <ServicesOverview />

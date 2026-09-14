@@ -26,10 +26,15 @@ export const brand = {
 } as const;
 
 export const images = {
-  heroPort: "/images/hero-port-quay.jpg",
+  heroPort: "/images/hero-port-quay-v2.jpg",
   offshore: "/images/offshore-jacket.jpg",
   subsea: "/images/subsea-pipeline.jpg",
   hq: "/images/hq-passeio-sapiens-florianopolis.png",
+  channelBottom: "/images/channel-bottom.jpg",
+  quayWall: "/images/quay-wall.jpg",
+  offshorePipelines: "/images/offshore-pipelines.jpg",
+  channelPov: "/images/channel-pov-vessels.jpg",
+  propeller: "/images/propeller-megaship.jpg",
 } as const;
 
 export const navRoutes = [

@@ -4,7 +4,7 @@ import { en } from "@/i18n/en";
 import { images } from "@/content/site";
 import { PageHeader } from "@/components/site/PageHeader";
 import { CtaBand } from "@/components/site/CtaBand";
-import { PropellerRings, SonarRings } from "@/components/site/Decor";
+import { SonarRings } from "@/components/site/Decor";
 import { Reveal } from "@/components/site/Reveal";
 
 const meta = en.meta.sectors;
@@ -31,7 +31,7 @@ function SectorsPage() {
     { kind: "img", src: images.heroPort, rings: true },
     { kind: "img", src: images.offshore, rings: false },
     { kind: "img", src: images.subsea, rings: false },
-    { kind: "svg", node: <PropellerRings />, rings: false },
+    { kind: "img", src: images.propeller, rings: false },
   ] as const;
 
   return (
@@ -39,7 +39,7 @@ function SectorsPage() {
       <PageHeader
         eyebrow={t.sectors.eyebrow}
         title={t.sectors.title}
-        image={images.offshore}
+        image={images.offshorePipelines}
         imageAlt={t.sectors.headerAlt}
       />
 
@@ -75,32 +75,26 @@ function SectorsPage() {
 
               <Reveal delay={0.1} className={i % 2 === 1 ? "lg:order-1" : ""}>
                 <div className="surface-card relative overflow-hidden p-0">
-                  {v.kind === "img" ? (
+                  <img
+                    src={v.src}
+                    alt={s.alt}
+                    loading="lazy"
+                    width={1920}
+                    height={1088}
+                    className={
+                      v.rings
+                        ? "aspect-[16/10] w-full object-cover opacity-55"
+                        : "aspect-[16/10] w-full object-cover opacity-80"
+                    }
+                  />
+                  {v.rings && (
                     <>
-                      <img
-                        src={v.src}
-                        alt={s.alt}
-                        loading="lazy"
-                        width={2560}
-                        height={1440}
-                        className={
-                          v.rings
-                            ? "aspect-[16/10] w-full object-cover opacity-55"
-                            : "aspect-[16/10] w-full object-cover opacity-80"
-                        }
+                      <div
+                        aria-hidden="true"
+                        className="absolute inset-0 bg-gradient-to-t from-abyss/80 via-abyss/20 to-transparent"
                       />
-                      {v.rings && (
-                        <>
-                          <div
-                            aria-hidden="true"
-                            className="absolute inset-0 bg-gradient-to-t from-abyss/80 via-abyss/20 to-transparent"
-                          />
-                          <SonarRings className="top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 opacity-50" />
-                        </>
-                      )}
+                      <SonarRings className="top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 opacity-50" />
                     </>
-                  ) : (
-                    <div className="aspect-[16/10] w-full">{v.node}</div>
                   )}
                 </div>
               </Reveal>

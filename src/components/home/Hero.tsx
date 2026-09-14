@@ -17,8 +17,8 @@ export function Hero() {
         src={images.heroPort}
         alt={t.home.heroAlt}
         fetchPriority="high"
-        width={2560}
-        height={1440}
+        width={1920}
+        height={1088}
         className="absolute inset-0 h-[112%] w-full object-cover object-right"
       />
       <div
