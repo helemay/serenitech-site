@@ -81,17 +81,13 @@ function SectorsPage() {
                     loading="lazy"
                     width={1920}
                     height={1088}
-                    className={
-                      v.rings
-                        ? "aspect-[16/10] w-full object-cover opacity-55"
-                        : "aspect-[16/10] w-full object-cover opacity-80"
-                    }
+                    className="aspect-[16/10] w-full object-cover opacity-100"
                   />
                   {v.rings && (
                     <>
                       <div
                         aria-hidden="true"
-                        className="absolute inset-0 bg-gradient-to-t from-abyss/80 via-abyss/20 to-transparent"
+                        className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-abyss/80 to-transparent"
                       />
                       <SonarRings className="top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 opacity-50" />
                     </>

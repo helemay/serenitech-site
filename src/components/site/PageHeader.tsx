@@ -21,13 +21,13 @@ export function PageHeader({
           <img
             src={image}
             alt={imageAlt ?? ""}
-            className="absolute inset-0 h-full w-full object-cover opacity-45"
+            className="absolute inset-0 h-full w-full object-cover opacity-75"
             width={2560}
             height={1440}
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/85 to-abyss/40"
+            className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/70 to-abyss/15"
           />
         </>
       ) : (

@@ -28,25 +28,25 @@ export function Header() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-5 py-3 md:px-10 md:py-3">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 md:px-10 md:py-3">
         <Link to="/" className="flex shrink-0 items-center py-1" aria-label="Serenitech — home">
           <img
             src={brand.logoWide}
             alt={t.brand.alt}
-            className="hidden h-[52px] w-auto lg:block"
+            className="hidden h-[52px] w-auto min-[1400px]:block"
             width={1086}
             height={103}
           />
           <img
             src={brand.logoCompact}
             alt={t.brand.alt}
-            className="h-9 w-auto lg:hidden"
+            className="h-9 w-auto min-[1400px]:hidden"
             width={570}
             height={88}
           />
         </Link>
 
-        <nav aria-label="Main" className="hidden items-center gap-8 lg:flex">
+        <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
           {navRoutes.map((r) => (
             <Link
               key={r.to}
@@ -61,7 +61,7 @@ export function Header() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitch />
-          <CtaLink to="/contact" className="px-5 py-2.5 text-[13px]">
+          <CtaLink to="/contact" className="px-5 py-2.5 text-[13px] whitespace-nowrap">
             {t.nav.cta}
           </CtaLink>
         </div>

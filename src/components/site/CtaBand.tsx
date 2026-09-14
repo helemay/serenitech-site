@@ -17,7 +17,11 @@ export function CtaBand() {
         width={2560}
         height={1440}
       />
-      <div aria-hidden="true" className="absolute inset-0 bg-abyss/80" />
+      <div aria-hidden="true" className="absolute inset-0 bg-abyss/55" />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-r from-abyss/80 to-transparent"
+      />
       <div className="relative mx-auto max-w-[1400px] px-5 py-12 md:px-10 md:py-16">
         <Reveal className="max-w-2xl">
           <Eyebrow>{t.home.finalCta.eyebrow}</Eyebrow>

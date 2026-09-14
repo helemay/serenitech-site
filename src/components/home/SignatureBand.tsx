@@ -8,25 +8,42 @@ export function SignatureBand() {
   const s = t.home.signature;
 
   return (
-    <section className="relative min-h-[70vh] overflow-hidden md:min-h-[60vh]">
+    <section className="relative overflow-hidden md:min-h-[60vh]">
+      {/* Mobile: image as a block above the text */}
+      <div className="relative w-full md:hidden">
+        <img
+          src={images.channelPov}
+          alt={s.alt}
+          loading="lazy"
+          width={1920}
+          height={1088}
+          className="aspect-[16/10] w-full object-cover object-center"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-abyss to-transparent"
+        />
+      </div>
+
       <img
         src={images.channelPov}
-        alt={s.alt}
+        alt=""
+        aria-hidden="true"
         loading="lazy"
         width={1920}
         height={1088}
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 hidden h-full w-full object-cover object-center md:block"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-abyss via-abyss/80 to-transparent"
+        className="absolute inset-0 hidden bg-gradient-to-r from-abyss via-abyss/60 via-35% to-transparent to-55% md:block"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/30 to-transparent"
+        className="absolute inset-x-0 bottom-0 hidden h-[30%] bg-gradient-to-t from-abyss to-transparent md:block"
       />
 
-      <div className="relative mx-auto flex min-h-[70vh] max-w-[1400px] items-center px-5 py-14 md:min-h-[60vh] md:px-10">
+      <div className="relative mx-auto flex max-w-[1400px] items-center px-5 py-10 md:min-h-[60vh] md:px-10 md:py-14">
         <Reveal className="max-w-2xl">
           <Eyebrow>{s.eyebrow}</Eyebrow>
           <h2 className="mt-5 text-3xl leading-tight font-bold md:text-5xl">
