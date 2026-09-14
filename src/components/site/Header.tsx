@@ -25,7 +25,7 @@ export function Header() {
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled || open
           ? "border-b border-ocean/70 bg-abyss/85 backdrop-blur-xl"
-          : "bg-transparent",
+          : "bg-gradient-to-b from-abyss/90 via-abyss/45 to-transparent",
       )}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 md:px-10 md:py-3">
