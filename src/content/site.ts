@@ -22,7 +22,7 @@ export const brand = {
   logoDarkPng: "/brand/serenitech-logo-horizontal-on-dark.png",
   mark: "/brand/serenitech-mark-on-dark.svg",
   badge: "/brand/serenitech-icon-badge-512.png",
-  email: "contact@serenitech.com",
+  email: "contact@serenitech.global",
 } as const;
 
 export const images = {
