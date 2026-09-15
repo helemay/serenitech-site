@@ -5,25 +5,43 @@ type OverlayFrom = "md" | "lg" | "xl";
 
 type PanelSide = "left" | "right";
 
+type PanelWidth = "xl" | "2xl";
+
+type PanelAlign = "bottom" | "center";
+
 const overlay: Record<OverlayFrom, Record<PanelSide, string>> = {
   md: {
-    left: "md:absolute md:bottom-6 md:left-6 md:mt-0 md:max-w-xl lg:bottom-8 lg:left-8",
-    right: "md:absolute md:right-6 md:bottom-6 md:mt-0 md:max-w-xl lg:right-8 lg:bottom-8",
+    left: "md:absolute md:bottom-6 md:left-6 md:mt-0 lg:bottom-8 lg:left-8",
+    right: "md:absolute md:right-6 md:bottom-6 md:mt-0 lg:right-8 lg:bottom-8",
   },
   lg: {
-    left: "lg:absolute lg:bottom-8 lg:left-8 lg:mt-0 lg:max-w-xl",
-    right: "lg:absolute lg:right-8 lg:bottom-8 lg:mt-0 lg:max-w-xl",
+    left: "lg:absolute lg:bottom-8 lg:left-8 lg:mt-0",
+    right: "lg:absolute lg:right-8 lg:bottom-8 lg:mt-0",
   },
   xl: {
-    left: "xl:absolute xl:bottom-10 xl:left-10 xl:mt-0 xl:max-w-xl",
-    right: "xl:absolute xl:right-10 xl:bottom-10 xl:mt-0 xl:max-w-xl",
+    left: "xl:absolute xl:bottom-10 xl:left-10 xl:mt-0",
+    right: "xl:absolute xl:right-10 xl:bottom-10 xl:mt-0",
   },
+};
+
+// vertically centred variant, biased slightly upwards so the bottom corner — and the logo baked
+// into every image there — stays clear even at the smallest overlay width
+const centred: Record<OverlayFrom, string> = {
+  md: "md:top-[46%] md:bottom-auto md:-translate-y-1/2",
+  lg: "lg:top-[46%] lg:bottom-auto lg:-translate-y-1/2",
+  xl: "xl:top-[46%] xl:bottom-auto xl:-translate-y-1/2",
+};
+
+const widths: Record<OverlayFrom, Record<PanelWidth, string>> = {
+  md: { xl: "md:max-w-xl", "2xl": "md:max-w-2xl" },
+  lg: { xl: "lg:max-w-xl", "2xl": "lg:max-w-2xl" },
+  xl: { xl: "xl:max-w-xl", "2xl": "xl:max-w-2xl" },
 };
 
 /**
  * A field image shown whole — native 1920×1088 aspect, no zoom-crop — inside a rounded frame,
  * with a subtle bluish tint that keeps the page calm. The copy sits in a translucent panel:
- * overlaid bottom-left once the frame is large enough, stacked under the picture before that.
+ * overlaid in a bottom corner once the frame is large enough, stacked under the picture before that.
  */
 export function FramedVisual({
   src,
@@ -32,6 +50,8 @@ export function FramedVisual({
   priority = false,
   overlayFrom = "lg",
   panelSide = "left",
+  panelWidth = "xl",
+  panelAlign = "bottom",
   className,
   panelClassName,
 }: {
@@ -41,6 +61,8 @@ export function FramedVisual({
   priority?: boolean;
   overlayFrom?: OverlayFrom;
   panelSide?: PanelSide;
+  panelWidth?: PanelWidth;
+  panelAlign?: PanelAlign;
   className?: string | undefined;
   panelClassName?: string | undefined;
 }) {
@@ -60,7 +82,15 @@ export function FramedVisual({
           <div aria-hidden="true" className="img-tint absolute inset-0" />
         </div>
         {children && (
-          <div className={cn("glass-panel mt-4 p-6 md:p-8", overlay[overlayFrom][panelSide], panelClassName)}>
+          <div
+            className={cn(
+              "glass-panel mt-4 p-6 md:p-8",
+              overlay[overlayFrom][panelSide],
+              panelAlign === "center" && centred[overlayFrom],
+              widths[overlayFrom][panelWidth],
+              panelClassName,
+            )}
+          >
             {children}
           </div>
         )}

@@ -182,7 +182,7 @@ export function SystemSchematic({ className, labels }: { className?: string; lab
         </text>
       </g>
 
-      {/* links: units → gateway (acoustic / magneto-inductive), with packets */}
+      {/* links: units → gateway (acoustic / optical), with packets */}
       {units.map((u, i) => {
         const p = `M ${u.x} ${u.y} Q ${(u.x + gateway.x) / 2} ${(u.y + gateway.y) / 2 - 30} ${gateway.x} ${gateway.y - 4}`;
         return (

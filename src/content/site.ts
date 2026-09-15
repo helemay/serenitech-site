@@ -3,7 +3,7 @@ import {
   Waves,
   Activity,
   Gauge,
-  Magnet,
+  Thermometer,
   Volume2,
   Radar,
   Layers,
@@ -55,7 +55,7 @@ export const navRoutes = [
   { hash: "contact", key: "contact" },
 ] as const;
 
-export const domainIcons: LucideIcon[] = [Volume2, Activity, Waves, Magnet];
+export const domainIcons: LucideIcon[] = [Volume2, Activity, Waves, Thermometer];
 
 export const serviceIcons: LucideIcon[] = [
   Volume2,

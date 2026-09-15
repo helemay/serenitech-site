@@ -30,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# brand tooling scratch (originals without logo live outside the repo)
+scripts/brand/originals/
+scripts/brand/logo-horizontal-glow-1800.png

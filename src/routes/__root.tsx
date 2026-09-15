@@ -90,11 +90,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Serenitech" },
       { property: "og:site_name", content: "Serenitech" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:locale:alternate", content: "pt_BR" },
+      // Link-preview card (WhatsApp, LinkedIn, iMessage, Slack…): whole logo on the site's dark blue.
+      // 1200×630 JPEG (~70 KB) — WhatsApp ignores images above ~300 KB and crops transparent PNGs.
       {
         property: "og:image",
-        content:
-          "https://serenitech.global/brand/serenitech-logo-horizontal-on-dark.png",
+        content: "https://serenitech.global/og/serenitech-og-1200x630.jpg",
+      },
+      {
+        property: "og:image:secure_url",
+        content: "https://serenitech.global/og/serenitech-og-1200x630.jpg",
+      },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Serenitech — Serenity beyond the waterline",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Serenitech — Underwater Intelligence" },
+      {
+        name: "twitter:image",
+        content: "https://serenitech.global/og/serenitech-og-1200x630.jpg",
       },
       { name: "theme-color", content: "#061424" },
     ],

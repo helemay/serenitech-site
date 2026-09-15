@@ -21,10 +21,10 @@ export const Route = createFileRoute("/")({
       { name: "description", content: meta.description },
       { property: "og:title", content: meta.title },
       { property: "og:description", content: meta.description },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://serenitech.global/" },
+      { name: "twitter:description", content: meta.description },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://serenitech.global/" }],
   }),
   component: Home,
 });

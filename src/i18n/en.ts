@@ -50,7 +50,7 @@ export const en = {
   home: {
     eyebrow: "AI COGNITIVE ROBOTICS FOR UNDERWATER MANAGEMENT",
     h1: "The underwater eyes of your infrastructure.",
-    sub: "Serenitech is an AI cognitive robotics company for the underwater management of port infrastructure, offshore platforms, subsea structures and the naval industry. Our cognitive robotic units perceive sub-surface physical phenomena — acoustics, vibration, structural motion, bathymetry, hydrodynamics and magnetics — reason at the edge and act, delivering real-time operational data as a secure cloud service.",
+    sub: "Serenitech is an AI cognitive robotics company for the underwater management of port infrastructure, offshore platforms, subsea structures and the naval industry. Our cognitive robotic units perceive sub-surface physical phenomena — acoustics, vibration, structural motion, bathymetry and hydrodynamics — reason at the edge and act, delivering real-time operational data as a secure cloud service.",
     ctaPrimary: "Request a technical briefing",
     ctaSecondary: "Explore the services",
     heroAlt:
@@ -105,7 +105,7 @@ export const en = {
     solution: {
       eyebrow: "THE SOLUTION",
       title: "One cognitive service. Four sub-surface domains.",
-      text: "Serenitech fuses hydro-acoustic arrays, structural mechanical fields, multi-directional hydrodynamic gradients, acoustic echo-sounding and geomagnetic sensing into a single operational canvas. All instrumentation is encapsulated under abstract functional layers: you consume data, alerts and a digital twin — not hardware.",
+      text: "Serenitech fuses hydro-acoustic arrays, structural mechanical fields, multi-directional hydrodynamic gradients, acoustic echo-sounding and water-column sensing into a single operational canvas. All instrumentation is encapsulated under abstract functional layers: you consume data, alerts and a digital twin — not hardware.",
       domains: [
         { title: "Hydro-acoustics", text: "sound pressure, spectra, signatures" },
         { title: "Structural mechanics", text: "vibration, displacement, impacts" },
@@ -113,7 +113,7 @@ export const en = {
           title: "Hydrodynamics & bathymetry",
           text: "depth, sediment, flow, draft",
         },
-        { title: "Magnetics", text: "hull mass anomalies, verification" },
+        { title: "Water column", text: "temperature, salinity, turbidity, sound speed" },
       ],
     },
     field: {
@@ -160,7 +160,7 @@ export const en = {
       steps: [
         {
           title: "Perceive",
-          text: "Cognitive robotic units — fixed and mobile, underwater and on the surface — sense the hydro-acoustic, structural, hydrodynamic and magnetic fields around your infrastructure, continuously.",
+          text: "Cognitive robotic units — fixed and mobile, underwater and on the surface — sense the hydro-acoustic, structural and hydrodynamic fields around your infrastructure, continuously.",
         },
         {
           title: "Reason",
@@ -183,7 +183,7 @@ export const en = {
         },
         {
           title: "Automated Digital Vessel Identification",
-          text: "Acoustic and magnetic fingerprinting cross-referenced with AIS; instant dark-vessel alerts.",
+          text: "Acoustic and hydrodynamic fingerprinting cross-referenced with AIS; instant dark-vessel alerts.",
         },
         {
           title: "Predictive Siltation & Shoaling Intelligence",
@@ -209,7 +209,7 @@ export const en = {
       steps: [
         {
           title: "Audit & feasibility consulting",
-          text: "A customised project for your channel, basin, berths or asset: systemic analysis, site survey, measurement plan and viability assessment — the basis of the services-contract proposal.",
+          text: "A customised project for your channel, basin, berths or asset: strategic diagnosis of the operation, improvement opportunities, objectives and KPIs, measurement plan and viability assessment — the basis of the definitive project and the services-contract proposal.",
         },
         {
           title: "Robotic deployment",
@@ -231,7 +231,7 @@ export const en = {
       bullets: [
         "Colour-coded bathymetric surface with siltation density and critical shallow zones",
         "Dynamic vessel blocks with real-time draft, pitch, roll and heel",
-        "Sub-surface wavefront overlays locating acoustic and magnetic events",
+        "Sub-surface wavefront overlays locating acoustic and structural events",
         "All rendered in the browser, fed by the same APIs your systems use",
       ],
       panelLabel: "Stylised illustration",
@@ -296,8 +296,26 @@ export const en = {
     },
     finalCta: {
       eyebrow: "HOW WE START",
-      title: "Start with a customised feasibility project.",
-      text: "Serenitech first presents an engagement proposal and the budget for an initial audit and feasibility consulting project, tailored to your channel, terminal, platform or asset. Its conclusions become the proposal for the long-term services contract.",
+      title: "It starts with a strategic diagnosis of your operation.",
+      text: "A structured, budgeted consulting project, tailored to your channel, terminal, platform or asset and built on deep knowledge of how your operation really works. Its conclusions become the definitive project and the long-term services-contract proposal.",
+      steps: [
+        {
+          title: "Strategic diagnosis",
+          text: "In-depth understanding of the current operation — routines, data, risks and constraints, as they actually happen.",
+        },
+        {
+          title: "Improvement opportunities",
+          text: "Where continuous sub-surface intelligence changes the outcome — located, quantified and prioritised.",
+        },
+        {
+          title: "Objectives & KPIs",
+          text: "The targets and indicators that will measure the definitive project, agreed with your team.",
+        },
+        {
+          title: "Definitive project",
+          text: "Development and deployment plan, budget and the services-contract proposal.",
+        },
+      ],
       button: "Request a technical briefing",
       imageAlt: "Offshore platform jacket structure seen from beyond the surface",
     },
@@ -329,8 +347,8 @@ export const en = {
       {
         title: "Automated Digital Vessel Identification",
         measure:
-          "High-resolution broadband and narrowband acoustic emission signatures; blade-rate modulation frequencies (fundamental propeller signature); multi-axis geomagnetic anomalies induced by moving hull mass; localised low-frequency hydrodynamic pressure signatures.",
-        get: "Unique Acoustic Fingerprint Profile (engine firing rates, shaft RPM, blade count, harmonic peaks); Magnetic Anomaly Profiles mapping hull mass; Multi-Influence Verification Matrix cross-referencing real-time footprints with mandatory AIS data; instant Dark Vessel Alerts when unauthorised or silent vessels cross spatial boundaries.",
+          "High-resolution broadband and narrowband acoustic emission signatures; blade-rate modulation frequencies (fundamental propeller signature); localised low-frequency hydrodynamic pressure signatures and the wake pattern induced by the moving hull.",
+        get: "Unique Acoustic Fingerprint Profile (engine firing rates, shaft RPM, blade count, harmonic peaks); Hydrodynamic Pressure Profiles estimating hull size, draft and speed; Multi-Influence Verification Matrix cross-referencing real-time footprints with mandatory AIS data; instant Dark Vessel Alerts when unauthorised or silent vessels cross spatial boundaries.",
         matters:
           "Security of the access channel and restricted zones, verification of declared traffic, forensic record of every movement.",
         bullets: [] as { label: string; text: string }[],
@@ -410,7 +428,7 @@ export const en = {
           },
           {
             label: "Underwater connectivity in demanding conditions",
-            text: "Design of acoustic, magneto-inductive and optical links, autonomy and survivability of units in silt-laden, high-traffic and deep-water conditions, deployment and maintenance engineering.",
+            text: "Design of acoustic and optical links, autonomy and survivability of units in silt-laden, high-traffic and deep-water conditions, deployment and maintenance engineering.",
           },
           {
             label: "Specification, procurement & owner's engineer",
@@ -481,10 +499,10 @@ export const en = {
       interfaces: "REST · WebSocket · dashboards · 3D twin · VTMIS / SCADA / ERP",
       gateway: "quay gateway",
       gatewayLink: "LTE-5G / fibre · TLS · signed measurements",
-      unitsLink: "acoustic · magneto-inductive 400 kHz · mesh",
+      unitsLink: "acoustic · optical · mesh",
       units: "cognitive units",
       auv: "survey unit · MBES swath",
-      phenomena: "acoustics · vibration · bathymetry · hydrodynamics · magnetics",
+      phenomena: "acoustics · vibration · bathymetry · hydrodynamics · water column",
       edge: "edge AI · classification at the source",
       federated: "model updates ↓",
       readouts: ["0.11 m/s", "1 650 kN", "142 dB re 1 µPa", "UKC 2.68 m"],
@@ -504,11 +522,11 @@ export const en = {
       },
       {
         title: "Connectivity layer",
-        text: "Underwater wireless links (magneto-inductive and optical) to surface gateways; cellular, satellite and long-range low-power radio backhaul; store-and-forward resilience.",
+        text: "Underwater wireless links (acoustic and optical) to surface gateways; cellular, satellite and long-range low-power radio backhaul; store-and-forward resilience.",
       },
       {
         title: "Robotic sensing layer",
-        text: "Cognitive robotic units carrying hydro-acoustic arrays, inertial and vibration sensing, pressure and distance matrices, echo-sounding and magnetometry, fixed on structures or deployed in the channel.",
+        text: "Cognitive robotic units carrying hydro-acoustic arrays, inertial and vibration sensing, pressure and distance matrices, echo-sounding and water-column probes (temperature, salinity, turbidity), fixed on structures or deployed in the channel.",
       },
     ],
     security: {
@@ -682,10 +700,10 @@ export const en = {
                 link: "https://sti.eduscol.education.fr/ressources_techniques/ewts-hyd-systeme-de-comptage-energetique",
               },
               {
-                title: "Designer of the 400 kHz FSK and wideband magneto-inductive underwater modems — hardware, firmware and commissioning",
+                title: "Designer of wideband underwater wireless modems — hardware, firmware and commissioning",
               },
               {
-                title: "INPI Soleau anteriority deposit DSO2019007239 (2019) — wideband magneto-inductive underwater link with OFDM modulation",
+                title: "INPI Soleau anteriority deposit DSO2019007239 (2019) — wideband underwater wireless link with OFDM modulation",
               },
               {
                 title: "Edge-to-cloud intelligence architectures and AI for severe environments",
@@ -799,7 +817,7 @@ export const en = {
                 link: "https://patents.google.com/patent/WO2025228988A1/en",
               },
             ],
-            footnote: "Two published patent applications covering one invention, sole inventor. The invention selects between acoustic, electromagnetic and optical underwater communication using a neural network fed by sensor readings, channel characteristics and network feedback. IPC H04B 11/00 and H04B 13/02.",
+            footnote: "Two published patent applications covering one invention, sole inventor. The invention selects among acoustic, optical and other underwater communication modes using a neural network fed by sensor readings, channel characteristics and network feedback. IPC H04B 11/00 and H04B 13/02.",
           },
           {
             title: "Academic",
@@ -809,12 +827,6 @@ export const en = {
                 title: "Enhancing Communication in Multi-Domain Ad-Hoc Networks for Maritime Critical Infrastructure Protection",
                 venue: "OCEANS 2024 Halifax, IEEE · with K. Brandl, J. Weid and A. Hahn",
                 link: "https://doi.org/10.1109/OCEANS55160.2024.10754334",
-              },
-              {
-                year: "2020",
-                title: "Antenna Adaptation Circuits for High Data Rate Magneto-Inductive Underwater Communications",
-                venue: "14th European Conference on Antennas and Propagation (EuCAP), Copenhagen, IEEE, pp. 1–5 · with A. Gaugue",
-                link: "https://doi.org/10.23919/EuCAP48036.2020.9135359",
               },
               {
                 year: "2020",
@@ -834,13 +846,8 @@ export const en = {
                 venue: "11th European Conference on Antennas and Propagation (EuCAP), Paris, IEEE, pp. 2251–2255 · with A. Gaugue, E. Parlier and S. Dardenne",
                 link: "https://doi.org/10.23919/EuCAP.2017.7928513",
               },
-              {
-                year: "2017",
-                title: "Télémétrie sous-marine à ondes électromagnétiques",
-                venue: "XXèmes Journées Nationales Micro-ondes, Saint-Malo · with A. Gaugue",
-              },
             ],
-            footnote: "Research areas: underwater electromagnetic and magneto-inductive communication, antenna design and impedance matching, OFDM for underwater links, multi-domain ad-hoc networks, and AI for severe environments.",
+            footnote: "Research areas: underwater wireless communication, antenna design and impedance matching, OFDM for underwater links, multi-domain ad-hoc networks, and AI for severe environments.",
           },
         ],
       },

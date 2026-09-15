@@ -52,7 +52,7 @@ export const pt: Dict = {
   home: {
     eyebrow: "ROBÓTICA COGNITIVA COM IA PARA A GESTÃO EMBAIXO D'ÁGUA",
     h1: "Os olhos subaquáticos da sua infraestrutura.",
-    sub: "A Serenitech é uma empresa de robótica cognitiva com IA para a gestão \"embaixo d'água\" de infraestrutura portuária, plataformas offshore, estruturas submarinas e indústria naval. Nossas unidades robóticas cognitivas percebem os fenômenos físicos subaquáticos — acústica, vibração, movimento estrutural, batimetria, hidrodinâmica e magnetismo —, raciocinam na borda e agem, entregando dados operacionais em tempo real como um serviço seguro em nuvem.",
+    sub: "A Serenitech é uma empresa de robótica cognitiva com IA para a gestão \"embaixo d'água\" de infraestrutura portuária, plataformas offshore, estruturas submarinas e indústria naval. Nossas unidades robóticas cognitivas percebem os fenômenos físicos subaquáticos — acústica, vibração, movimento estrutural, batimetria e hidrodinâmica —, raciocinam na borda e agem, entregando dados operacionais em tempo real como um serviço seguro em nuvem.",
     ctaPrimary: "Solicitar briefing técnico",
     ctaSecondary: "Conhecer os serviços",
     heroAlt:
@@ -106,7 +106,7 @@ export const pt: Dict = {
     solution: {
       eyebrow: "A SOLUÇÃO",
       title: "Um serviço cognitivo. Quatro domínios subaquáticos.",
-      text: "A Serenitech funde arranjos hidroacústicos, campos mecânicos estruturais, gradientes hidrodinâmicos multidirecionais, ecobatimetria e sensoriamento geomagnético em um único painel operacional. Toda a instrumentação fica encapsulada em camadas funcionais abstratas: você consome dados, alertas e um gêmeo digital — não hardware.",
+      text: "A Serenitech funde arranjos hidroacústicos, campos mecânicos estruturais, gradientes hidrodinâmicos multidirecionais, ecobatimetria e sensoriamento da coluna d'água em um único painel operacional. Toda a instrumentação fica encapsulada em camadas funcionais abstratas: você consome dados, alertas e um gêmeo digital — não hardware.",
       domains: [
         { title: "Hidroacústica", text: "pressão sonora, espectros, assinaturas" },
         {
@@ -117,7 +117,7 @@ export const pt: Dict = {
           title: "Hidrodinâmica e batimetria",
           text: "profundidade, sedimento, fluxo, calado",
         },
-        { title: "Magnetismo", text: "anomalias de massa do casco, verificação" },
+        { title: "Coluna d'água", text: "temperatura, salinidade, turbidez, velocidade do som" },
       ],
     },
     field: {
@@ -164,7 +164,7 @@ export const pt: Dict = {
       steps: [
         {
           title: "Perceber",
-          text: "Unidades robóticas cognitivas — fixas e móveis, subaquáticas e de superfície — sentem continuamente os campos hidroacústico, estrutural, hidrodinâmico e magnético ao redor da sua infraestrutura.",
+          text: "Unidades robóticas cognitivas — fixas e móveis, subaquáticas e de superfície — sentem continuamente os campos hidroacústico, estrutural e hidrodinâmico ao redor da sua infraestrutura.",
         },
         {
           title: "Raciocinar",
@@ -187,7 +187,7 @@ export const pt: Dict = {
         },
         {
           title: "Identificação Digital Automatizada de Embarcações",
-          text: "Assinatura acústica e magnética cruzada com o AIS; alerta imediato de \"embarcação escura\".",
+          text: "Assinatura acústica e hidrodinâmica cruzada com o AIS; alerta imediato de \"embarcação escura\".",
         },
         {
           title: "Inteligência Preditiva de Assoreamento",
@@ -213,7 +213,7 @@ export const pt: Dict = {
       steps: [
         {
           title: "Auditoria e consultoria de viabilidade",
-          text: "Um projeto customizado para seu canal, bacia, berços ou ativo: análise sistêmica, levantamento de campo, plano de medição e avaliação de viabilidade — base da proposta de contrato de serviços.",
+          text: "Um projeto customizado para seu canal, bacia, berços ou ativo: diagnóstico estratégico da operação, oportunidades de melhoria, objetivos e KPIs, plano de medição e avaliação de viabilidade — base do projeto definitivo e da proposta de contrato de serviços.",
         },
         {
           title: "Implantação robótica",
@@ -235,7 +235,7 @@ export const pt: Dict = {
       bullets: [
         "Superfície batimétrica com densidade de assoreamento e zonas rasas críticas",
         "Blocos dinâmicos de navios com calado, arfagem, balanço e banda em tempo real",
-        "Frentes de onda subaquáticas localizando eventos acústicos e magnéticos",
+        "Frentes de onda subaquáticas localizando eventos acústicos e estruturais",
         "Tudo no navegador, alimentado pelas mesmas APIs dos seus sistemas",
       ],
       panelLabel: "Ilustração estilizada",
@@ -300,8 +300,26 @@ export const pt: Dict = {
     },
     finalCta: {
       eyebrow: "COMO COMEÇAMOS",
-      title: "Comece com um projeto customizado de viabilidade.",
-      text: "A Serenitech apresenta primeiro uma proposta de início de negócio e o orçamento de um projeto inicial de auditoria e consultoria de viabilidade, sob medida para seu canal, terminal, plataforma ou ativo. As conclusões desse projeto se convertem na proposta de contrato de serviços de longo prazo.",
+      title: "Começa com um diagnóstico estratégico da sua operação.",
+      text: "Um projeto de consultoria estruturado e orçado, sob medida para seu canal, terminal, plataforma ou ativo e construído sobre o conhecimento profundo de como a sua operação realmente funciona. Suas conclusões se convertem no projeto definitivo e na proposta de contrato de serviços de longo prazo.",
+      steps: [
+        {
+          title: "Diagnóstico estratégico",
+          text: "Entendimento profundo da operação atual — rotinas, dados, riscos e restrições, como de fato acontecem.",
+        },
+        {
+          title: "Oportunidades de melhoria",
+          text: "Onde a inteligência subaquática contínua muda o resultado — localizadas, quantificadas e priorizadas.",
+        },
+        {
+          title: "Objetivos e KPIs",
+          text: "As metas e os indicadores que medirão o projeto definitivo, acordados com a sua equipe.",
+        },
+        {
+          title: "Projeto definitivo",
+          text: "Plano de desenvolvimento e implantação, orçamento e a proposta de contrato de serviços.",
+        },
+      ],
       button: "Solicitar briefing técnico",
       imageAlt: "Estrutura de jaqueta de plataforma offshore vista sob a superfície",
     },
@@ -333,8 +351,8 @@ export const pt: Dict = {
       {
         title: "Identificação Digital Automatizada de Embarcações",
         measure:
-          "Assinaturas acústicas de banda larga e estreita em alta resolução; frequências de modulação de pás (assinatura fundamental do hélice); anomalias geomagnéticas multieixo induzidas pela massa do casco; assinaturas de pressão hidrodinâmica de baixa frequência.",
-        get: "Perfil de Assinatura Acústica Único (regime dos cilindros, RPM do eixo, número de pás, picos harmônicos); Perfis de Anomalia Magnética; Matriz de Verificação Multi-influência cruzando as assinaturas com os dados obrigatórios do AIS; Alerta de Embarcação Escura instantâneo quando embarcações não autorizadas ou silenciosas cruzam limites espaciais.",
+          "Assinaturas acústicas de banda larga e estreita em alta resolução; frequências de modulação de pás (assinatura fundamental do hélice); assinaturas de pressão hidrodinâmica de baixa frequência e o padrão de esteira induzido pelo casco em movimento.",
+        get: "Perfil de Assinatura Acústica Único (regime dos cilindros, RPM do eixo, número de pás, picos harmônicos); Perfis de Pressão Hidrodinâmica estimando porte, calado e velocidade do casco; Matriz de Verificação Multi-influência cruzando as assinaturas com os dados obrigatórios do AIS; Alerta de Embarcação Escura instantâneo quando embarcações não autorizadas ou silenciosas cruzam limites espaciais.",
         matters:
           "Segurança do canal e das áreas restritas, verificação do tráfego declarado, registro forense de cada movimento.",
         bullets: [],
@@ -414,7 +432,7 @@ export const pt: Dict = {
           },
           {
             label: "Conectividade subaquática em condições exigentes",
-            text: "Projeto de links acústicos, magneto-indutivos e ópticos, autonomia e sobrevivência das unidades em condições de sedimento, alto tráfego e águas profundas, engenharia de implantação e manutenção.",
+            text: "Projeto de links acústicos e ópticos, autonomia e sobrevivência das unidades em condições de sedimento, alto tráfego e águas profundas, engenharia de implantação e manutenção.",
           },
           {
             label: "Especificação, aquisição e owner's engineer",
@@ -485,10 +503,10 @@ export const pt: Dict = {
       interfaces: "REST · WebSocket · painéis · gêmeo 3D · VTMIS / SCADA / ERP",
       gateway: "gateway de cais",
       gatewayLink: "LTE-5G / fibra · TLS · medições assinadas",
-      unitsLink: "acústico · magneto-indutivo 400 kHz · malha",
+      unitsLink: "acústico · óptico · malha",
       units: "unidades cognitivas",
       auv: "unidade de levantamento · faixa MBES",
-      phenomena: "acústica · vibração · batimetria · hidrodinâmica · magnetismo",
+      phenomena: "acústica · vibração · batimetria · hidrodinâmica · coluna d'água",
       edge: "IA de borda · classificação na origem",
       federated: "atualizações de modelo ↓",
       readouts: ["0,11 m/s", "1 650 kN", "142 dB re 1 µPa", "UKC 2,68 m"],
@@ -508,11 +526,11 @@ export const pt: Dict = {
       },
       {
         title: "Conectividade",
-        text: "Links subaquáticos sem fio (magneto-indutivos e ópticos) até gateways de superfície; backhaul celular, satelital e rádio de longo alcance e baixo consumo; resiliência store-and-forward.",
+        text: "Links subaquáticos sem fio (acústicos e ópticos) até gateways de superfície; backhaul celular, satelital e rádio de longo alcance e baixo consumo; resiliência store-and-forward.",
       },
       {
         title: "Camada robótica de sensoriamento",
-        text: "Unidades robóticas cognitivas com arranjos hidroacústicos, sensoriamento inercial e de vibração, matrizes de pressão e distância, ecobatimetria e magnetometria, fixadas em estruturas ou implantadas no canal.",
+        text: "Unidades robóticas cognitivas com arranjos hidroacústicos, sensoriamento inercial e de vibração, matrizes de pressão e distância, ecobatimetria e sondas da coluna d'água (temperatura, salinidade, turbidez), fixadas em estruturas ou implantadas no canal.",
       },
     ],
     security: {
@@ -686,10 +704,10 @@ export const pt: Dict = {
                 link: "https://sti.eduscol.education.fr/ressources_techniques/ewts-hyd-systeme-de-comptage-energetique",
               },
               {
-                title: "Projetista dos modems subaquáticos FSK 400 kHz e magneto-indutivo de banda larga — hardware, firmware e comissionamento",
+                title: "Projetista de modems subaquáticos sem fio de banda larga — hardware, firmware e comissionamento",
               },
               {
-                title: "Depósito de anterioridade INPI Soleau DSO2019007239 (2019) — enlace subaquático magneto-indutivo de banda larga com modulação OFDM",
+                title: "Depósito de anterioridade INPI Soleau DSO2019007239 (2019) — enlace subaquático sem fio de banda larga com modulação OFDM",
               },
               {
                 title: "Arquiteturas de inteligência da borda à nuvem e IA para ambientes severos",
@@ -803,7 +821,7 @@ export const pt: Dict = {
                 link: "https://patents.google.com/patent/WO2025228988A1/en",
               },
             ],
-            footnote: "Dois pedidos de patente publicados cobrindo uma única invenção, inventor único. A invenção seleciona entre comunicação subaquática acústica, eletromagnética e óptica por meio de uma rede neural alimentada por leituras de sensores, características do canal e realimentação da rede. IPC H04B 11/00 e H04B 13/02.",
+            footnote: "Dois pedidos de patente publicados cobrindo uma única invenção, inventor único. A invenção seleciona entre modos de comunicação subaquática acústicos, ópticos e outros por meio de uma rede neural alimentada por leituras de sensores, características do canal e realimentação da rede. IPC H04B 11/00 e H04B 13/02.",
           },
           {
             title: "Acadêmico",
@@ -813,12 +831,6 @@ export const pt: Dict = {
                 title: "Enhancing Communication in Multi-Domain Ad-Hoc Networks for Maritime Critical Infrastructure Protection",
                 venue: "OCEANS 2024 Halifax, IEEE · com K. Brandl, J. Weid e A. Hahn",
                 link: "https://doi.org/10.1109/OCEANS55160.2024.10754334",
-              },
-              {
-                year: "2020",
-                title: "Antenna Adaptation Circuits for High Data Rate Magneto-Inductive Underwater Communications",
-                venue: "14th European Conference on Antennas and Propagation (EuCAP), Copenhague, IEEE, pp. 1–5 · com A. Gaugue",
-                link: "https://doi.org/10.23919/EuCAP48036.2020.9135359",
               },
               {
                 year: "2020",
@@ -838,13 +850,8 @@ export const pt: Dict = {
                 venue: "11th European Conference on Antennas and Propagation (EuCAP), Paris, IEEE, pp. 2251–2255 · com A. Gaugue, E. Parlier e S. Dardenne",
                 link: "https://doi.org/10.23919/EuCAP.2017.7928513",
               },
-              {
-                year: "2017",
-                title: "Télémétrie sous-marine à ondes électromagnétiques",
-                venue: "XXèmes Journées Nationales Micro-ondes, Saint-Malo · com A. Gaugue",
-              },
             ],
-            footnote: "Áreas de pesquisa: comunicação subaquática eletromagnética e magneto-indutiva, projeto de antenas e casamento de impedância, OFDM para enlaces subaquáticos, redes ad-hoc multidomínio e IA para ambientes severos.",
+            footnote: "Áreas de pesquisa: comunicação subaquática sem fio, projeto de antenas e casamento de impedância, OFDM para enlaces subaquáticos, redes ad-hoc multidomínio e IA para ambientes severos.",
           },
         ],
       },
