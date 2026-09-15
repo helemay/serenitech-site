@@ -65,7 +65,7 @@ function TechnologyPage() {
                   >
                     <span
                       aria-hidden="true"
-                      className="absolute top-6 left-0 flex h-7 w-7 items-center justify-center rounded-full border border-cyan bg-abyss font-mono text-[10px] text-cyan"
+                      className="absolute top-6 left-0 flex h-7 w-7 items-center justify-center rounded-full border border-cyan bg-abyss glow-text font-mono text-[10px] text-cyan"
                     >
                       {count - i}
                     </span>

@@ -56,7 +56,7 @@ export function SignatureBand() {
             <li className="flex items-center gap-3 font-mono text-[11px] tracking-[0.2em] text-steel uppercase">
               <span
                 aria-hidden="true"
-                className="h-2.5 w-2.5 rounded-full bg-cyan"
+                className="glow-img h-2.5 w-2.5 rounded-full bg-cyan"
               />
               {s.legendOk}
             </li>

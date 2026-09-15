@@ -27,7 +27,7 @@ export function LanguageSwitch({ className }: { className?: string }) {
             className={cn(
               "rounded px-2 py-1 font-medium transition-colors",
               lang === o.value
-                ? "border border-cyan/60 bg-cyan/10 text-cyan"
+                ? "glow-text border border-cyan/60 bg-cyan/10 text-cyan"
                 : "border border-transparent text-steel hover:text-surface-white",
             )}
           >

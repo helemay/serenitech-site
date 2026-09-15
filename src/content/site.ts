@@ -19,14 +19,16 @@ import {
 } from "lucide-react";
 
 export const brand = {
-  logoWide: "/brand/serenitech-logo-wide-on-dark.svg",
-  logoCompact: "/brand/serenitech-logo-compact-on-dark.svg",
-  logoHorizontal: "/brand/serenitech-logo-horizontal-on-dark.svg",
+  logoWide: "/brand/serenitech-logo-wide-on-dark-glow.svg",
+  logoCompact: "/brand/serenitech-logo-compact-on-dark-glow.svg",
+  logoHorizontal: "/brand/serenitech-logo-horizontal-on-dark-glow.svg",
   logoHorizontalPt: "/brand/serenitech-logo-horizontal-on-dark-pt.svg",
   logoDarkPng: "/brand/serenitech-logo-horizontal-on-dark.png",
-  mark: "/brand/serenitech-mark-on-dark.svg",
+  mark: "/brand/serenitech-mark-on-dark-glow.svg",
   badge: "/brand/serenitech-icon-badge-512.png",
   email: "contact@serenitech.global",
+  contactEndpoint:
+    "https://xblwde2qf4gihsfbmgbuaceyfm0kvfio.lambda-url.eu-west-3.on.aws/",
 } as const;
 
 export const images = {

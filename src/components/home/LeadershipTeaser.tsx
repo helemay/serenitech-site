@@ -27,11 +27,11 @@ export function LeadershipTeaser() {
                 </span>
                 <div>
                   <h3 className="text-base font-semibold">{p.name}</h3>
-                  <p className="mt-1 font-mono text-[11px] tracking-[0.14em] text-cyan uppercase">
+                  <p className="mt-1 glow-text font-mono text-[11px] tracking-[0.14em] text-cyan uppercase">
                     {p.role}
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-steel">{p.line}</p>
-                  <span className="mt-4 inline-flex items-center gap-2 text-sm text-cyan">
+                  <span className="glow-text mt-4 inline-flex items-center gap-2 text-sm text-cyan">
                     {t.home.leadership.link}
                     <ArrowRight
                       size={15}

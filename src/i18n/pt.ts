@@ -521,6 +521,7 @@ export const pt: Dict = {
     text: "Conte-nos sobre seu canal, terminal, plataforma ou ativo. Nossos engenheiros retornam com um plano de medição e uma proposta de test-drive com prazo definido.",
     fields: {
       name: "Nome",
+      email: "E-mail",
       organisation: "Organização",
       role: "Cargo",
       country: "País",
@@ -537,7 +538,13 @@ export const pt: Dict = {
       "Outro",
     ],
     required: "Campo obrigatório.",
-    success: "Seu rascunho de e-mail está pronto. Envie e retornaremos em breve.",
+    sending: "Enviando…",
+    successTitle: "Obrigado",
+    success:
+      "Solicitação recebida. Nossos engenheiros respondem em até um dia útil.",
+    error:
+      "Não foi possível enviar sua solicitação. Tente novamente ou escreva para contact@serenitech.global.",
+    again: "Enviar outra solicitação",
     locationsTitle: "Localizações",
     locations: ["Mônaco", "Florianópolis", "Flórida", "Emirados Árabes"],
     emailLabel: "E-mail",

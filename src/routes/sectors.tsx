@@ -56,7 +56,7 @@ function SectorsPage() {
           >
             <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-5 md:px-10 lg:grid-cols-2">
               <Reveal className={i % 2 === 1 ? "lg:order-2" : ""}>
-                <span className="font-mono text-xs text-cyan">
+                <span className="glow-text font-mono text-xs text-cyan">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h2 className="mt-4 text-2xl leading-tight font-bold md:text-4xl">
@@ -64,7 +64,7 @@ function SectorsPage() {
                 </h2>
                 <p className="mt-6 text-base leading-relaxed text-steel">{s.text}</p>
                 <p className="mt-6 border-l border-cyan pl-5">
-                  <span className="font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
+                  <span className="glow-text font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
                     {t.sectors.outcomeLabel}
                   </span>
                   <span className="mt-2 block text-base text-surface-white">

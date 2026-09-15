@@ -37,7 +37,7 @@ function ServicesPage() {
       >
         <p>{t.services.intro}</p>
         <p className="mt-6 border-l border-cyan/50 pl-5 text-sm md:text-base">
-          <span className="font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
+          <span className="glow-text font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
             {t.services.mandateLabel}
           </span>
           <br />
@@ -86,7 +86,7 @@ function ServicesPage() {
                   {m.bullets.map((b, bi) => (
                     <Reveal as="li" key={b.label} delay={bi * 0.07}>
                       <div className="surface-card h-full p-7">
-                        <h3 className="text-base font-semibold text-cyan">{b.label}</h3>
+                        <h3 className="glow-text text-base font-semibold text-cyan">{b.label}</h3>
                         <p className="mt-3 text-sm leading-relaxed text-steel">
                           {b.text}
                         </p>
@@ -105,7 +105,7 @@ function ServicesPage() {
                   ).map(([label, text], ci) => (
                     <Reveal key={label} delay={ci * 0.08}>
                       <div className="surface-card h-full p-7">
-                        <h3 className="font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
+                        <h3 className="glow-text font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
                           {label}
                         </h3>
                         <p className="mt-4 text-sm leading-relaxed text-steel">
@@ -120,7 +120,7 @@ function ServicesPage() {
               {isLast && (
                 <Reveal delay={0.1}>
                   <div className="surface-card mt-8 overflow-hidden p-0">
-                    <div className="border-b border-ocean px-5 py-3 font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
+                    <div className="border-b border-ocean px-5 py-3 glow-text font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
                       {t.services.apiLabel}
                     </div>
                     <pre className="overflow-x-auto px-5 py-6 font-mono text-[12px] leading-relaxed text-steel">

@@ -8,8 +8,8 @@ const base =
 const variants = {
   primary: "bg-cyan text-abyss hover:bg-cyan-deep hover:text-surface-white",
   outline:
-    "border border-ocean text-surface-white hover:border-cyan hover:text-cyan",
-  ghost: "text-cyan hover:text-cyan-deep px-0 py-0",
+    "border border-ocean text-surface-white hover:border-cyan hover:text-cyan hover:glow-text",
+  ghost: "glow-text text-cyan hover:text-cyan-deep px-0 py-0",
 } as const;
 
 type Variant = keyof typeof variants;

@@ -5,7 +5,7 @@
 /*
  * Serenitech design system — dark theme only.
  * Abyss #061424 · Navy #0B2540 · Ocean #123B63
- * Sonar Cyan #2BD4E6 · Deep Cyan #0FA3B8
+ * Sea Blue #24ADDB · Deep Sea #136586
  * Surface White #F4F8FB · Steel #8FA3B8 · Alert Amber #F5A524
  */
 
@@ -55,8 +55,8 @@
   --abyss: oklch(0.192 0.041 246.5);
   --navy: oklch(0.256 0.052 249.3);
   --ocean: oklch(0.362 0.076 248.6);
-  --sonar-cyan: oklch(0.815 0.128 204.2);
-  --deep-cyan: oklch(0.664 0.114 210.5);
+  --sonar-cyan: oklch(0.699 0.127 227);
+  --deep-cyan: oklch(0.477 0.09 231.3);
   --surface-white: oklch(0.972 0.006 236.3);
   --steel: oklch(0.703 0.032 247.1);
   --alert-amber: oklch(0.783 0.144 71.5);
@@ -127,6 +127,19 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-cyan);
+  text-shadow:
+    0 0 10px color-mix(in oklab, var(--color-cyan) 65%, transparent),
+    0 0 24px color-mix(in oklab, var(--color-cyan) 30%, transparent);
+}
+
+@utility glow-text {
+  text-shadow:
+    0 0 10px color-mix(in oklab, var(--color-cyan) 65%, transparent),
+    0 0 24px color-mix(in oklab, var(--color-cyan) 30%, transparent);
+}
+
+@utility glow-img {
+  filter: drop-shadow(0 0 10px color-mix(in oklab, var(--color-cyan) 45%, transparent));
 }
 
 @utility surface-card {

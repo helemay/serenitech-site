@@ -79,7 +79,7 @@ export function TrustStrip() {
             <li key={s}>{s}</li>
           ))}
         </ul>
-        <ul className="flex flex-wrap gap-x-6 gap-y-2 text-cyan">
+        <ul className="glow-text flex flex-wrap gap-x-6 gap-y-2 text-cyan">
           {t.home.trustRegions.map((r) => (
             <li key={r}>{r}</li>
           ))}

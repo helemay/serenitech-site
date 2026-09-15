@@ -29,7 +29,7 @@ export function CognitiveSection() {
                 />
                 <span className="absolute inset-[6px] rounded-full bg-cyan" />
               </span>
-              <span className="font-mono text-xs text-cyan">
+              <span className="glow-text font-mono text-xs text-cyan">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-3 text-xl leading-snug font-semibold">{s.title}</h3>

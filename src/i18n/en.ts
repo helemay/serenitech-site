@@ -517,6 +517,7 @@ export const en = {
     text: "Tell us about your channel, terminal, platform or asset. Our engineers will come back with a measurement plan and a proposal for a time-boxed test-drive.",
     fields: {
       name: "Name",
+      email: "E-mail",
       organisation: "Organisation",
       role: "Role",
       country: "Country",
@@ -533,7 +534,12 @@ export const en = {
       "Other",
     ],
     required: "This field is required.",
-    success: "Your e-mail draft is ready. Send it and we will reply shortly.",
+    sending: "Sending…",
+    successTitle: "Thank you",
+    success: "Request received. Our engineers will reply within one business day.",
+    error:
+      "We could not send your request. Please try again or write to contact@serenitech.global.",
+    again: "Send another request",
     locationsTitle: "Locations",
     locations: ["Monaco", "Florianópolis", "Florida", "UAE"],
     emailLabel: "E-mail",

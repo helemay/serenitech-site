@@ -55,7 +55,7 @@ function CompanyPage() {
                     />
                   </span>
                   <h3 className="mt-6 text-xl font-semibold">{p.name}</h3>
-                  <p className="mt-2 font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
+                  <p className="mt-2 glow-text font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
                     {p.role}
                   </p>
                   <p className="mt-5 text-sm leading-relaxed text-steel">{p.bio}</p>

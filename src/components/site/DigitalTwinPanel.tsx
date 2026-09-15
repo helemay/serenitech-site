@@ -7,7 +7,7 @@ export function DigitalTwinPanel() {
   return (
     <figure className="surface-card overflow-hidden p-0">
       <div className="flex items-center justify-between border-b border-ocean px-4 py-3">
-        <span className="font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
+        <span className="glow-text font-mono text-[11px] tracking-[0.2em] text-cyan uppercase">
           Digital twin
         </span>
         <span className="font-mono text-[11px] text-steel">

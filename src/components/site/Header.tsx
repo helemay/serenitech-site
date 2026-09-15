@@ -33,15 +33,15 @@ export function Header() {
           <img
             src={brand.logoWide}
             alt={t.brand.alt}
-            className="hidden h-[52px] w-auto min-[1400px]:block"
-            width={1086}
+            className="glow-img hidden h-[52px] w-auto min-[1400px]:block"
+            width={1096}
             height={103}
           />
           <img
             src={brand.logoCompact}
             alt={t.brand.alt}
-            className="h-9 w-auto min-[1400px]:hidden"
-            width={570}
+            className="glow-img h-9 w-auto min-[1400px]:hidden"
+            width={579}
             height={88}
           />
         </Link>

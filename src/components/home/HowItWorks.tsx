@@ -24,7 +24,7 @@ export function HowItWorks() {
                 aria-hidden="true"
                 className="mb-6 block h-3.5 w-3.5 rounded-full border border-cyan bg-abyss"
               />
-              <span className="font-mono text-xs text-cyan">
+              <span className="glow-text font-mono text-xs text-cyan">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-3 text-lg leading-snug font-semibold">{s.title}</h3>
