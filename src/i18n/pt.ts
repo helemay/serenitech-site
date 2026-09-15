@@ -150,6 +150,12 @@ export const pt: Dict = {
         {
           caption: "Hélice de mega navio — assinatura de ruído e cavitação, frentes de onda propagando-se para ré.",
         },
+        {
+          caption: "Console cognitivo — gêmeo digital de uma bacia de demonstração: batimetria 3D com navios e unidades, planta, numéricos de UKC, perfil transversal, espectro acústico e eventos.",
+        },
+        {
+          caption: "Vista 3D do gêmeo — canal de acesso e bacia de evolução a −15,0 m CD, 220 m de largura, com o navio entrando, o navio atracado e 24 unidades cognitivas (traçado sintético).",
+        },
       ],
     },
     cognitive: {
@@ -239,6 +245,18 @@ export const pt: Dict = {
         "Embarcação escura: nenhuma",
         "Bacia 3 · ao vivo",
       ],
+      console: {
+        title: "Console cognitivo · gêmeo digital",
+        live: "Ao vivo",
+        open: "Abrir a tela do console em tamanho real",
+        alt: "Console cognitivo Serenitech: vista 3D batimétrica de um canal de acesso e bacia de evolução com navios e unidades cognitivas, planta, numéricos, perfil transversal, espectro acústico e registro de eventos",
+        ukc: "UKC dinâmico",
+        tide: "Maré",
+        sog: "Navio entrando",
+        spl: "Frequência de pá 14,2 Hz",
+        pings: "Pings MBES · unidades",
+        caption: "Bacia de demonstração sintética — o traçado é fictício; canal a −15,0 m CD, 220 m de largura, taludes 1:3, bacia de evolução Ø 600 m, navios de 347 m / 294 m e maré +0,9 m são valores da classe Miami/Santos. Renderizado a partir do mesmo modelo de dados que o console serve.",
+      },
     },
     ai: {
       eyebrow: "STACK DE IA",
@@ -461,11 +479,19 @@ export const pt: Dict = {
       "A Serenitech é um sistema de robótica cognitiva com IA: unidades que percebem, raciocinam e agem, orquestradas por um motor cognitivo em nuvem.",
     layersTitle: "Cinco camadas",
     schematic: {
-      units: "unidades",
-      gateway: "gateway",
-      cloud: "motor em nuvem",
-      interfaces: "APIs · painéis · gêmeo digital",
-      alt: "Esquema em corte vertical do mar com unidades robóticas cognitivas, gateway de superfície e motor em nuvem",
+      alt: "Seção vertical animada de um berço: sensoriamento no leito e nas estacas, unidades robóticas cognitivas e uma unidade de levantamento, gateway de cais com inteligência de borda, motor cognitivo em nuvem e interfaces do operador, com pacotes de dados percorrendo os enlaces",
+      layers: ["Interfaces", "Motor em nuvem", "Inteligência de borda", "Unidades robóticas cognitivas", "Sensoriamento"],
+      cloud: "motor cognitivo em nuvem",
+      interfaces: "REST · WebSocket · painéis · gêmeo 3D · VTMIS / SCADA / ERP",
+      gateway: "gateway de cais",
+      gatewayLink: "LTE-5G / fibra · TLS · medições assinadas",
+      unitsLink: "acústico · magneto-indutivo 400 kHz · malha",
+      units: "unidades cognitivas",
+      auv: "unidade de levantamento · faixa MBES",
+      phenomena: "acústica · vibração · batimetria · hidrodinâmica · magnetismo",
+      edge: "IA de borda · classificação na origem",
+      federated: "atualizações de modelo ↓",
+      readouts: ["0,11 m/s", "1 650 kN", "142 dB re 1 µPa", "UKC 2,68 m"],
     },
     layers: [
       {

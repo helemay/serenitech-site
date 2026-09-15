@@ -135,7 +135,7 @@ export function Header() {
             to="/"
             hash="contact"
             hashScrollIntoView={hashScroll}
-            className="px-5 py-2.5 text-[13px] whitespace-nowrap"
+            className="hidden px-5 py-2.5 text-[13px] whitespace-nowrap xl:inline-flex"
           >
             {t.nav.cta}
           </CtaLink>

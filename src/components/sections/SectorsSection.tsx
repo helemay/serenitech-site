@@ -61,8 +61,9 @@ export function SectorsSection() {
                     loading="lazy"
                     width={1920}
                     height={1088}
-                    className="aspect-[16/10] w-full object-cover opacity-100"
+                    className="block aspect-[1920/1088] w-full object-cover"
                   />
+                  <div aria-hidden="true" className="img-tint absolute inset-0" />
                   {v.rings && (
                     <SonarRings className="top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 opacity-40" />
                   )}

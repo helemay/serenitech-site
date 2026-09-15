@@ -42,6 +42,8 @@ export const images = {
   offshorePipelines: "/images/offshore-pipelines.jpg",
   channelPov: "/images/channel-pov-vessels.jpg",
   propeller: "/images/propeller-megaship.jpg",
+  twinConsole: "/images/twin-console.jpg",
+  twin3d: "/images/twin-3d-view.jpg",
 } as const;
 
 export const navRoutes = [

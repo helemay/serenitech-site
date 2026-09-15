@@ -168,6 +168,15 @@
   box-shadow: 0 30px 80px -40px color-mix(in oklab, var(--color-abyss) 95%, transparent);
 }
 
+/* Subtle bluish darkening over the field images (keeps the page calm; the pictures stay whole). */
+@utility img-tint {
+  background-color: color-mix(in oklab, var(--color-navy) 46%, transparent);
+  mix-blend-mode: multiply;
+  backdrop-filter: saturate(0.82);
+  -webkit-backdrop-filter: saturate(0.82);
+  pointer-events: none;
+}
+
 @utility hairline {
   height: 1px;
   width: 100%;
@@ -201,6 +210,34 @@
   @media (min-width: 768px) {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+}
+
+@keyframes twin-sweep {
+  0% {
+    left: 1.5%;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    left: 63%;
+    opacity: 0;
+  }
+}
+
+.twin-sweep {
+  animation: twin-sweep 9s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .twin-sweep {
+    animation: none;
+    display: none;
   }
 }
 

@@ -146,6 +146,12 @@ export const en = {
         {
           caption: "Mega-ship propeller — noise and cavitation signature, wavefronts propagating astern.",
         },
+        {
+          caption: "Cognitive console — digital twin of a demonstration basin: 3D bathymetry with vessels and units, plan view, UKC numerics, cross-section, acoustic spectrum and events.",
+        },
+        {
+          caption: "3D twin view — access channel and turning basin at −15.0 m CD, 220 m wide, with the inbound vessel, the berthed ship and 24 cognitive units (synthetic layout).",
+        },
       ],
     },
     cognitive: {
@@ -235,6 +241,18 @@ export const en = {
         "Dark vessel: none",
         "Basin 3 · live",
       ],
+      console: {
+        title: "Cognitive console · digital twin",
+        live: "Live",
+        open: "Open the console screen at full size",
+        alt: "Serenitech cognitive console: 3D bathymetric view of an access channel and turning basin with vessels and cognitive units, plan view, numerics, cross-section profile, acoustic spectrum and event log",
+        ukc: "UKC dynamic",
+        tide: "Tide",
+        sog: "Inbound vessel",
+        spl: "Blade rate 14.2 Hz",
+        pings: "MBES pings · units",
+        caption: "Synthetic demonstration basin — layout is fictional; channel −15.0 m CD, 220 m wide, 1:3 slopes, Ø 600 m turning basin, 347 m / 294 m vessels and tide +0.9 m are Miami/Santos-class figures. Rendered from the same data model the console serves.",
+      },
     },
     ai: {
       eyebrow: "AI STACK",
@@ -457,11 +475,19 @@ export const en = {
       "Serenitech is an AI cognitive robotics system: units that perceive, reason and act, orchestrated by a cloud cognitive engine.",
     layersTitle: "Five layers",
     schematic: {
-      units: "units",
-      gateway: "gateway",
-      cloud: "cloud engine",
-      interfaces: "APIs · dashboards · digital twin",
-      alt: "Schematic vertical section of the sea with cognitive robotic units, a surface gateway and the cloud engine",
+      alt: "Animated vertical section of a berth: sensing on the bed and piles, cognitive robotic units and a survey unit, a quay gateway with edge intelligence, the cloud engine and the operator interfaces, with data packets travelling along the links",
+      layers: ["Interfaces", "Cloud engine", "Edge intelligence", "Cognitive robotic units", "Sensing"],
+      cloud: "cloud cognitive engine",
+      interfaces: "REST · WebSocket · dashboards · 3D twin · VTMIS / SCADA / ERP",
+      gateway: "quay gateway",
+      gatewayLink: "LTE-5G / fibre · TLS · signed measurements",
+      unitsLink: "acoustic · magneto-inductive 400 kHz · mesh",
+      units: "cognitive units",
+      auv: "survey unit · MBES swath",
+      phenomena: "acoustics · vibration · bathymetry · hydrodynamics · magnetics",
+      edge: "edge AI · classification at the source",
+      federated: "model updates ↓",
+      readouts: ["0.11 m/s", "1 650 kN", "142 dB re 1 µPa", "UKC 2.68 m"],
     },
     layers: [
       {

@@ -13,6 +13,8 @@ const order = [
   images.subsea,
   images.channelPov,
   images.propeller,
+  images.twinConsole,
+  images.twin3d,
 ] as const;
 
 export function FieldViews() {
@@ -42,14 +44,17 @@ export function FieldViews() {
                     aria-label={`${f.open}: ${item.caption}`}
                     className="block overflow-hidden"
                   >
-                    <img
-                      src={src}
-                      alt={item.caption}
-                      loading="lazy"
-                      width={1920}
-                      height={1088}
-                      className="aspect-[16/10] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                    />
+                    <span className="relative block">
+                      <img
+                        src={src}
+                        alt={item.caption}
+                        loading="lazy"
+                        width={1920}
+                        height={1088}
+                        className="block aspect-[1920/1088] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      />
+                      <span aria-hidden="true" className="img-tint absolute inset-0" />
+                    </span>
                   </a>
                   <figcaption className="border-t border-ocean px-5 py-4 text-sm leading-relaxed text-steel">
                     <span className="glow-text mr-2 font-mono text-[11px] text-cyan">
