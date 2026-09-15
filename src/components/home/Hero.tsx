@@ -58,8 +58,10 @@ export function Hero() {
             {t.home.sub}
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <CtaLink to="/contact">{t.home.ctaPrimary}</CtaLink>
-            <CtaLink to="/services" variant="outline">
+            <CtaLink to="/" hash="contact">
+              {t.home.ctaPrimary}
+            </CtaLink>
+            <CtaLink to="/" hash="services" variant="outline">
               {t.home.ctaSecondary}
             </CtaLink>
           </div>

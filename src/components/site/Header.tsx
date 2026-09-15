@@ -7,16 +7,76 @@ import { CtaLink } from "./CtaLink";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { cn } from "@/lib/utils";
 
+const hashScroll = { behavior: "smooth", block: "start" } as const;
+// Section links all point to "/": match on the hash too, or every link reports itself as the current page.
+const sectionActive = { includeHash: true, exact: true } as const;
+
 export function Header() {
   const { t, lang } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Active section = the last section whose top has passed a line ~35% down the viewport
+  // (sections are several screens tall, so IntersectionObserver ratios are not a reliable signal).
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const line = Math.min(window.innerHeight * 0.35, 320);
+      let current: string | null = null;
+      for (const r of navRoutes) {
+        const el = document.getElementById(r.hash);
+        if (el && el.getBoundingClientRect().top <= line) current = r.hash;
+      }
+      setActive(current);
+    };
+    const schedule = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, []);
+
+  // Deep link (/#section, /#module-n): the browser anchors before fonts/images settle and the smooth
+  // scroll drifts off target, so re-anchor instantly once the page has loaded — unless the visitor
+  // has already started scrolling.
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (!id || !document.getElementById(id)) return;
+    let cancelled = false;
+    const cancel = () => {
+      cancelled = true;
+    };
+    const jump = () => {
+      if (cancelled) return;
+      document.getElementById(id)?.scrollIntoView({ block: "start", behavior: "instant" });
+    };
+    const settle = () => {
+      jump();
+      document.fonts?.ready.then(() => requestAnimationFrame(jump));
+    };
+    const cancelEvents = ["wheel", "touchstart", "keydown"] as const;
+    cancelEvents.forEach((e) => window.addEventListener(e, cancel, { passive: true, once: true }));
+    if (document.readyState === "complete") settle();
+    else window.addEventListener("load", settle, { once: true });
+    return () => {
+      window.removeEventListener("load", settle);
+      cancelEvents.forEach((e) => window.removeEventListener(e, cancel));
+    };
   }, []);
 
   return (
@@ -49,10 +109,18 @@ export function Header() {
         <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
           {navRoutes.map((r) => (
             <Link
-              key={r.to}
-              to={r.to}
-              className="text-sm font-medium text-steel transition-colors hover:text-surface-white"
-              activeProps={{ className: "text-cyan" }}
+              key={r.hash}
+              to="/"
+              hash={r.hash}
+              hashScrollIntoView={hashScroll}
+              activeOptions={sectionActive}
+              aria-current={active === r.hash ? "true" : undefined}
+              className={cn(
+                "text-sm font-medium transition-colors",
+                active === r.hash
+                  ? "glow-text text-cyan"
+                  : "text-steel hover:text-surface-white",
+              )}
             >
               {t.nav[r.key]}
             </Link>
@@ -61,7 +129,12 @@ export function Header() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitch />
-          <CtaLink to="/contact" className="px-5 py-2.5 text-[13px] whitespace-nowrap">
+          <CtaLink
+            to="/"
+            hash="contact"
+            hashScrollIntoView={hashScroll}
+            className="px-5 py-2.5 text-[13px] whitespace-nowrap"
+          >
             {t.nav.cta}
           </CtaLink>
         </div>
@@ -85,11 +158,19 @@ export function Header() {
           >
             {navRoutes.map((r) => (
               <Link
-                key={r.to}
-                to={r.to}
+                key={r.hash}
+                to="/"
+                hash={r.hash}
+                hashScrollIntoView={hashScroll}
+                activeOptions={sectionActive}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-2 py-3 text-base text-steel hover:text-surface-white"
-                activeProps={{ className: "text-cyan" }}
+                aria-current={active === r.hash ? "true" : undefined}
+                className={cn(
+                  "rounded-md px-2 py-3 text-base",
+                  active === r.hash
+                    ? "glow-text text-cyan"
+                    : "text-steel hover:text-surface-white",
+                )}
               >
                 {t.nav[r.key]}
               </Link>
@@ -97,7 +178,9 @@ export function Header() {
             <div className="mt-3 flex items-center justify-between gap-4">
               <LanguageSwitch />
               <CtaLink
-                to="/contact"
+                to="/"
+                hash="contact"
+                hashScrollIntoView={hashScroll}
                 onClick={() => setOpen(false)}
                 className="flex-1 px-4 py-2.5 text-[13px]"
               >

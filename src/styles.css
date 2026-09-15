@@ -89,7 +89,7 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    /* Anchor offset lives on the targets (scroll-mt-20 md:scroll-mt-24); no scroll-padding here, or the two add up. */
   }
 
   body {

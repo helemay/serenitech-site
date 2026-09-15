@@ -4,14 +4,11 @@ import { ProblemSection } from "@/components/home/ProblemSection";
 import { SignatureBand } from "@/components/home/SignatureBand";
 import { SolutionSection } from "@/components/home/SolutionSection";
 import { CognitiveSection } from "@/components/home/CognitiveSection";
-import { ServicesOverview } from "@/components/home/ServicesOverview";
-import { AdvisoryBand } from "@/components/home/AdvisoryBand";
-import { HowItWorks } from "@/components/home/HowItWorks";
-import { TwinSection } from "@/components/home/TwinSection";
-import { AiStack } from "@/components/home/AiStack";
-import { PresenceSection } from "@/components/home/PresenceSection";
-import { LeadershipTeaser } from "@/components/home/LeadershipTeaser";
-import { CtaBand } from "@/components/site/CtaBand";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { SectorsSection } from "@/components/sections/SectorsSection";
+import { TechnologySection } from "@/components/sections/TechnologySection";
+import { CompanySection } from "@/components/sections/CompanySection";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { en } from "@/i18n/en";
 
 const meta = en.meta.home;
@@ -40,14 +37,11 @@ function Home() {
       <SignatureBand />
       <SolutionSection />
       <CognitiveSection />
-      <ServicesOverview />
-      <AdvisoryBand />
-      <HowItWorks />
-      <TwinSection />
-      <AiStack />
-      <PresenceSection />
-      <LeadershipTeaser />
-      <CtaBand />
+      <ServicesSection />
+      <SectorsSection />
+      <TechnologySection />
+      <CompanySection />
+      <ContactSection />
     </>
   );
 }

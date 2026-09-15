@@ -63,7 +63,7 @@ export const pt: Dict = {
       "Estruturas submarinas",
       "Indústria naval",
     ],
-    trustRegions: ["Mônaco", "Brasil", "EUA", "Emirados Árabes"],
+    trustRegions: ["Mônaco", "Brasil", "EUA"],
     problem: {
       eyebrow: "O PROBLEMA",
       title:
@@ -229,7 +229,6 @@ export const pt: Dict = {
           text: "Sede brasileira, escritório e laboratório (Passeio Sapiens, Sapiens Parque)",
         },
         { place: "Flórida, EUA", text: "Operações na América do Norte" },
-        { place: "Emirados Árabes Unidos", text: "Operações no Oriente Médio" },
       ],
     },
     leadership: {
@@ -485,7 +484,7 @@ export const pt: Dict = {
       {
         name: "Rodrigo Füchter",
         role: "CEO e cofundador",
-        bio: "Empreendedor com mais de 25 anos construindo negócios de tecnologia e financeiros. Começou na montagem de microcomputadores e redes, passou a plataformas online e foi por quase duas décadas CFO e Head de Compliance do grupo familiar antes de fundar diversas empresas, entre elas Serenitech, MonFinance, DebitoPago, CarroPago e Lanet Tecnologia. Baseado em Mônaco, lidera estratégia, estrutura societária, finanças e a expansão do grupo no Brasil, nos Estados Unidos e no Oriente Médio.",
+        bio: "Empreendedor com mais de 25 anos construindo negócios de tecnologia e financeiros. Começou na montagem de microcomputadores e redes, passou a plataformas online e foi por quase duas décadas CFO e Head de Compliance do grupo familiar antes de fundar diversas empresas, entre elas Serenitech, MonFinance, DebitoPago, CarroPago e Lanet Tecnologia. Baseado em Mônaco, lidera estratégia, estrutura societária, finanças e a expansão do grupo no Brasil e nos Estados Unidos.",
       },
       {
         name: "Dr. Thierry Deschamps de Paillette",
@@ -504,10 +503,6 @@ export const pt: Dict = {
         text: "Sede brasileira com escritório e laboratório no Passeio Sapiens, no distrito de inovação Sapiens Parque; operações para clientes de portos, offshore e naval no Brasil.",
       },
       { place: "Flórida, EUA — Serenitech USA", text: "Operações na América do Norte." },
-      {
-        place: "Emirados Árabes Unidos — Serenitech UAE",
-        text: "Operações no Oriente Médio.",
-      },
       { place: "Serenitech Global", text: "Holding do grupo." },
     ],
     photoCaption:
@@ -546,7 +541,7 @@ export const pt: Dict = {
       "Não foi possível enviar sua solicitação. Tente novamente ou escreva para contact@serenitech.global.",
     again: "Enviar outra solicitação",
     locationsTitle: "Localizações",
-    locations: ["Mônaco", "Florianópolis", "Flórida", "Emirados Árabes"],
+    locations: ["Mônaco", "Florianópolis", "Flórida"],
     emailLabel: "E-mail",
   },
   footer: {
@@ -561,7 +556,6 @@ export const pt: Dict = {
       "Serenitech S.A.R.L. (Mônaco)",
       "Serenitech Brasil",
       "Serenitech USA",
-      "Serenitech UAE",
     ],
     privacy: "Privacidade",
     rights: "© 2026 Serenitech. Todos os direitos reservados.",

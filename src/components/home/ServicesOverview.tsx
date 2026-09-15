@@ -24,7 +24,7 @@ export function ServicesOverview() {
             return (
               <Reveal as="li" key={s.title} delay={(i % 3) * 0.08}>
                 <Link
-                  to="/services"
+                  to="/"
                   hash={`module-${i + 1}`}
                   className="surface-card group flex h-full flex-col p-7"
                 >

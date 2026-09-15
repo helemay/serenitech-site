@@ -61,7 +61,7 @@ export const en = {
       "Subsea structures",
       "Naval industry",
     ],
-    trustRegions: ["Monaco", "Brazil", "USA", "UAE"],
+    trustRegions: ["Monaco", "Brazil", "USA"],
     problem: {
       eyebrow: "THE PROBLEM",
       title:
@@ -225,7 +225,6 @@ export const en = {
           text: "Brazil headquarters, office & laboratory (Passeio Sapiens, Sapiens Parque)",
         },
         { place: "Florida, USA", text: "North American operations" },
-        { place: "United Arab Emirates", text: "Middle East operations" },
       ],
     },
     leadership: {
@@ -481,7 +480,7 @@ export const en = {
       {
         name: "Rodrigo Füchter",
         role: "CEO & Co-founder",
-        bio: "Entrepreneur with more than 25 years building technology and financial businesses. He started in microcomputer assembly and networking, moved into online platforms and spent nearly two decades as CFO and Head of Compliance of his family group before founding several companies, among them Serenitech, MonFinance, DebitoPago, CarroPago and Lanet Tecnologia. Based in Monaco, he leads strategy, corporate structure, finance and the group's expansion across Brazil, the United States and the Middle East.",
+        bio: "Entrepreneur with more than 25 years building technology and financial businesses. He started in microcomputer assembly and networking, moved into online platforms and spent nearly two decades as CFO and Head of Compliance of his family group before founding several companies, among them Serenitech, MonFinance, DebitoPago, CarroPago and Lanet Tecnologia. Based in Monaco, he leads strategy, corporate structure, finance and the group's expansion across Brazil and the United States.",
       },
       {
         name: "Dr. Thierry Deschamps de Paillette",
@@ -500,10 +499,6 @@ export const en = {
         text: "Brazil headquarters with office and laboratory at Passeio Sapiens, in the Sapiens Parque innovation district; operations for ports, offshore and naval clients in Brazil.",
       },
       { place: "Florida, USA — Serenitech USA", text: "North American operations." },
-      {
-        place: "United Arab Emirates — Serenitech UAE",
-        text: "Middle East operations.",
-      },
       { place: "Serenitech Global", text: "Group holding company." },
     ],
     photoCaption:
@@ -541,7 +536,7 @@ export const en = {
       "We could not send your request. Please try again or write to contact@serenitech.global.",
     again: "Send another request",
     locationsTitle: "Locations",
-    locations: ["Monaco", "Florianópolis", "Florida", "UAE"],
+    locations: ["Monaco", "Florianópolis", "Florida"],
     emailLabel: "E-mail",
   },
   footer: {
@@ -556,7 +551,6 @@ export const en = {
       "Serenitech S.A.R.L. (Monaco)",
       "Serenitech Brasil",
       "Serenitech USA",
-      "Serenitech UAE",
     ],
     privacy: "Privacy",
     rights: "© 2026 Serenitech. All rights reserved.",

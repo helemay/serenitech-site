@@ -29,17 +29,17 @@ export function Footer() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/company" className="text-steel hover:text-surface-white">
+                <Link to="/" hash="company" className="text-steel hover:text-surface-white">
                   {t.nav.company}
                 </Link>
               </li>
               <li>
-                <Link to="/technology" className="text-steel hover:text-surface-white">
+                <Link to="/" hash="technology" className="text-steel hover:text-surface-white">
                   {t.nav.technology}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-steel hover:text-surface-white">
+                <Link to="/" hash="contact" className="text-steel hover:text-surface-white">
                   {t.nav.contact}
                 </Link>
               </li>
@@ -54,7 +54,7 @@ export function Footer() {
               {t.services.modules.map((m, i) => (
                 <li key={m.title}>
                   <Link
-                    to="/services"
+                    to="/"
                     hash={`module-${i + 1}`}
                     className="text-steel hover:text-surface-white"
                   >
@@ -72,7 +72,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               {t.sectors.items.map((s) => (
                 <li key={s.title}>
-                  <Link to="/sectors" className="text-steel hover:text-surface-white">
+                  <Link to="/" hash="sectors" className="text-steel hover:text-surface-white">
                     {s.title}
                   </Link>
                 </li>

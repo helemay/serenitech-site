@@ -45,11 +45,11 @@ export const images = {
 } as const;
 
 export const navRoutes = [
-  { to: "/services", key: "services" },
-  { to: "/sectors", key: "sectors" },
-  { to: "/technology", key: "technology" },
-  { to: "/company", key: "company" },
-  { to: "/contact", key: "contact" },
+  { hash: "services", key: "services" },
+  { hash: "sectors", key: "sectors" },
+  { hash: "technology", key: "technology" },
+  { hash: "company", key: "company" },
+  { hash: "contact", key: "contact" },
 ] as const;
 
 export const domainIcons: LucideIcon[] = [Volume2, Activity, Waves, Magnet];

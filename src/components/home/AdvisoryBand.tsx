@@ -19,7 +19,7 @@ export function AdvisoryBand() {
             {a.text}
           </p>
           <CtaLink
-            to="/services"
+            to="/"
             hash="module-7"
             variant="outline"
             className="mt-7 px-5 py-2.5 text-[13px]"

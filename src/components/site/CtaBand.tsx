@@ -31,7 +31,7 @@ export function CtaBand() {
           <p className="mt-5 text-base leading-relaxed text-steel md:text-lg">
             {t.home.finalCta.text}
           </p>
-          <CtaLink to="/contact" className="mt-8">
+          <CtaLink to="/" hash="contact" className="mt-8">
             {t.home.finalCta.button}
           </CtaLink>
         </Reveal>
