@@ -4,28 +4,34 @@ import { CtaLink } from "../site/CtaLink";
 import { Eyebrow } from "../site/Decor";
 import { FramedVisual } from "../site/FramedVisual";
 
+/** Opening: the copy sits above the picture, so the field image is shown whole and unobstructed. */
 export function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="pt-24 pb-4 md:pt-28 md:pb-8">
-      <FramedVisual src={images.heroClean} alt={t.home.heroAlt} priority overlayFrom="xl" panelSide="right">
-        <Eyebrow>{t.home.eyebrow}</Eyebrow>
-        <h1 className="mt-5 text-4xl leading-[1.03] font-bold sm:text-5xl xl:text-6xl">
-          {t.home.h1}
-        </h1>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-steel md:text-lg">
-          {t.home.sub}
-        </p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <CtaLink to="/" hash="contact">
-            {t.home.ctaPrimary}
-          </CtaLink>
-          <CtaLink to="/" hash="services" variant="outline">
-            {t.home.ctaSecondary}
-          </CtaLink>
+    <section className="pt-24 pb-4 md:pt-26 md:pb-8">
+      <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-7">
+            <Eyebrow>{t.home.eyebrow}</Eyebrow>
+            <h1 className="mt-5 text-4xl leading-[1.03] font-bold sm:text-5xl lg:text-6xl">
+              {t.home.h1}
+            </h1>
+          </div>
+          <div className="lg:col-span-5">
+            <p className="text-base leading-relaxed text-steel">{t.home.sub}</p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <CtaLink to="/" hash="contact">
+                {t.home.ctaPrimary}
+              </CtaLink>
+              <CtaLink to="/" hash="services" variant="outline">
+                {t.home.ctaSecondary}
+              </CtaLink>
+            </div>
+          </div>
         </div>
-      </FramedVisual>
+      </div>
+      <FramedVisual src={images.heroClean} alt={t.home.heroAlt} priority className="mt-8" />
     </section>
   );
 }
