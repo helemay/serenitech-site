@@ -46,7 +46,7 @@ export const pt: Dict = {
     contact: {
       title: "Solicitar briefing técnico — Serenitech",
       description:
-        "Conte-nos sobre seu canal, terminal, plataforma ou ativo. Nossos engenheiros retornam com um plano de medição e uma proposta de test-drive.",
+        "Conte-nos sobre seu canal, terminal, plataforma ou ativo. Nossos engenheiros retornam com uma proposta de início de negócio e o escopo e orçamento do estudo inicial de auditoria e viabilidade.",
     },
   },
   home: {
@@ -87,7 +87,7 @@ export const pt: Dict = {
       eyebrow: "CONSULTORIA SOB MEDIDA",
       title:
         "Consultoria projetada para a sua estrutura, não para o porto médio.",
-      text: "Estudos de aplicabilidade e viabilidade, revisão de impactos ambientais, avaliação de riscos estruturais e operacionais, assessoria em arquitetura de IA e deep tech, comunicações subaquáticas em ambientes hostis — entregues caso a caso, em nível internacional, pela equipe que constrói o sistema.",
+      text: "Estudos de aplicabilidade e viabilidade, revisão de impactos ambientais, avaliação de riscos estruturais e operacionais, assessoria em arquitetura de IA e deep tech, conectividade subaquática em condições exigentes — entregues caso a caso, em nível internacional, pela equipe que constrói o sistema.",
       chips: [
         "Aplicabilidade e viabilidade",
         "Revisão de impactos ambientais",
@@ -118,6 +118,38 @@ export const pt: Dict = {
           text: "profundidade, sedimento, fluxo, calado",
         },
         { title: "Magnetismo", text: "anomalias de massa do casco, verificação" },
+      ],
+    },
+    field: {
+      eyebrow: "VISÕES DE CAMPO",
+      title: "O que as unidades cognitivas veem.",
+      text: "Cenas dos domínios que instrumentamos — fundos de canal, muros de cais, estruturas offshore, ativos submarinos e os cascos acima deles — com as medições, os nós sensores e as frentes de onda que o nosso sistema produz. Abra qualquer imagem para ver o detalhe.",
+      open: "Abrir em tamanho real",
+      items: [
+        {
+          caption: "Muro de cais e porta-contêineres atracado — folga sob a quilha, cargas de atracação e frentes de onda acústicas do hélice.",
+        },
+        {
+          caption: "Fundo do canal sob um navio em trânsito — superfície batimétrica, calado dinâmico e assinatura de hélice e leme.",
+        },
+        {
+          caption: "Muro de cais — deformação estrutural, integridade das estacas e assoreamento, medidos estaca a estaca.",
+        },
+        {
+          caption: "Dutos offshore sob uma plataforma — vibração, erosão e mapeamento de integridade.",
+        },
+        {
+          caption: "Pernas de jaqueta — deformação, corrosão e detecção de aproximação a partir de nós sensores na estrutura.",
+        },
+        {
+          caption: "Duto submarino e manifold — grade de levantamento, mudanças do fundo e detecção de eventos.",
+        },
+        {
+          caption: "Fundo do canal, do ponto de vista das unidades — várias embarcações verificadas, uma sinalizada fora de especificação.",
+        },
+        {
+          caption: "Hélice de mega navio — assinatura de ruído e cavitação, frentes de onda propagando-se para ré.",
+        },
       ],
     },
     cognitive: {
@@ -170,12 +202,12 @@ export const pt: Dict = {
       ],
     },
     how: {
-      eyebrow: "COMO FUNCIONA",
-      title: "Do levantamento de campo ao serviço contínuo.",
+      eyebrow: "COMO TRABALHAMOS",
+      title: "Do estudo de viabilidade ao serviço contínuo.",
       steps: [
         {
-          title: "Análise sistêmica e levantamento de campo",
-          text: "Modelamos seu canal, bacia, berços ou ativo e definimos o plano de medição.",
+          title: "Auditoria e consultoria de viabilidade",
+          text: "Um projeto customizado para seu canal, bacia, berços ou ativo: análise sistêmica, levantamento de campo, plano de medição e avaliação de viabilidade — base da proposta de contrato de serviços.",
         },
         {
           title: "Implantação robótica",
@@ -187,7 +219,7 @@ export const pt: Dict = {
         },
         {
           title: "Serviço contínuo",
-          text: "Monitoramento 24/7, atualização de modelos, relatórios ambientais e de integridade, por assinatura.",
+          text: "Monitoramento 24/7, atualização de modelos, relatórios ambientais e de integridade — por assinatura, no âmbito do contrato de serviços.",
         },
       ],
     },
@@ -195,7 +227,7 @@ export const pt: Dict = {
       eyebrow: "GÊMEO DIGITAL",
       title: "Um modelo 3D vivo do seu porto — do fundo para cima.",
       bullets: [
-        "Malha batimétrica com densidade de assoreamento e zonas rasas críticas",
+        "Superfície batimétrica com densidade de assoreamento e zonas rasas críticas",
         "Blocos dinâmicos de navios com calado, arfagem, balanço e banda em tempo real",
         "Frentes de onda subaquáticas localizando eventos acústicos e magnéticos",
         "Tudo no navegador, alimentado pelas mesmas APIs dos seus sistemas",
@@ -249,9 +281,9 @@ export const pt: Dict = {
       ],
     },
     finalCta: {
-      eyebrow: "TEST-DRIVE",
-      title: "Comece com um test-drive.",
-      text: "Um piloto com prazo definido em um berço, setor de canal ou estrutura: dados ao vivo, alertas e gêmeo digital nos seus ativos, antes de qualquer compromisso de longo prazo.",
+      eyebrow: "COMO COMEÇAMOS",
+      title: "Comece com um projeto customizado de viabilidade.",
+      text: "A Serenitech apresenta primeiro uma proposta de início de negócio e o orçamento de um projeto inicial de auditoria e consultoria de viabilidade, sob medida para seu canal, terminal, plataforma ou ativo. As conclusões desse projeto se convertem na proposta de contrato de serviços de longo prazo.",
       button: "Solicitar briefing técnico",
       imageAlt: "Estrutura de jaqueta de plataforma offshore vista sob a superfície",
     },
@@ -332,7 +364,7 @@ export const pt: Dict = {
           },
           {
             label: "Motor de Alarmes e Políticas",
-            text: "Regras de baixa latência com alertas visuais, SMS e webhook — violações ambientais, ameaças de segurança, riscos operacionais.",
+            text: "Regras de baixa latência com alertas visuais, SMS e webhook — violações ambientais, eventos de segurança, riscos operacionais.",
           },
           {
             label: "Gêmeo Digital Espacial 3D",
@@ -363,7 +395,7 @@ export const pt: Dict = {
             text: "Revisão e projeto independentes de arquiteturas de sensoriamento, IA de borda, nuvem e gêmeo digital; estratégia de dados, integração com VTMIS, SCADA e ERP, cibersegurança e governança de dados.",
           },
           {
-            label: "Comunicações subaquáticas em ambientes hostis",
+            label: "Conectividade subaquática em condições exigentes",
             text: "Projeto de links acústicos, magneto-indutivos e ópticos, autonomia e sobrevivência das unidades em condições de sedimento, alto tráfego e águas profundas, engenharia de implantação e manutenção.",
           },
           {
@@ -375,7 +407,7 @@ export const pt: Dict = {
     ],
     apiLabel: "Exemplo de API",
     advisoryIntro:
-      "Cada porto, plataforma e estrutura é diferente. Nossa consultoria é desenhada caso a caso pela equipe que constrói as unidades robóticas cognitivas, a IA e os links subaquáticos — conhecimento de nível internacional em IA, deep tech e comunicações subaquáticas em ambientes hostis, aplicado à sua situação.",
+      "Cada porto, plataforma e estrutura é diferente. Nossa consultoria é desenhada caso a caso pela equipe que constrói as unidades robóticas cognitivas, a IA e os links subaquáticos — conhecimento de nível internacional em IA, deep tech e conectividade subaquática em condições exigentes, aplicado à sua situação.",
     headerAlt:
       "Vista subaquática de um muro de cais com unidades robóticas cognitivas e leituras 3D",
     commercial: {
@@ -410,7 +442,7 @@ export const pt: Dict = {
         text: "Dutos, manifolds, cabos, emissários e fundações de eólicas offshore: movimento e vibração estrutural, mudanças do leito e dinâmica de sedimentos, detecção de eventos e deriva de longo prazo — com unidades robóticas cognitivas que dispensam mergulho por anos.",
         outcome:
           "Menos campanhas de inspeção, alertas mais cedo, gêmeo digital do ativo no fundo do mar.",
-        alt: "Duto submarino e manifold no leito marinho com malha de levantamento",
+        alt: "Duto submarino e manifold no fundo do mar com grade de levantamento",
       },
       {
         title: "Indústria Naval",
@@ -424,7 +456,7 @@ export const pt: Dict = {
   technology: {
     eyebrow: "TECNOLOGIA",
     title: "Do fundo do mar à API.",
-    headerAlt: "Malha batimétrica 3D sobre o fundo de um canal portuário",
+    headerAlt: "Superfície batimétrica 3D sobre o fundo de um canal portuário",
     headerLine:
       "A Serenitech é um sistema de robótica cognitiva com IA: unidades que percebem, raciocinam e agem, orquestradas por um motor cognitivo em nuvem.",
     layersTitle: "Cinco camadas",
@@ -479,41 +511,343 @@ export const pt: Dict = {
     title: "Um grupo global de deep tech dedicado ao mundo subaquático.",
     about:
       "A infraestrutura mais crítica do planeta está parcialmente embaixo d'água e é gerida quase às cegas. A Serenitech constrói a robótica cognitiva com IA — sensoriamento, conectividade, inteligência artificial e serviços em nuvem — que dá a autoridades portuárias, operadores offshore, donos de ativos submarinos e à indústria naval visão, memória e previsão contínuas além da linha d'água. O nome diz tudo: serenidade por meio da tecnologia.",
-    leadershipTitle: "Liderança",
+    foundersEyebrow: "OS COFUNDADORES",
+    foundersTitle: "Dois fundadores. Uma obsessão: inteligência além da linha d'água.",
+    foundersIntro: "Engenharia em ambientes aquáticos, IA na borda e mais de 25 anos construindo negócios de tecnologia e financeiros — em um só time fundador. Thierry projetou redes de sensores e telecomunicação subaquáticas e liderou os programas europeus de IA AI4DI e EdgeAI; Rodrigo construiu e dirigiu negócios de tecnologia e financeiros por mais de duas décadas e lidera a estratégia, a estrutura e a expansão do grupo.",
+    photoCaptionShort: "Passeio Sapiens, Florianópolis — sede e laboratório no Brasil.",
+    showMore: "Ver mais",
+    showLess: "Ver menos",
+    linkedin: "LinkedIn →",
+    openLabel: "Abrir",
     leaders: [
       {
         name: "Rodrigo Füchter",
         role: "CEO e cofundador",
-        bio: "Empreendedor com mais de 25 anos construindo negócios de tecnologia e financeiros. Começou na montagem de microcomputadores e redes, passou a plataformas online e foi por quase duas décadas CFO e Head de Compliance do grupo familiar antes de fundar diversas empresas, entre elas Serenitech, MonFinance, DebitoPago, CarroPago e Lanet Tecnologia. Baseado em Mônaco, lidera estratégia, estrutura societária, finanças e a expansão do grupo no Brasil e nos Estados Unidos.",
+        bio: "Empreendedor desde os tempos de colégio, com mais de 25 anos construindo e dirigindo negócios de tecnologia e financeiros. Começou montando e mantendo microcomputadores e redes, passou a construir plataformas online e foi por quase duas décadas CFO e Head de Compliance do grupo familiar, onde adquiriu profunda experiência financeira e regulatória. Ao longo de todo esse percurso manteve sua própria equipe de desenvolvimento, entregando inúmeras soluções para os mercados automotivo e financeiro internacional: Serenitech, MonFinance, DebitoPago, CarroPago e Lanet Tecnologia. Baseado em Mônaco, lidera a estratégia, a estrutura societária, as finanças e a expansão do grupo Serenitech no Brasil e nos Estados Unidos.",
+        link: "https://www.linkedin.com/in/rodrigofuchter/",
+        panels: [
+          {
+            title: "Formação",
+            items: [
+              {
+                year: "2000 — 2004",
+                title: "Universidade do Estado de Santa Catarina — ESAG",
+                venue: "Bacharelado em Administração · Florianópolis, Brasil",
+              },
+              {
+                year: "2009",
+                title: "FIA — Fundação Instituto de Administração",
+                venue: "Gestão financeira de concessionárias · São Paulo, Brasil",
+              },
+              {
+                year: "2008",
+                title: "Trevisan Escola de Negócios",
+                venue: "Gestão de concessionárias · São Paulo, Brasil",
+              },
+              {
+                year: "2007",
+                title: "ESPM — Escola Superior de Propaganda e Marketing",
+                venue: "Gestão de concessionárias · São Paulo, Brasil",
+              },
+            ],
+          },
+          {
+            title: "Experiência",
+            items: [
+              {
+                year: "2025 — atual",
+                title: "Serenitech Global Corporation",
+                venue: "Cofundador e CEO — robótica cognitiva com IA para a gestão embaixo d'água",
+              },
+              {
+                year: "2024 — atual",
+                title: "Lanet Tecnologia",
+                venue: "Fundador · Brasil — serviços de dados, APIs e processamento de pagamentos para o setor automotivo",
+              },
+              {
+                year: "2024 — atual",
+                title: "ACATE — Associação Catarinense de Tecnologia",
+                venue: "Mentor de startups · Florianópolis, Brasil — mentoria pro bono para fundadores de tecnologia em estágio inicial",
+              },
+              {
+                year: "2012 — atual",
+                title: "CarroPago",
+                venue: "Fundador · Florianópolis, Brasil — intermediação de pagamentos de veículos e financiamento de estoque",
+              },
+              {
+                year: "2024 — 2026",
+                title: "MonFinance",
+                venue: "Fundador · Brasil — banco digital corporativo para empresas, seus sócios, colaboradores e cadeias de fornecimento",
+              },
+              {
+                year: "2020 — 2025",
+                title: "Reejay",
+                venue: "Fundador · Estados Unidos — plataforma white-label de streaming, ingressos e apostas para esportes e eventos ao vivo",
+              },
+              {
+                year: "2017 — 2026",
+                title: "CarPrix",
+                venue: "Fundador · Estados Unidos — marketplace automotivo e plataforma de negociação entre concessionárias",
+              },
+              {
+                year: "2001 — 2019",
+                title: "Grupo Le Monde",
+                venue: "CFO e fundador · Florianópolis, Brasil — grupo de concessionárias autorizadas e seminovos com reconhecimento internacional",
+              },
+              {
+                year: "1999 — 2001",
+                title: "Aclive Internet",
+                venue: "Fundador · Florianópolis, Brasil — sites e soluções de negócios online",
+              },
+            ],
+          },
+          {
+            title: "Patentes",
+            items: [
+              {
+                year: "WO2019183501A1",
+                title: "System and Method for Operating a Social Network for Automotive Quotes",
+                venue: "Pedido internacional PCT/US2019/023629 · depositante Carprix LLC · inventor único · publicado em 26 de setembro de 2019",
+                link: "https://patents.google.com/patent/WO2019183501A1/en",
+              },
+              {
+                year: "US20210049650A1",
+                title: "System and Method for Operating a Social Network for Automotive Quotes",
+                venue: "Fase nacional nos EUA, pedido 16/982,868 · entrada em 21 de setembro de 2020 · publicado em 18 de fevereiro de 2021",
+                link: "https://patents.google.com/patent/US20210049650A1/en",
+              },
+            ],
+            footnote: "Dois pedidos de patente publicados cobrindo uma única invenção, inventor único, com prioridade do provisório americano 62/646,828 depositado em 22 de março de 2018. Uma rede social para avaliação de veículos: o pedido distribui dados do veículo a um grupo selecionado de pessoas conhecidas e coleta suas estimativas de preço. Depositado para a Carprix LLC.",
+          },
+        ],
       },
       {
         name: "Dr. Thierry Deschamps de Paillette",
         role: "CTO e cofundador",
-        bio: "Agrégé em engenharia elétrica, doutor pela Université de La Rochelle (mais alta distinção), com 27 anos de pesquisa avançada em eletrônica de alta frequência, fotônica, inteligência artificial, cibernética e sistemas de telecomunicações. Projetou redes de telecomunicação e sensoriamento subaquáticos para infraestruturas críticas, dedicou mais de 20 anos ao projeto de produtos industriais, ocupou cátedra superior no sistema acadêmico nacional francês, liderou programas europeus de IA (AI4DI, EdgeAI), publica no IEEE e é revisor do IEEE Journal of Oceanic Engineering. Lidera a tecnologia, os laboratórios e a arquitetura de produto da Serenitech.",
+        bio: "Dr. Thierry Deschamps de Paillette é agrégé em engenharia elétrica e eletrônica — o concurso nacional mais seletivo da França na disciplina — e doutor pela Université de La Rochelle com félicitations du jury, a mais alta distinção. Traz 27 anos de pesquisa avançada em eletrônica de alta frequência, fotônica e sistemas, aplicada a IA, cibernética e sistemas de telecomunicação entre meios distintos em cooperação com grandes grupos industriais. Seu trabalho recente de pesquisa e engenharia cobre uma nova geração de redes subaquáticas de telecomunicação e sensores. Projeta produtos industriais há duas décadas — Crouzet, Micrelec, TECHNEXT — e é o inventor nomeado em pedidos de patente para a seleção por IA do modo de comunicação subaquática. Professor de cátedra superior no sistema acadêmico nacional francês, integrou as bancas nacionais que recrutam agrégés em ciências da engenharia. Publica no IEEE e é revisor do IEEE Journal of Oceanic Engineering; como conselheiro, palestrante e especialista em IA em clusters como o Institut EuropIA e o Cluster-IA, liderou os programas europeus de IA AI4DI e EdgeAI com grandes grupos industriais e startups. Na Serenitech lidera a tecnologia, os laboratórios e a arquitetura de produto — as unidades robóticas cognitivas, a pilha de comunicação subaquática e as camadas de sensoriamento por IA e inteligência de borda.",
+        link: "https://www.linkedin.com/in/thierry-deschamps-de-paillette-b1669821/",
+        panels: [
+          {
+            title: "Credenciais",
+            items: [
+              {
+                title: "Revisor, IEEE Journal of Oceanic Engineering",
+              },
+              {
+                title: "Especialista, IA & Oceanos — Institut EuropIA",
+                link: "https://instituteuropia.eu/experts",
+              },
+              {
+                title: "Vice-presidente — Cluster-IA",
+              },
+              {
+                title: "AI4DI — Artificial Intelligence for Digitizing Industry · H2020 / ECSEL JU, grant agreement 826060",
+                link: "https://ai4di.eu/",
+              },
+              {
+                title: "EdgeAI — Edge AI Technologies for Optimised Performance Embedded Processing · Horizon Europe / KDT JU, grant agreement 101097300",
+                link: "https://cordis.europa.eu/project/id/101097300",
+              },
+              {
+                title: "Membro de júri dos concursos nacionais franceses de Agrégation para recrutamento de professores em ciências da engenharia",
+                link: "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/833/833-rapport-jury-agreg-ext-ssi-et-ingenierie-electrique.pdf",
+              },
+              {
+                title: "Projeto de produtos industriais para Crouzet, Micrelec e TECHNEXT",
+              },
+              {
+                title: "Sistema de medição de energia e água EWTS HYD — material didático do currículo nacional francês de engenharia",
+                link: "https://sti.eduscol.education.fr/ressources_techniques/ewts-hyd-systeme-de-comptage-energetique",
+              },
+              {
+                title: "Projetista dos modems subaquáticos FSK 400 kHz e magneto-indutivo de banda larga — hardware, firmware e comissionamento",
+              },
+              {
+                title: "Depósito de anterioridade INPI Soleau DSO2019007239 (2019) — enlace subaquático magneto-indutivo de banda larga com modulação OFDM",
+              },
+              {
+                title: "Arquiteturas de inteligência da borda à nuvem e IA para ambientes severos",
+              },
+            ],
+          },
+          {
+            title: "Formação",
+            items: [
+              {
+                year: "2015 — 2020",
+                title: "Université de La Rochelle — laboratório L3i",
+                venue: "Doutorado em Eletrônica de Alta Frequência, Fotônica e Sistemas · com félicitations du jury · La Rochelle, França · defesa em 22 de outubro de 2020 · orientador Prof. Alain Gaugue",
+                link: "https://theses.hal.science/tel-03349746",
+              },
+              {
+                year: "2011 — 2012",
+                title: "Approved Training Organisation (ATO)",
+                venue: "Licença de piloto privado PPL-A, monomotor — glass cockpit e FADEC · França",
+              },
+              {
+                year: "2007 — 2008",
+                title: "Université d'Orléans",
+                venue: "Doutorado de pesquisa em processamento de sinal e imagem · rastreamento de alvos em sequências de vídeo em condições severas · Orléans, França",
+              },
+              {
+                year: "1998",
+                title: "Ministère de l'Éducation nationale",
+                venue: "Agrégation externe — engenharia elétrica, eletrônica e informática industrial · aprovado · França",
+              },
+              {
+                year: "1996 — 1997",
+                title: "Université Blaise Pascal (Clermont-II)",
+                venue: "DEA, mestrado por pesquisa em eletrônica e sistemas — visão para sistemas robóticos · Clermont-Ferrand, França",
+              },
+              {
+                year: "1995 — 1996",
+                title: "Université Blaise Pascal (Clermont-II)",
+                venue: "Mestrado em engenharia elétrica — microeletrônica · Clermont-Ferrand, França",
+              },
+              {
+                year: "1995 — 1996",
+                title: "Université Blaise Pascal (Clermont-II)",
+                venue: "Licence em engenharia elétrica (EEA) — eletrônica, sistemas eletromecânicos, teoria de controle · Clermont-Ferrand, França",
+              },
+              {
+                year: "1993 — 1994",
+                title: "Institut Universitaire de Technologie, Université Blaise Pascal",
+                venue: "DUT em engenharia elétrica — controle e informática industrial, sistemas C3/C4I · Clermont-Ferrand, França",
+              },
+              {
+                year: "1990 — 1992",
+                title: "Lycée Godefroy de Bouillon",
+                venue: "Baccalauréat F3, eletromecânica · França",
+              },
+            ],
+          },
+          {
+            title: "Experiência",
+            items: [
+              {
+                year: "2013 — 2026",
+                title: "Ministère de l'Éducation nationale",
+                venue: "Professor de engenharia elétrica e ciência da computação, cátedra superior (professeur de chaire supérieure) · França",
+              },
+              {
+                year: "2007 — 2026",
+                title: "TECHNEXT",
+                venue: "Conselheiro científico · Cannes, França",
+              },
+              {
+                year: "2015 — 2020",
+                title: "Laboratório L3i, Université de La Rochelle",
+                venue: "Pesquisador — telecomunicações subaquáticas e redes de telemetria submarina · La Rochelle, França",
+              },
+              {
+                year: "2011 — 2015",
+                title: "Concours national d'Agrégation",
+                venue: "Membro de júri, banca externa de recrutamento de professores em ciências da engenharia · França",
+              },
+              {
+                year: "2011 — 2014",
+                title: "TECHNEXT",
+                venue: "Autor — sistemas embarcados, escalonamento de tarefas e projeto de algoritmos complexos · Cannes, França",
+              },
+              {
+                year: "2005 — 2009",
+                title: "Concours national d'Agrégation",
+                venue: "Membro de júri, banca interna de recrutamento de professores em ciências da engenharia · França",
+              },
+              {
+                year: "1998 — 2011",
+                title: "Ministère de l'Éducation nationale",
+                venue: "Professor de engenharia elétrica — Mathématiques spéciales · França",
+              },
+            ],
+          },
+          {
+            title: "Patentes",
+            items: [
+              {
+                year: "EP4645718A1",
+                title: "Method and device for selecting underwater communication mode",
+                venue: "Pedido de patente europeu · inventor único · depositado em 29 de abril de 2024, publicado em 5 de novembro de 2025",
+                link: "https://patents.google.com/patent/EP4645718A1/en",
+              },
+              {
+                year: "WO2025228988A1",
+                title: "Method and device for selecting underwater communication mode",
+                venue: "Pedido internacional PCT/EP2025/061717 · inventor único · publicado em 6 de novembro de 2025",
+                link: "https://patents.google.com/patent/WO2025228988A1/en",
+              },
+            ],
+            footnote: "Dois pedidos de patente publicados cobrindo uma única invenção, inventor único. A invenção seleciona entre comunicação subaquática acústica, eletromagnética e óptica por meio de uma rede neural alimentada por leituras de sensores, características do canal e realimentação da rede. IPC H04B 11/00 e H04B 13/02.",
+          },
+          {
+            title: "Acadêmico",
+            items: [
+              {
+                year: "2024",
+                title: "Enhancing Communication in Multi-Domain Ad-Hoc Networks for Maritime Critical Infrastructure Protection",
+                venue: "OCEANS 2024 Halifax, IEEE · com K. Brandl, J. Weid e A. Hahn",
+                link: "https://doi.org/10.1109/OCEANS55160.2024.10754334",
+              },
+              {
+                year: "2020",
+                title: "Antenna Adaptation Circuits for High Data Rate Magneto-Inductive Underwater Communications",
+                venue: "14th European Conference on Antennas and Propagation (EuCAP), Copenhague, IEEE, pp. 1–5 · com A. Gaugue",
+                link: "https://doi.org/10.23919/EuCAP48036.2020.9135359",
+              },
+              {
+                year: "2020",
+                title: "Transmissions numériques sans-fil pour la surveillance environnementale en milieu sous-marin",
+                venue: "Tese de doutorado, Université de La Rochelle · HAL tel-03349746",
+                link: "https://theses.hal.science/tel-03349746",
+              },
+              {
+                year: "2019",
+                title: "High Data Rate Wireless Underwater Sensors for Environmental Monitoring",
+                venue: "MTS/IEEE OCEANS 2019, Marselha, pp. 1–10 · com A. Gaugue",
+                link: "https://doi.org/10.1109/OCEANSE.2019.8867364",
+              },
+              {
+                year: "2017",
+                title: "Antenna design for underwater wireless telemetry systems",
+                venue: "11th European Conference on Antennas and Propagation (EuCAP), Paris, IEEE, pp. 2251–2255 · com A. Gaugue, E. Parlier e S. Dardenne",
+                link: "https://doi.org/10.23919/EuCAP.2017.7928513",
+              },
+              {
+                year: "2017",
+                title: "Télémétrie sous-marine à ondes électromagnétiques",
+                venue: "XXèmes Journées Nationales Micro-ondes, Saint-Malo · com A. Gaugue",
+              },
+            ],
+            footnote: "Áreas de pesquisa: comunicação subaquática eletromagnética e magneto-indutiva, projeto de antenas e casamento de impedância, OFDM para enlaces subaquáticos, redes ad-hoc multidomínio e IA para ambientes severos.",
+          },
+        ],
       },
     ],
     presenceTitle: "Presença global",
     presence: [
       {
-        place: "Mônaco — Serenitech S.A.R.L.",
+        place: "Mônaco",
         text: "Sede do grupo e laboratório; desenvolvimento tecnológico e engenharia.",
       },
       {
-        place: "Florianópolis, Brasil — Serenitech Brasil",
+        place: "Florianópolis, Brasil",
         text: "Sede brasileira com escritório e laboratório no Passeio Sapiens, no distrito de inovação Sapiens Parque; operações para clientes de portos, offshore e naval no Brasil.",
       },
-      { place: "Flórida, EUA — Serenitech USA", text: "Operações na América do Norte." },
-      { place: "Serenitech Global", text: "Holding do grupo." },
+      { place: "Flórida, EUA", text: "Operações na América do Norte." },
+      {
+        place: "Serenitech Global Corporation",
+        text: "Holding do grupo e de todas as suas subsidiárias.",
+      },
     ],
     photoCaption:
-      "Serenitech Brasil — escritório e laboratório no Passeio Sapiens, Sapiens Parque, Florianópolis (SC).",
+      "Sede brasileira — escritório e laboratório no Passeio Sapiens, Sapiens Parque, Florianópolis (SC).",
     photoAlt:
       "Edifício de escritórios em vidro e madeira no Passeio Sapiens, Sapiens Parque, Florianópolis",
   },
   contact: {
     eyebrow: "CONTATO",
     title: "Solicitar briefing técnico.",
-    text: "Conte-nos sobre seu canal, terminal, plataforma ou ativo. Nossos engenheiros retornam com um plano de medição e uma proposta de test-drive com prazo definido.",
+    text: "Conte-nos sobre seu canal, terminal, plataforma ou ativo. Nossos engenheiros retornam com uma proposta de início de negócio e o escopo e orçamento do projeto inicial de auditoria e viabilidade.",
     fields: {
       name: "Nome",
       email: "E-mail",
@@ -550,14 +884,9 @@ export const pt: Dict = {
     companyCol: "Empresa",
     servicesCol: "Serviços",
     sectorsCol: "Setores",
-    groupTitle: "Empresas do grupo",
-    group: [
-      "Serenitech Global",
-      "Serenitech S.A.R.L. (Mônaco)",
-      "Serenitech Brasil",
-      "Serenitech USA",
-    ],
+    groupTitle: "Grupo",
+    group: ["Serenitech Global Corporation — holding de todas as empresas Serenitech"],
     privacy: "Privacidade",
-    rights: "© 2026 Serenitech. Todos os direitos reservados.",
+    rights: "© 2026 Serenitech Global Corporation. Todos os direitos reservados.",
   },
 };

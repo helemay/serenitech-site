@@ -8,7 +8,7 @@ export function SectorsSection() {
   const { t } = useI18n();
 
   const visuals = [
-    { src: images.heroPort, rings: true },
+    { src: images.channelBottom, rings: true },
     { src: images.offshore, rings: false },
     { src: images.subsea, rings: false },
     { src: images.propeller, rings: false },
@@ -64,13 +64,7 @@ export function SectorsSection() {
                     className="aspect-[16/10] w-full object-cover opacity-100"
                   />
                   {v.rings && (
-                    <>
-                      <div
-                        aria-hidden="true"
-                        className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-abyss/80 to-transparent"
-                      />
-                      <SonarRings className="top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 opacity-50" />
-                    </>
+                    <SonarRings className="top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 opacity-40" />
                   )}
                 </div>
               </Reveal>

@@ -158,6 +158,16 @@
   }
 }
 
+/* Translucent text box used over the field images, so the pictures stay fully visible. */
+@utility glass-panel {
+  background-color: color-mix(in oklab, var(--color-abyss) 90%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-cyan) 22%, var(--color-ocean));
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px -40px color-mix(in oklab, var(--color-abyss) 95%, transparent);
+}
+
 @utility hairline {
   height: 1px;
   width: 100%;

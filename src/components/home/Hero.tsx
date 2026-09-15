@@ -2,7 +2,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import { useI18n } from "@/i18n";
 import { images } from "@/content/site";
 import { CtaLink } from "../site/CtaLink";
-import { Eyebrow, SonarRings } from "../site/Decor";
+import { Eyebrow } from "../site/Decor";
 
 export function Hero() {
   const { t } = useI18n();
@@ -24,11 +24,11 @@ export function Hero() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-abyss to-transparent"
+          className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-abyss/80 to-transparent"
         />
       </div>
 
-      {/* Desktop: full-bleed background image */}
+      {/* Desktop: full-bleed background image, shown in full — the copy sits in a translucent panel */}
       <motion.img
         style={{ y }}
         src={images.heroPort}
@@ -40,16 +40,11 @@ export function Hero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 hidden bg-gradient-to-r from-abyss via-abyss/75 via-45% to-transparent to-70% md:block"
+        className="absolute inset-x-0 bottom-0 hidden h-24 bg-gradient-to-t from-abyss/80 to-transparent md:block"
       />
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 hidden h-[35%] bg-gradient-to-t from-abyss to-transparent md:block"
-      />
-      <SonarRings className="top-1/4 -right-24 hidden lg:block" />
 
       <div className="relative mx-auto mt-10 w-full max-w-[1400px] px-5 md:mt-0 md:px-10">
-        <div className="max-w-xl">
+        <div className="max-w-xl md:glass-panel md:p-8 lg:p-10">
           <Eyebrow>{t.home.eyebrow}</Eyebrow>
           <h1 className="mt-6 text-4xl leading-[1.03] font-bold sm:text-5xl lg:text-7xl">
             {t.home.h1}

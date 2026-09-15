@@ -9,21 +9,31 @@ export function CtaBand() {
 
   return (
     <section className="relative overflow-hidden border-y border-ocean/60">
+      {/* Mobile: the whole picture as a block, copy below it */}
       <img
         src={images.offshore}
         alt={t.home.finalCta.imageAlt}
         loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover opacity-25"
-        width={2560}
-        height={1440}
+        className="block aspect-[16/10] w-full object-cover md:hidden"
+        width={1920}
+        height={1088}
       />
-      <div aria-hidden="true" className="absolute inset-0 bg-abyss/55" />
+      {/* Desktop: full-bleed, full opacity */}
+      <img
+        src={images.offshore}
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        className="absolute inset-0 hidden h-full w-full object-cover md:block"
+        width={1920}
+        height={1088}
+      />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-abyss/80 to-transparent"
+        className="absolute inset-x-0 bottom-0 hidden h-24 bg-gradient-to-t from-abyss/70 to-transparent md:block"
       />
-      <div className="relative mx-auto max-w-[1400px] px-5 py-12 md:px-10 md:py-16">
-        <Reveal className="max-w-2xl">
+      <div className="relative mx-auto flex max-w-[1400px] items-end px-5 py-6 md:min-h-[560px] md:px-10 md:py-16">
+        <Reveal className="glass-panel max-w-2xl p-6 md:p-8">
           <Eyebrow>{t.home.finalCta.eyebrow}</Eyebrow>
           <h2 className="mt-5 text-3xl font-bold md:text-5xl">
             {t.home.finalCta.title}

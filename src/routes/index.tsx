@@ -4,6 +4,7 @@ import { ProblemSection } from "@/components/home/ProblemSection";
 import { SignatureBand } from "@/components/home/SignatureBand";
 import { SolutionSection } from "@/components/home/SolutionSection";
 import { CognitiveSection } from "@/components/home/CognitiveSection";
+import { FieldViews } from "@/components/home/FieldViews";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { SectorsSection } from "@/components/sections/SectorsSection";
 import { TechnologySection } from "@/components/sections/TechnologySection";
@@ -37,6 +38,7 @@ function Home() {
       <SignatureBand />
       <SolutionSection />
       <CognitiveSection />
+      <FieldViews />
       <ServicesSection />
       <SectorsSection />
       <TechnologySection />

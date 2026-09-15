@@ -86,11 +86,12 @@ export function Header() {
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled || open
           ? "border-b border-ocean/70 bg-abyss/85 backdrop-blur-xl"
-          : "bg-gradient-to-b from-abyss/90 via-abyss/45 to-transparent",
+          : "bg-abyss/55 backdrop-blur-md",
       )}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 md:px-10 md:py-3">
-        <Link to="/" className="flex shrink-0 items-center py-1" aria-label="Serenitech — home">
+        {/* Plain anchor on purpose: the logo reloads the site from the top instead of a soft in-app scroll. */}
+        <a href="/" className="flex shrink-0 items-center py-1" aria-label="Serenitech — home">
           <img
             src={lang === "pt" ? brand.logoWidePt : brand.logoWide}
             alt={t.brand.alt}
@@ -105,7 +106,7 @@ export function Header() {
             width={528}
             height={76}
           />
-        </Link>
+        </a>
 
         <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
           {navRoutes.map((r) => (

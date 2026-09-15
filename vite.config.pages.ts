@@ -16,6 +16,9 @@ export default defineConfig({
         enabled: true,
         crawlLinks: true,
         autoSubfolderIndex: true,
+        // The crawler follows every internal <a href>; static files (the field-image links open the
+        // full-size JPEGs) must not be "prerendered", or their binaries get rewritten as UTF-8 text.
+        filter: (page) => !/\.(jpe?g|png|webp|gif|svg|pdf|zip|xml|txt)$/i.test(page.path),
       },
       // spa shell handled separately (see scripts/postbuild-pages.mjs)
     }),

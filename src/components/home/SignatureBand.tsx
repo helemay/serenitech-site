@@ -21,7 +21,7 @@ export function SignatureBand() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-abyss to-transparent"
+          className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-abyss/80 to-transparent"
         />
       </div>
 
@@ -36,15 +36,11 @@ export function SignatureBand() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 hidden bg-gradient-to-r from-abyss via-abyss/60 via-35% to-transparent to-55% md:block"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 hidden h-[30%] bg-gradient-to-t from-abyss to-transparent md:block"
+        className="absolute inset-x-0 bottom-0 hidden h-24 bg-gradient-to-t from-abyss/80 to-transparent md:block"
       />
 
-      <div className="relative mx-auto flex max-w-[1400px] items-center px-5 py-10 md:min-h-[60vh] md:px-10 md:py-14">
-        <Reveal className="max-w-2xl">
+      <div className="relative mx-auto flex max-w-[1400px] items-end px-5 py-10 md:min-h-[72vh] md:px-10 md:py-14">
+        <Reveal className="max-w-xl md:glass-panel md:p-8">
           <Eyebrow>{s.eyebrow}</Eyebrow>
           <h2 className="mt-5 text-3xl leading-tight font-bold md:text-5xl">
             {s.title}
