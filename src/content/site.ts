@@ -26,6 +26,7 @@ export const brand = {
   logoHorizontalPt: "/brand/serenitech-logo-horizontal-on-dark-glow-pt.svg",
   logoDarkPng: "/brand/serenitech-logo-horizontal-on-dark.png",
   mark: "/brand/serenitech-mark-on-dark-glow.svg",
+  markCore: "/brand/serenitech-mark-core-on-dark-glow.svg",
   badge: "/brand/serenitech-icon-badge-512.png",
   email: "contact@serenitech.global",
   contactEndpoint: "https://9pch0bp0m7.execute-api.eu-west-3.amazonaws.com/",

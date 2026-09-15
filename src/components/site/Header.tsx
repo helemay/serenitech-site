@@ -33,16 +33,16 @@ export function Header() {
           <img
             src={lang === "pt" ? brand.logoWidePt : brand.logoWide}
             alt={t.brand.alt}
-            className="glow-img hidden h-[52px] w-auto min-[1400px]:block"
-            width={lang === "pt" ? 1041 : 1013}
-            height={103}
+            className="glow-img hidden h-10 w-auto min-[1400px]:block"
+            width={lang === "pt" ? 1051 : 1023}
+            height={76}
           />
           <img
             src={brand.logoCompact}
             alt={t.brand.alt}
-            className="glow-img h-10 w-auto min-[1400px]:hidden"
-            width={526}
-            height={103}
+            className="glow-img h-9 w-auto min-[1400px]:hidden"
+            width={537}
+            height={76}
           />
         </Link>
 

@@ -15,8 +15,8 @@ export function Footer() {
               src={lang === "pt" ? brand.logoHorizontalPt : brand.logoHorizontal}
               alt={t.brand.alt}
               className="glow-img h-16 w-auto md:h-20"
-              width={lang === "pt" ? 580 : 583}
-              height={lang === "pt" ? 129 : 131}
+              width={lang === "pt" ? 589 : 592}
+              height={lang === "pt" ? 93 : 94}
               loading="lazy"
             />
             <p className="max-w-xs text-sm text-steel">{t.footer.descriptor}</p>

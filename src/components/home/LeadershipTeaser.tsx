@@ -23,7 +23,7 @@ export function LeadershipTeaser() {
             <Reveal as="li" key={p.name} delay={i * 0.1}>
               <Link to="/company" className="surface-card group flex h-full gap-5 p-6">
                 <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-ocean bg-abyss">
-                  <img src={brand.mark} alt="" aria-hidden="true" className="h-7 w-7" loading="lazy" />
+                  <img src={brand.markCore} alt="" aria-hidden="true" className="h-9 w-9" loading="lazy" />
                 </span>
                 <div>
                   <h3 className="text-base font-semibold">{p.name}</h3>
