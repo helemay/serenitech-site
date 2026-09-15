@@ -34,14 +34,14 @@ export function Header() {
             src={lang === "pt" ? brand.logoWidePt : brand.logoWide}
             alt={t.brand.alt}
             className="glow-img hidden h-10 w-auto min-[1400px]:block"
-            width={lang === "pt" ? 1051 : 1023}
+            width={lang === "pt" ? 1046 : 1018}
             height={76}
           />
           <img
             src={brand.logoCompact}
             alt={t.brand.alt}
             className="glow-img h-9 w-auto min-[1400px]:hidden"
-            width={537}
+            width={532}
             height={76}
           />
         </Link>
