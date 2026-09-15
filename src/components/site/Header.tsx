@@ -8,6 +8,7 @@ import { LanguageSwitch } from "./LanguageSwitch";
 import { cn } from "@/lib/utils";
 
 const hashScroll = { behavior: "smooth", block: "start" } as const;
+
 // Section links all point to "/": match on the hash too, or every link reports itself as the current page.
 const sectionActive = { includeHash: true, exact: true } as const;
 
