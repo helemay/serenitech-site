@@ -20,15 +20,15 @@ import {
 
 export const brand = {
   logoWide: "/brand/serenitech-logo-wide-on-dark-glow.svg",
+  logoWidePt: "/brand/serenitech-logo-wide-on-dark-glow-pt.svg",
   logoCompact: "/brand/serenitech-logo-compact-on-dark-glow.svg",
   logoHorizontal: "/brand/serenitech-logo-horizontal-on-dark-glow.svg",
-  logoHorizontalPt: "/brand/serenitech-logo-horizontal-on-dark-pt.svg",
+  logoHorizontalPt: "/brand/serenitech-logo-horizontal-on-dark-glow-pt.svg",
   logoDarkPng: "/brand/serenitech-logo-horizontal-on-dark.png",
   mark: "/brand/serenitech-mark-on-dark-glow.svg",
   badge: "/brand/serenitech-icon-badge-512.png",
   email: "contact@serenitech.global",
-  contactEndpoint:
-    "https://xblwde2qf4gihsfbmgbuaceyfm0kvfio.lambda-url.eu-west-3.on.aws/",
+  contactEndpoint: "https://9pch0bp0m7.execute-api.eu-west-3.amazonaws.com/",
 } as const;
 
 export const images = {

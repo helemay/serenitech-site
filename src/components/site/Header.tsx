@@ -8,7 +8,7 @@ import { LanguageSwitch } from "./LanguageSwitch";
 import { cn } from "@/lib/utils";
 
 export function Header() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -31,18 +31,18 @@ export function Header() {
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 md:px-10 md:py-3">
         <Link to="/" className="flex shrink-0 items-center py-1" aria-label="Serenitech — home">
           <img
-            src={brand.logoWide}
+            src={lang === "pt" ? brand.logoWidePt : brand.logoWide}
             alt={t.brand.alt}
             className="glow-img hidden h-[52px] w-auto min-[1400px]:block"
-            width={1096}
+            width={lang === "pt" ? 1041 : 1013}
             height={103}
           />
           <img
             src={brand.logoCompact}
             alt={t.brand.alt}
-            className="glow-img h-9 w-auto min-[1400px]:hidden"
-            width={579}
-            height={88}
+            className="glow-img h-10 w-auto min-[1400px]:hidden"
+            width={526}
+            height={103}
           />
         </Link>
 

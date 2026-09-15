@@ -43,13 +43,20 @@ else
 fi
 aws lambda wait function-active --function-name "$FN" --region "$REGION"
 
-# 4) Function URL (public, CORS restricted to the site origins)
-CORS="{\"AllowOrigins\":[$(echo "$ORIGINS" | sed 's/[^,][^,]*/"&"/g')],\"AllowMethods\":[\"POST\"],\"AllowHeaders\":[\"content-type\"],\"MaxAge\":3600}"
-if ! aws lambda get-function-url-config --function-name "$FN" --region "$REGION" >/dev/null 2>&1; then
-  aws lambda create-function-url-config --function-name "$FN" --region "$REGION" --auth-type NONE --cors "$CORS" >/dev/null
-  aws lambda add-permission --function-name "$FN" --region "$REGION" --statement-id public-url --action lambda:InvokeFunctionUrl \
-    --principal '*' --function-url-auth-type NONE >/dev/null
-else
-  aws lambda update-function-url-config --function-name "$FN" --region "$REGION" --auth-type NONE --cors "$CORS" >/dev/null
+# 4) API Gateway HTTP API (public endpoint with CORS). Lambda Function URLs with auth NONE return
+#    403 in this account (public access is blocked), so the API is fronted by API Gateway instead.
+API_NAME="${API_NAME:-serenitech-contact}"
+FN_ARN="arn:aws:lambda:${REGION}:${ACCOUNT}:function:${FN}"
+API_ID="$(aws apigatewayv2 get-apis --region "$REGION" --query "Items[?Name=='${API_NAME}'].ApiId | [0]" --output text 2>/dev/null || true)"
+if [ -z "$API_ID" ] || [ "$API_ID" = "None" ]; then
+  API_ID="$(aws apigatewayv2 create-api --region "$REGION" --name "$API_NAME" --protocol-type HTTP --target "$FN_ARN" \
+    --cors-configuration "AllowOrigins=$(echo "$ORIGINS" | tr ',' ' ' | sed 's/ /,/g'),AllowMethods=POST,OPTIONS,AllowHeaders=content-type,MaxAge=3600" \
+    --query ApiId --output text)"
+  INTEG="$(aws apigatewayv2 get-integrations --region "$REGION" --api-id "$API_ID" --query 'Items[0].IntegrationId' --output text)"
+  aws apigatewayv2 create-route --region "$REGION" --api-id "$API_ID" --route-key 'POST /' --target "integrations/${INTEG}" >/dev/null
+  aws apigatewayv2 create-route --region "$REGION" --api-id "$API_ID" --route-key 'OPTIONS /' --target "integrations/${INTEG}" >/dev/null
+  aws lambda add-permission --function-name "$FN" --region "$REGION" --statement-id apigw-serenitech-contact --action lambda:InvokeFunction \
+    --principal apigateway.amazonaws.com --source-arn "arn:aws:execute-api:${REGION}:${ACCOUNT}:${API_ID}/*/*/" >/dev/null
+  echo "api created"
 fi
-aws lambda get-function-url-config --function-name "$FN" --region "$REGION" --query FunctionUrl --output text
+aws apigatewayv2 get-api --region "$REGION" --api-id "$API_ID" --query ApiEndpoint --output text
