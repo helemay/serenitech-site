@@ -33,7 +33,7 @@ export const brand = {
 } as const;
 
 export const images = {
-  heroPort: "/images/hero-port-quay-v2.jpg",
+  heroPort: "/images/hero-port-quay-v3.jpg",
   offshore: "/images/offshore-jacket.jpg",
   subsea: "/images/subsea-pipeline.jpg",
   hq: "/images/hq-passeio-sapiens-florianopolis.png",

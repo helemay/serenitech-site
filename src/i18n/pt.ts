@@ -479,7 +479,7 @@ export const pt: Dict = {
     eyebrow: "EMPRESA",
     title: "Um grupo global de deep tech dedicado ao mundo subaquático.",
     about:
-      "A Serenitech foi fundada por um empreendedor e um cientista que compartilham uma convicção: a infraestrutura mais crítica do planeta está parcialmente embaixo d'água e é gerida quase às cegas. A Serenitech constrói a robótica cognitiva com IA — sensoriamento, conectividade, inteligência artificial e serviços em nuvem — que dá a autoridades portuárias, operadores offshore, donos de ativos submarinos e à indústria naval visão, memória e previsão contínuas além da linha d'água. O nome diz tudo: serenidade por meio da tecnologia.",
+      "A infraestrutura mais crítica do planeta está parcialmente embaixo d'água e é gerida quase às cegas. A Serenitech constrói a robótica cognitiva com IA — sensoriamento, conectividade, inteligência artificial e serviços em nuvem — que dá a autoridades portuárias, operadores offshore, donos de ativos submarinos e à indústria naval visão, memória e previsão contínuas além da linha d'água. O nome diz tudo: serenidade por meio da tecnologia.",
     leadershipTitle: "Liderança",
     leaders: [
       {

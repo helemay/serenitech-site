@@ -475,7 +475,7 @@ export const en = {
     eyebrow: "COMPANY",
     title: "A global deep-tech group dedicated to the sub-surface world.",
     about:
-      "Serenitech was founded by an entrepreneur and a scientist who share one conviction: the most critical infrastructure on Earth sits partly under water, and it is managed almost blind. Serenitech builds the AI cognitive robotics — sensing, connectivity, artificial intelligence and cloud services — that give port authorities, offshore operators, subsea asset owners and the naval industry continuous sight, memory and foresight beyond the waterline. The name says it: serenity through technology.",
+      "The most critical infrastructure on Earth sits partly under water, and it is managed almost blind. Serenitech builds the AI cognitive robotics — sensing, connectivity, artificial intelligence and cloud services — that give port authorities, offshore operators, subsea asset owners and the naval industry continuous sight, memory and foresight beyond the waterline. The name says it: serenity through technology.",
     leadershipTitle: "Leadership",
     leaders: [
       {
