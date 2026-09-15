@@ -34,9 +34,9 @@ export function TwinConsole() {
 
   // Unit positions (percent of the image) — three cognitive units on the 3D view
   const nodes = [
-    { x: 27.4, y: 54.8 },
-    { x: 33.6, y: 43.1 },
-    { x: 43.5, y: 60.4 },
+    { x: 31.2, y: 40.6 },
+    { x: 36.8, y: 47.5 },
+    { x: 43.0, y: 59.8 },
   ];
 
   return (
