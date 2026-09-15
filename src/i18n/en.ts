@@ -54,7 +54,7 @@ export const en = {
     ctaPrimary: "Request a technical briefing",
     ctaSecondary: "Explore the services",
     heroAlt:
-      "Underwater view of a container ship moored alongside a quay wall, with sonar wavefronts around the piles",
+      "Split view of a container ship moored at a concrete quay: bow and cranes above the waterline; below it, the hull, the quay piles, a sandy channel bottom with sea grass, a sea turtle, a school of fish and two dolphins",
     trustSectors: [
       "Ports & terminals",
       "Offshore oil & gas",

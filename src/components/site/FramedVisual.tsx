@@ -3,10 +3,21 @@ import { cn } from "@/lib/utils";
 
 type OverlayFrom = "md" | "lg" | "xl";
 
-const overlay: Record<OverlayFrom, string> = {
-  md: "md:absolute md:bottom-6 md:left-6 md:mt-0 md:max-w-xl lg:bottom-8 lg:left-8",
-  lg: "lg:absolute lg:bottom-8 lg:left-8 lg:mt-0 lg:max-w-xl",
-  xl: "xl:absolute xl:bottom-10 xl:left-10 xl:mt-0 xl:max-w-xl",
+type PanelSide = "left" | "right";
+
+const overlay: Record<OverlayFrom, Record<PanelSide, string>> = {
+  md: {
+    left: "md:absolute md:bottom-6 md:left-6 md:mt-0 md:max-w-xl lg:bottom-8 lg:left-8",
+    right: "md:absolute md:right-6 md:bottom-6 md:mt-0 md:max-w-xl lg:right-8 lg:bottom-8",
+  },
+  lg: {
+    left: "lg:absolute lg:bottom-8 lg:left-8 lg:mt-0 lg:max-w-xl",
+    right: "lg:absolute lg:right-8 lg:bottom-8 lg:mt-0 lg:max-w-xl",
+  },
+  xl: {
+    left: "xl:absolute xl:bottom-10 xl:left-10 xl:mt-0 xl:max-w-xl",
+    right: "xl:absolute xl:right-10 xl:bottom-10 xl:mt-0 xl:max-w-xl",
+  },
 };
 
 /**
@@ -20,6 +31,7 @@ export function FramedVisual({
   children,
   priority = false,
   overlayFrom = "lg",
+  panelSide = "left",
   className,
   panelClassName,
 }: {
@@ -28,6 +40,7 @@ export function FramedVisual({
   children?: ReactNode;
   priority?: boolean;
   overlayFrom?: OverlayFrom;
+  panelSide?: PanelSide;
   className?: string | undefined;
   panelClassName?: string | undefined;
 }) {
@@ -47,7 +60,7 @@ export function FramedVisual({
           <div aria-hidden="true" className="img-tint absolute inset-0" />
         </div>
         {children && (
-          <div className={cn("glass-panel mt-4 p-6 md:p-8", overlay[overlayFrom], panelClassName)}>
+          <div className={cn("glass-panel mt-4 p-6 md:p-8", overlay[overlayFrom][panelSide], panelClassName)}>
             {children}
           </div>
         )}

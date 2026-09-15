@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <section className="pt-24 pb-4 md:pt-28 md:pb-8">
-      <FramedVisual src={images.heroPort} alt={t.home.heroAlt} priority overlayFrom="xl">
+      <FramedVisual src={images.heroClean} alt={t.home.heroAlt} priority overlayFrom="xl" panelSide="right">
         <Eyebrow>{t.home.eyebrow}</Eyebrow>
         <h1 className="mt-5 text-4xl leading-[1.03] font-bold sm:text-5xl xl:text-6xl">
           {t.home.h1}

@@ -56,7 +56,7 @@ export const pt: Dict = {
     ctaPrimary: "Solicitar briefing técnico",
     ctaSecondary: "Conhecer os serviços",
     heroAlt:
-      "Vista subaquática de um navio porta-contêineres atracado junto ao cais, com frentes de onda de sonar ao redor das estacas",
+      "Vista dividida de um porta-contêineres atracado em um cais de concreto: proa e guindastes acima da linha d'água; abaixo, o casco, as estacas do cais, o fundo arenoso do canal com algas, uma tartaruga marinha, um cardume e dois golfinhos",
     trustSectors: [
       "Portos e terminais",
       "Offshore óleo e gás",
