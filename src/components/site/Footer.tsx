@@ -15,7 +15,7 @@ export function Footer() {
               src={lang === "pt" ? brand.logoHorizontalPt : brand.logoHorizontal}
               alt={t.brand.alt}
               className="glow-img h-16 w-auto md:h-20"
-              width={lang === "pt" ? 582 : 586}
+              width={lang === "pt" ? 578 : 581}
               height={lang === "pt" ? 93 : 94}
               loading="lazy"
             />
