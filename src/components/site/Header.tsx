@@ -90,8 +90,26 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 md:px-10 md:py-3">
-        {/* Plain anchor on purpose: the logo reloads the site from the top instead of a soft in-app scroll. */}
-        <a href="/" className="flex shrink-0 items-center py-1" aria-label="Serenitech — home">
+        {/* The logo does one thing: a full reload of the home page, landing at the very top. A plain
+            href="/" is not enough — from "/#section" the browser treats it as a fragment change (no
+            reload) and on a same-URL reload it restores the previous scroll position — so the click is
+            handled explicitly: clear the hash, disable scroll restoration, go to the top, reload. */}
+        <a
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            try {
+              window.history.scrollRestoration = "manual";
+              window.history.replaceState(null, "", "/");
+            } catch {
+              /* ignore */
+            }
+            window.scrollTo(0, 0);
+            window.location.reload();
+          }}
+          className="flex shrink-0 items-center py-1"
+          aria-label="Serenitech — home"
+        >
           <img
             src={lang === "pt" ? brand.logoWidePt : brand.logoWide}
             alt={t.brand.alt}
