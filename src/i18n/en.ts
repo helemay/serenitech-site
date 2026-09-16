@@ -285,12 +285,12 @@ export const en = {
       eyebrow: "GLOBAL PRESENCE",
       title: "One platform, operated locally, governed globally.",
       items: [
-        { place: "Monaco", text: "Group headquarters & laboratory" },
+        { place: "Monaco", text: "Group headquarters & laboratory — Avenue J. F. Kennedy, Port Hercule" },
         {
           place: "Florianópolis, Brazil",
-          text: "Brazil headquarters, office & laboratory (Passeio Sapiens, Sapiens Parque)",
+          text: "Brazil headquarters, office & laboratory — Sapiens Parque, Brazil's largest technology park",
         },
-        { place: "Florida, USA", text: "North American operations" },
+        { place: "Coral Gables, Florida, USA", text: "North American operations — Valencia Avenue" },
       ],
     },
     finalCta: {
@@ -561,7 +561,7 @@ export const en = {
       { value: "AI4DI · EdgeAI", label: "European AI programmes led with large industrial groups and startups" },
       { value: "20 years", label: "of industrial product design — Crouzet, Micrelec, TECHNEXT" },
     ],
-    photoCaptionShort: "Passeio Sapiens, Florianópolis — Brazil headquarters and laboratory.",
+    photoCaptionShort: "Sapiens Parque, Florianópolis — Brazil headquarters and laboratory, in Brazil's largest technology park.",
     showMore: "Show more",
     showLess: "Show less",
     linkedin: "LinkedIn →",
@@ -772,21 +772,28 @@ export const en = {
       {
         place: "Monaco",
         text: "Group headquarters and laboratory; technology development and engineering.",
+        address: ["Avenue J. F. Kennedy, Port Hercule", "98000 Monaco", "Principality of Monaco"],
       },
       {
         place: "Florianópolis, Brazil",
-        text: "Brazil headquarters with office and laboratory at Passeio Sapiens, in the Sapiens Parque innovation district; operations for ports, offshore and naval clients in Brazil.",
+        text: "Brazil headquarters with office and laboratory in Sapiens Parque, Brazil's largest technology park; operations for ports, offshore and naval clients in Brazil.",
+        address: ["Avenida Luiz Boiteux Piazza, Sapiens Parque", "Florianópolis, SC, 88056-000", "Brazil"],
       },
-      { place: "Florida, USA", text: "North American operations." },
+      {
+        place: "Coral Gables, Florida, USA",
+        text: "North American operations.",
+        address: ["Valencia Avenue", "Coral Gables, Florida, 33134", "United States of America"],
+      },
       {
         place: "Serenitech Global Corporation",
         text: "Holding company of the group and of all its subsidiaries.",
+        address: [] as string[],
       },
     ],
     photoCaption:
-      "Brazil headquarters — office and laboratory at Passeio Sapiens, Sapiens Parque, Florianópolis (SC).",
+      "Brazil headquarters — office and laboratory in Sapiens Parque, Florianópolis (SC), Brazil's largest technology park.",
     photoAlt:
-      "Glass-and-timber office building at Passeio Sapiens, Sapiens Parque, Florianópolis",
+      "Aerial view of the glass office building of the Brazil headquarters in Sapiens Parque, Florianópolis, beside a lake",
   },
   contact: {
     eyebrow: "CONTACT",
@@ -818,7 +825,23 @@ export const en = {
       "We could not send your request. Please try again or write to contact@serenitech.global.",
     again: "Send another request",
     locationsTitle: "Locations",
-    locations: ["Monaco", "Florianópolis", "Florida"],
+    locations: [
+      {
+        place: "Monaco",
+        role: "Group headquarters & laboratory",
+        address: ["Avenue J. F. Kennedy, Port Hercule", "98000 Monaco", "Principality of Monaco"],
+      },
+      {
+        place: "Florianópolis, Brazil",
+        role: "Brazil headquarters & laboratory — Sapiens Parque, Brazil's largest technology park",
+        address: ["Avenida Luiz Boiteux Piazza, Sapiens Parque", "Florianópolis, SC, 88056-000", "Brazil"],
+      },
+      {
+        place: "Coral Gables, Florida, USA",
+        role: "North American operations",
+        address: ["Valencia Avenue", "Coral Gables, Florida, 33134", "United States of America"],
+      },
+    ],
     emailLabel: "E-mail",
   },
   footer: {

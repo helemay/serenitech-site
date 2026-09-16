@@ -110,20 +110,16 @@ export function TechnicalDirection() {
       <div className="mx-auto max-w-[1400px] px-5 md:px-10">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
-            <figure className="relative overflow-hidden rounded-lg border border-ocean lg:sticky lg:top-28">
+            <figure className="overflow-hidden rounded-lg border border-ocean bg-navy/30 lg:sticky lg:top-28">
               <img
                 src={images.hq}
                 alt={c.photoAlt}
                 loading="lazy"
-                width={1600}
-                height={1067}
-                className="aspect-square w-full object-cover object-center"
+                width={1024}
+                height={484}
+                className="block aspect-[1024/484] w-full object-contain"
               />
-              <div
-                aria-hidden="true"
-                className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-abyss/85 to-transparent"
-              />
-              <figcaption className="absolute bottom-5 left-5 right-5 font-mono text-[11px] tracking-[0.2em] text-steel uppercase">
+              <figcaption className="border-t border-ocean/60 px-5 py-4 font-mono text-[11px] leading-relaxed tracking-[0.16em] text-steel uppercase">
                 {c.photoCaptionShort}
               </figcaption>
             </figure>

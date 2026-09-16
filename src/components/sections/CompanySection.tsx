@@ -38,9 +38,18 @@ export function CompanySection() {
               <Reveal as="li" key={p.place} delay={i * 0.06}>
                 <div className="surface-card flex h-full items-start gap-4 p-6">
                   <MapPin size={18} strokeWidth={1.5} className="mt-0.5 shrink-0 text-cyan" />
-                  <div>
+                  <div className="min-w-0">
                     <h4 className="text-base font-semibold">{p.place}</h4>
                     <p className="mt-2 text-sm leading-relaxed text-steel">{p.text}</p>
+                    {p.address.length > 0 && (
+                      <address className="mt-3 border-t border-ocean/60 pt-3 font-mono text-[11px] leading-relaxed tracking-[0.04em] text-steel not-italic">
+                        {p.address.map((line) => (
+                          <span key={line} className="block">
+                            {line}
+                          </span>
+                        ))}
+                      </address>
+                    )}
                   </div>
                 </div>
               </Reveal>

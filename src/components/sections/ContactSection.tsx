@@ -245,11 +245,21 @@ export function ContactSection() {
           <Reveal delay={0.1}>
             <aside className="surface-card h-full p-7">
               <Eyebrow>{t.contact.locationsTitle}</Eyebrow>
-              <ul className="mt-6 space-y-4">
+              <ul className="mt-6 space-y-6">
                 {t.contact.locations.map((l) => (
-                  <li key={l} className="flex items-center gap-3 text-sm text-surface-white">
-                    <MapPin size={16} strokeWidth={1.5} className="text-cyan" />
-                    {l}
+                  <li key={l.place} className="flex gap-3">
+                    <MapPin size={16} strokeWidth={1.5} className="mt-0.5 shrink-0 text-cyan" />
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold text-surface-white">{l.place}</p>
+                      <p className="mt-1 text-[13px] leading-snug text-steel">{l.role}</p>
+                      <address className="mt-2 font-mono text-[11px] leading-relaxed tracking-[0.04em] text-steel not-italic">
+                        {l.address.map((line) => (
+                          <span key={line} className="block">
+                            {line}
+                          </span>
+                        ))}
+                      </address>
+                    </div>
                   </li>
                 ))}
               </ul>

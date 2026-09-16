@@ -38,7 +38,7 @@ export const images = {
   heroClean: "/images/hero-quay-clean.jpg",
   offshore: "/images/offshore-jacket.jpg",
   subsea: "/images/subsea-pipeline.jpg",
-  hq: "/images/hq-passeio-sapiens-florianopolis.png",
+  hq: "/images/hq-sapiens-parque-florianopolis.jpg",
   channelBottom: "/images/channel-bottom.jpg",
   quayWall: "/images/quay-wall.jpg",
   offshorePipelines: "/images/offshore-pipelines.jpg",

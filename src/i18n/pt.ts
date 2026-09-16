@@ -289,12 +289,12 @@ export const pt: Dict = {
       eyebrow: "PRESENÇA GLOBAL",
       title: "Uma plataforma, operada localmente, governada globalmente.",
       items: [
-        { place: "Mônaco", text: "Sede do grupo e laboratório" },
+        { place: "Mônaco", text: "Sede do grupo e laboratório — Avenue J. F. Kennedy, Port Hercule" },
         {
           place: "Florianópolis, Brasil",
-          text: "Sede brasileira, escritório e laboratório (Passeio Sapiens, Sapiens Parque)",
+          text: "Sede brasileira, escritório e laboratório — Sapiens Parque, o maior centro de tecnologia do Brasil",
         },
-        { place: "Flórida, EUA", text: "Operações na América do Norte" },
+        { place: "Coral Gables, Flórida, EUA", text: "Operações na América do Norte — Valencia Avenue" },
       ],
     },
     finalCta: {
@@ -565,7 +565,7 @@ export const pt: Dict = {
       { value: "AI4DI · EdgeAI", label: "programas europeus de IA liderados com grandes grupos industriais e startups" },
       { value: "20 anos", label: "de projeto de produtos industriais — Crouzet, Micrelec, TECHNEXT" },
     ],
-    photoCaptionShort: "Passeio Sapiens, Florianópolis — sede e laboratório no Brasil.",
+    photoCaptionShort: "Sapiens Parque, Florianópolis — sede e laboratório no Brasil, no maior centro de tecnologia do país.",
     showMore: "Ver mais",
     showLess: "Ver menos",
     linkedin: "LinkedIn →",
@@ -776,21 +776,28 @@ export const pt: Dict = {
       {
         place: "Mônaco",
         text: "Sede do grupo e laboratório; desenvolvimento tecnológico e engenharia.",
+        address: ["Avenue J. F. Kennedy, Port Hercule", "98000 Mônaco", "Principado de Mônaco"],
       },
       {
         place: "Florianópolis, Brasil",
-        text: "Sede brasileira com escritório e laboratório no Passeio Sapiens, no distrito de inovação Sapiens Parque; operações para clientes de portos, offshore e naval no Brasil.",
+        text: "Sede brasileira com escritório e laboratório no Sapiens Parque, o maior centro de tecnologia do Brasil; operações para clientes de portos, offshore e naval no Brasil.",
+        address: ["Avenida Luiz Boiteux Piazza, Sapiens Parque", "Florianópolis, SC, 88056-000", "Brasil"],
       },
-      { place: "Flórida, EUA", text: "Operações na América do Norte." },
+      {
+        place: "Coral Gables, Flórida, EUA",
+        text: "Operações na América do Norte.",
+        address: ["Valencia Avenue", "Coral Gables, Florida, 33134", "Estados Unidos da América"],
+      },
       {
         place: "Serenitech Global Corporation",
         text: "Holding do grupo e de todas as suas subsidiárias.",
+        address: [],
       },
     ],
     photoCaption:
-      "Sede brasileira — escritório e laboratório no Passeio Sapiens, Sapiens Parque, Florianópolis (SC).",
+      "Sede brasileira — escritório e laboratório no Sapiens Parque, Florianópolis (SC), o maior centro de tecnologia do Brasil.",
     photoAlt:
-      "Edifício de escritórios em vidro e madeira no Passeio Sapiens, Sapiens Parque, Florianópolis",
+      "Vista aérea do edifício de escritórios em vidro da sede brasileira no Sapiens Parque, Florianópolis, à beira de um lago",
   },
   contact: {
     eyebrow: "CONTATO",
@@ -823,7 +830,23 @@ export const pt: Dict = {
       "Não foi possível enviar sua solicitação. Tente novamente ou escreva para contact@serenitech.global.",
     again: "Enviar outra solicitação",
     locationsTitle: "Localizações",
-    locations: ["Mônaco", "Florianópolis", "Flórida"],
+    locations: [
+      {
+        place: "Mônaco",
+        role: "Sede do grupo e laboratório",
+        address: ["Avenue J. F. Kennedy, Port Hercule", "98000 Mônaco", "Principado de Mônaco"],
+      },
+      {
+        place: "Florianópolis, Brasil",
+        role: "Sede brasileira e laboratório — Sapiens Parque, o maior centro de tecnologia do Brasil",
+        address: ["Avenida Luiz Boiteux Piazza, Sapiens Parque", "Florianópolis, SC, 88056-000", "Brasil"],
+      },
+      {
+        place: "Coral Gables, Flórida, EUA",
+        role: "Operações na América do Norte",
+        address: ["Valencia Avenue", "Coral Gables, Florida, 33134", "Estados Unidos da América"],
+      },
+    ],
     emailLabel: "E-mail",
   },
   footer: {
