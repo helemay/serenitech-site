@@ -95,10 +95,15 @@ function Panels({ panels, idBase, openLabel }: { panels: Panel[]; idBase: string
   );
 }
 
-/** The co-founders — same presentation as monbleue.ai: numbered entries, name, role, clamped bio, panels, LinkedIn. */
-export function Founders() {
+/**
+ * Technical & scientific direction — Serenitech presents itself as a specialised technical-services
+ * company: the section features the CTO's research background (bio, credentials, education, experience,
+ * patents, academic work) as the proof of capability behind every service, with proof-point tiles.
+ */
+export function TechnicalDirection() {
   const { t } = useI18n();
   const c = t.company;
+  const p = c.lead;
 
   return (
     <div className="section-y">
@@ -126,44 +131,40 @@ export function Founders() {
 
           <div className="lg:col-span-7">
             <Reveal>
-              <Eyebrow>{c.foundersEyebrow}</Eyebrow>
+              <Eyebrow>{c.technicalEyebrow}</Eyebrow>
             </Reveal>
             <Reveal delay={0.09}>
-              <h3 className="mt-5 max-w-[18ch] text-3xl font-bold md:text-4xl">{c.foundersTitle}</h3>
+              <h3 className="mt-5 max-w-[26ch] text-3xl font-bold md:text-4xl">{c.technicalTitle}</h3>
             </Reveal>
             <Reveal delay={0.13}>
-              <p className="mt-6 max-w-[54ch] text-base leading-[1.75] text-steel">{c.foundersIntro}</p>
+              <p className="mt-6 max-w-[62ch] text-base leading-[1.75] text-steel">{c.technicalIntro}</p>
             </Reveal>
 
-            <div className="mt-12 border-t border-ocean/60">
-              {c.leaders.map((p, i) => (
-                <Reveal key={p.name} delay={i * 0.09} className="border-b border-ocean/60 py-8">
-                  <div className="flex items-baseline gap-5">
-                    <span className="font-mono text-[11px] tracking-[0.3em] text-cyan/70">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div className="min-w-0">
-                      <h4 className="text-2xl leading-tight font-semibold">{p.name}</h4>
-                      <p className="glow-text mt-1 font-mono text-[11px] tracking-[0.24em] text-cyan uppercase">
-                        {p.role}
-                      </p>
-                      <Bio text={p.bio} more={c.showMore} less={c.showLess} />
-                      {p.panels.length > 0 && (
-                        <Panels panels={p.panels} idBase={`founder-${i}`} openLabel={c.openLabel} />
-                      )}
-                      <a
-                        href={p.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4 inline-block font-mono text-[11px] tracking-[0.24em] text-surface-white uppercase transition-colors hover:text-cyan"
-                      >
-                        {c.linkedin}
-                      </a>
-                    </div>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {c.proofPoints.map((pp, i) => (
+                <Reveal as="li" key={pp.value} delay={i * 0.05}>
+                  <div className="surface-card h-full p-4">
+                    <span className="glow-text block font-mono text-sm text-cyan">{pp.value}</span>
+                    <span className="mt-1.5 block text-[12px] leading-snug text-steel">{pp.label}</span>
                   </div>
                 </Reveal>
               ))}
-            </div>
+            </ul>
+
+            <Reveal delay={0.1} className="mt-12 border-y border-ocean/60 py-8">
+              <h4 className="text-2xl leading-tight font-semibold">{p.name}</h4>
+              <p className="glow-text mt-1 font-mono text-[11px] tracking-[0.24em] text-cyan uppercase">{p.role}</p>
+              <Bio text={p.bio} more={c.showMore} less={c.showLess} />
+              {p.panels.length > 0 && <Panels panels={p.panels} idBase="technical-lead" openLabel={c.openLabel} />}
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block font-mono text-[11px] tracking-[0.24em] text-surface-white uppercase transition-colors hover:text-cyan"
+              >
+                {c.linkedin}
+              </a>
+            </Reveal>
           </div>
         </div>
       </div>

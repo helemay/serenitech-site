@@ -9,7 +9,7 @@ type PanelWidth = "xl" | "2xl";
 
 type PanelAlign = "bottom" | "center";
 
-const overlay: Record<OverlayFrom, Record<PanelSide, string>> = {
+const positions: Record<OverlayFrom, Record<PanelSide, string>> = {
   md: {
     left: "md:absolute md:bottom-6 md:left-6 md:mt-0 lg:bottom-8 lg:left-8",
     right: "md:absolute md:right-6 md:bottom-6 md:mt-0 lg:right-8 lg:bottom-8",
@@ -47,6 +47,7 @@ export function FramedVisual({
   src,
   alt,
   children,
+  overlay,
   priority = false,
   overlayFrom = "lg",
   panelSide = "left",
@@ -58,6 +59,8 @@ export function FramedVisual({
   src: string;
   alt: string;
   children?: ReactNode;
+  /** Drawn over the picture (above the tint), clipped to the frame — e.g. an animated HUD. */
+  overlay?: ReactNode;
   priority?: boolean;
   overlayFrom?: OverlayFrom;
   panelSide?: PanelSide;
@@ -80,12 +83,13 @@ export function FramedVisual({
             className="block aspect-[1920/1088] w-full object-cover"
           />
           <div aria-hidden="true" className="img-tint absolute inset-0" />
+          {overlay}
         </div>
         {children && (
           <div
             className={cn(
               "glass-panel mt-4 p-6 md:p-8",
-              overlay[overlayFrom][panelSide],
+              positions[overlayFrom][panelSide],
               panelAlign === "center" && centred[overlayFrom],
               widths[overlayFrom][panelWidth],
               panelClassName,

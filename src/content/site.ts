@@ -16,6 +16,7 @@ import {
   Network,
   RefreshCcw,
   Lock,
+  FlaskConical,
 } from "lucide-react";
 
 export const brand = {
@@ -67,7 +68,7 @@ export const serviceIcons: LucideIcon[] = [
   Compass,
 ];
 
-export const aiIcons: LucideIcon[] = [Cpu, Atom, Network, RefreshCcw, Lock];
+export const aiIcons: LucideIcon[] = [Cpu, Atom, Network, RefreshCcw, Lock, FlaskConical];
 
 export const gaugeIcon = Gauge;
 

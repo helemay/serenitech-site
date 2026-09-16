@@ -3,8 +3,9 @@ import { images } from "@/content/site";
 import { CtaLink } from "../site/CtaLink";
 import { Eyebrow } from "../site/Decor";
 import { FramedVisual } from "../site/FramedVisual";
+import { HeroHud } from "./HeroHud";
 
-/** Opening: the copy sits above the picture, so the field image is shown whole and unobstructed. */
+/** Opening: the copy sits above the picture; the field image is shown whole, with the animated HUD over it. */
 export function Hero() {
   const { t } = useI18n();
 
@@ -31,7 +32,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <FramedVisual src={images.heroClean} alt={t.home.heroAlt} priority className="mt-8" />
+      <FramedVisual src={images.heroClean} alt={t.home.heroAlt} priority className="mt-8" overlay={<HeroHud />} />
     </section>
   );
 }

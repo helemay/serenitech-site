@@ -4,7 +4,7 @@ import { brand } from "@/content/site";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Eyebrow } from "@/components/site/Decor";
 import { Reveal } from "@/components/site/Reveal";
-import { Founders } from "./Founders";
+import { TechnicalDirection } from "./TechnicalDirection";
 
 export function CompanySection() {
   const { t } = useI18n();
@@ -15,7 +15,7 @@ export function CompanySection() {
         <p>{t.company.about}</p>
       </SectionHeader>
 
-      <Founders />
+      <TechnicalDirection />
 
       <div className="section-y relative overflow-hidden border-y border-ocean/50 bg-navy/20">
         <img

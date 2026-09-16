@@ -19,7 +19,7 @@ export const en = {
     home: {
       title: "Serenitech — AI Cognitive Robotics for Underwater Management",
       description:
-        "Serenitech is an AI cognitive robotics company for the underwater management of ports, offshore platforms, subsea structures and the naval industry. Sensing, monitoring, measurements and cloud services beyond the waterline.",
+        "Serenitech is an AI cognitive robotics company for the underwater management of critical port infrastructure, offshore platforms, subsea structures and the naval industry. Sensing, monitoring, measurements and cloud services beyond the waterline — under a technical direction with 27 years of research in underwater telecommunications, sensors and embedded AI.",
     },
     services: {
       title: "Cognitive Services — Serenitech",
@@ -50,11 +50,26 @@ export const en = {
   home: {
     eyebrow: "AI COGNITIVE ROBOTICS FOR UNDERWATER MANAGEMENT",
     h1: "The underwater eyes of your infrastructure.",
-    sub: "Serenitech is an AI cognitive robotics company for the underwater management of port infrastructure, offshore platforms, subsea structures and the naval industry. Our cognitive robotic units perceive sub-surface physical phenomena — acoustics, vibration, structural motion, bathymetry and hydrodynamics — reason at the edge and act, delivering real-time operational data as a secure cloud service.",
+    sub: "Serenitech is an AI cognitive robotics company for the underwater management of critical infrastructure — ports, offshore platforms, subsea structures and the naval industry. Our cognitive robotic units perceive sub-surface physical phenomena — acoustics, vibration, structural motion, bathymetry and hydrodynamics — reason at the edge and act, delivering real-time operational data as a secure cloud service. Behind them: three decades of research in underwater telecommunications, sensors and embedded AI.",
     ctaPrimary: "Request a technical briefing",
     ctaSecondary: "Explore the services",
     heroAlt:
       "Split view of a container ship moored at a concrete quay: bow and cranes above the waterline; below it, the hull, the quay piles, a sandy channel bottom with sea grass, a sea turtle, a school of fish and two dolphins",
+    hud: {
+      tide: ["tide · water level", "+0.90 m · HW 15:41"],
+      auv: ["AUV-1 · mobile unit", "MBES swath · 0.5 m grid"],
+      draft: ["MV · draft & squat", "13.8 m · −0.31 m · AIS verified"],
+      hydrophone: ["HY-01 · hydrophone", "142 dB re 1 µPa · blade 14.2 Hz"],
+      pile: ["QW-02 · quay pile", "strain 0.11 m/s · 1 650 kN"],
+      pile2: ["QW-03 · quay pile", "vibration 2.4 mm/s · no impact"],
+      bed: ["CH-04S · channel bed", "−15.2 m CD · UKC 2.68 m"],
+      siltation: ["CH-03P · siltation", "+0.42 m · 4.3 cm/month"],
+      fauna: ["marine fauna · 2 dolphins", "turtle · school · SPL ≤ limit"],
+      water: ["water column", "24.1 °C · 30.2 PSU · 1 521 m/s"],
+      current: ["current", "0.62 kn @ 142°"],
+      gateway: ["quay gateway · edge AI", "LTE-5G · TLS → cloud twin"],
+      legend: "● fixed cognitive unit   ▲ mobile unit   ◯ acoustic wavefront   ⋯ data link",
+    },
     trustSectors: [
       "Ports & terminals",
       "Offshore oil & gas",
@@ -65,7 +80,7 @@ export const en = {
     problem: {
       eyebrow: "THE PROBLEM",
       title:
-        "Everything you operate depends on what happens under water. Almost none of it is measured continuously.",
+        "Critical infrastructure depends on what happens under water. Almost none of it is supervised continuously, online.",
       items: [
         {
           title: "Depth is decided on old data.",
@@ -73,7 +88,7 @@ export const en = {
         },
         {
           title: "Impacts and fatigue leave no record.",
-          text: "Berthing collisions, vibration and structural drift on piers, dolphins and jacket legs go unmeasured until a repair — or a dispute.",
+          text: "Berthing collisions, vibration and structural drift on critical structures — piers, dolphins, jacket legs — go unmeasured until a repair, or a dispute.",
         },
         {
           title: "Blind spots in security and compliance.",
@@ -84,8 +99,8 @@ export const en = {
     advisory: {
       eyebrow: "TAILOR-MADE ADVISORY",
       title:
-        "Consulting engineered for your structure, not for the average port.",
-      text: "Applicability and feasibility studies, environmental impact reviews, structural and operational risk assessments, AI and deep-tech architecture advisory, underwater connectivity in demanding conditions — delivered case by case, at international level, by the team that builds the system.",
+        "Consulting engineered for your critical infrastructure, not for the average port.",
+      text: "Applicability and feasibility studies, environmental impact reviews, structural and operational risk assessments, AI and deep-tech architecture advisory, underwater connectivity in demanding conditions — delivered case by case, at international level, under a technical direction with 27 years of research in underwater telecommunications, sensors and embedded AI.",
       chips: [
         "Applicability & feasibility",
         "Environmental impact review",
@@ -160,7 +175,7 @@ export const en = {
       steps: [
         {
           title: "Perceive",
-          text: "Cognitive robotic units — fixed and mobile, underwater and on the surface — sense the hydro-acoustic, structural and hydrodynamic fields around your infrastructure, continuously.",
+          text: "Cognitive robotic units — fixed and mobile, underwater and on the surface — sense the hydro-acoustic, structural and hydrodynamic fields around your critical infrastructure, continuously.",
         },
         {
           title: "Reason",
@@ -195,7 +210,7 @@ export const en = {
         },
         {
           title: "Structural Integrity & Berthing Impact Monitoring",
-          text: "Autonomous cognitive robotic units on piers, dolphins, quay walls, jacket legs and subsea assets: displacement, vibration spectrum, shock and impact records.",
+          text: "Autonomous cognitive robotic units on critical structures — piers, dolphins, quay walls, jacket legs and subsea assets: displacement, vibration spectrum, shock and impact records.",
         },
         {
           title: "Cloud Platform: APIs, Dashboards, Alerts & 3D Digital Twin",
@@ -263,6 +278,7 @@ export const en = {
         "Layered intelligence — unit → gateway → cloud, resilient to intermittent links.",
         "Federated learning and over-the-air model updates across sites.",
         "Security by design — encrypted links, signed measurements, role-based access, full audit trail.",
+        "Research lineage — doctoral work in signal and image computing and in high-frequency electronics, IEEE OCEANS and EuCAP publications on high-data-rate underwater sensors, and the European EdgeAI programme behind our edge-intelligence design.",
       ],
     },
     presence: {
@@ -275,23 +291,6 @@ export const en = {
           text: "Brazil headquarters, office & laboratory (Passeio Sapiens, Sapiens Parque)",
         },
         { place: "Florida, USA", text: "North American operations" },
-      ],
-    },
-    leadership: {
-      eyebrow: "LEADERSHIP",
-      title: "Founded by an entrepreneur and a scientist.",
-      link: "Company",
-      people: [
-        {
-          name: "Rodrigo Füchter",
-          role: "CEO & Co-founder",
-          line: "Strategy, corporate structure, finance and the group's expansion.",
-        },
-        {
-          name: "Dr. Thierry Deschamps de Paillette",
-          role: "CTO & Co-founder",
-          line: "Technology, laboratories and product architecture.",
-        },
       ],
     },
     finalCta: {
@@ -324,7 +323,7 @@ export const en = {
     eyebrow: "COGNITIVE SERVICES",
     title: "Serenitech Cognitive Services",
     intro:
-      "Serenitech Cognitive Services — the cloud layer of our AI cognitive robotics system: a unified, cloud-native platform that turns high-technology sub-surface physical phenomena into granular, real-time operational data streams. Continuous coverage of the critical domains: access channel, manoeuvring basins, berthing piers — and, for offshore and subsea operators, the structure itself. When a situation calls for it, we also deliver tailor-made advisory.",
+      "Serenitech Cognitive Services — the cloud layer of our AI cognitive robotics system: a unified, cloud-native platform that turns high-technology sub-surface physical phenomena into granular, real-time operational data streams. Continuous, online supervision of the critical infrastructure: access channel, manoeuvring basins, berthing piers — and, for offshore and subsea operators, the critical structure itself. Every module is engineered under a technical direction with 27 years of research in cross-medium telecommunications, underwater sensor networks, signal processing and edge AI — published at IEEE and protected by patent applications. When a situation calls for it, we also deliver tailor-made advisory.",
     mandateLabel: "Architecture mandate",
     mandate:
       "Distinctly moving away from a decentralised, hardware-centric model, the service encapsulates all underlying instrumentation under abstract functional layers, served through low-latency secure APIs to control dashboards, real-time alert systems and a high-fidelity 3D spatial digital twin.",
@@ -377,7 +376,7 @@ export const en = {
           "Autonomous cognitive robotic units fixed to piles, dolphins, fenders, quay walls, mooring structures, jacket legs, risers and subsea assets — three-axis acceleration, angular motion and displacement, shock/impact detection, full vibration spectrum and modal analysis; data carried by underwater wireless links to surface gateways (cellular, satellite or long-range low-power radio) with multi-year autonomy.",
         get: "Displacement and drift trends, fatigue and modal signatures, timestamped impact records that identify the responsible vessel in docking collisions, threshold-based anomaly alerts, direct SCADA integration.",
         matters:
-          "Liability and insurance evidence, fewer unplanned repairs, integrity management for structures no diver inspects every day.",
+          "Liability and insurance evidence, fewer unplanned repairs, integrity management for critical structures no diver inspects every day.",
         bullets: [] as { label: string; text: string }[],
       },
       {
@@ -439,7 +438,7 @@ export const en = {
     ],
     apiLabel: "API sample",
     advisoryIntro:
-      "Every port, platform and structure is different. Our advisory work is designed case by case by the team that builds the cognitive robotic units, the AI and the underwater links — international-level expertise in AI, deep tech and underwater connectivity in demanding conditions, applied to your situation.",
+      "Every port, platform and critical structure is different. Our advisory work is designed case by case by the team that builds the cognitive robotic units, the AI and the underwater links, under the direction of Dr. Thierry Deschamps de Paillette — agrégé, doctor in high-frequency electronics, photonics and systems, 27 years of research in cross-medium telecommunications, underwater sensor networks and edge AI, IEEE author and reviewer. International-level expertise in AI, deep tech and underwater connectivity in demanding conditions, applied to your situation.",
     headerAlt:
       "Underwater view of a quay wall with cognitive robotic units and 3D readings",
     commercial: {
@@ -457,28 +456,28 @@ export const en = {
     items: [
       {
         title: "Ports & Terminals",
-        text: "Access channel, manoeuvring basins and berths under continuous sub-surface watch: dynamic draft and UKC, predictive siltation, environmental noise compliance, vessel verification and berthing-impact records. Integrates with VTMIS and port ERPs.",
+        text: "Access channel, manoeuvring basins and berths — the port's critical infrastructure — under continuous, online sub-surface supervision: dynamic draft and UKC, predictive siltation, environmental noise compliance, vessel verification and berthing-impact records. Integrates with VTMIS and port ERPs.",
         outcome:
           "Safer transits, optimised dredging, documented compliance, fewer disputes.",
         alt: "Quay wall and moored vessel seen from under water",
       },
       {
         title: "Offshore Oil & Gas",
-        text: "Jacket legs, risers, mooring systems and subsea equipment monitored for motion, vibration, impact and scour; approach detection of unidentified vessels around the platform; underwater noise monitoring during drilling and construction.",
+        text: "Critical structures — jacket legs, risers, mooring systems and subsea equipment — supervised online for motion, vibration, impact and scour; approach detection of unidentified vessels around the platform; underwater noise monitoring during drilling and construction.",
         outcome:
           "Integrity management with continuous evidence, security perimeter beyond the surface, environmental compliance.",
         alt: "Offshore platform jacket legs underwater with acoustic robotic sensing units",
       },
       {
         title: "Subsea Structures",
-        text: "Pipelines, manifolds, cables, outfalls and offshore-wind foundations: structural motion and vibration, sea-floor change and sediment dynamics around the asset, event detection and long-term drift — from cognitive robotic units that need no diver visit for years.",
+        text: "Critical subsea infrastructure — pipelines, manifolds, cables, outfalls and offshore-wind foundations: structural motion and vibration, sea-floor change and sediment dynamics around the asset, event detection and long-term drift — from cognitive robotic units that need no diver visit for years.",
         outcome:
           "Fewer inspection campaigns, earlier warnings, a digital twin of the asset on the sea floor.",
         alt: "Subsea pipeline and manifold on the sea floor with survey grid overlay",
       },
       {
         title: "Naval Industry",
-        text: "Shipyards, fleets and naval engineering: underwater radiated noise and acoustic signature measurement of hulls and propellers, signature drift as a condition indicator, basin and dry-dock monitoring, structural instrumentation of hulls and berthing structures.",
+        text: "Shipyards, fleets and naval engineering: underwater radiated noise and acoustic signature measurement of hulls and propellers, signature drift as a condition indicator, basin and dry-dock monitoring, structural instrumentation of hulls and berthing structures — grounded in two decades of signal-processing and underwater-telemetry research.",
         outcome:
           "Measurable acoustic performance and continuous data for design, maintenance and certification support.",
         alt: "Propeller of an ultra-large container ship with acoustic rings and 3D wireframe",
@@ -490,7 +489,7 @@ export const en = {
     title: "From the sea floor to the API.",
     headerAlt: "Bathymetric 3D surface over a port channel bottom",
     headerLine:
-      "Serenitech is an AI cognitive robotics system: units that perceive, reason and act, orchestrated by a cloud cognitive engine.",
+      "Serenitech is an AI cognitive robotics system: units that perceive, reason and act, orchestrated by a cloud cognitive engine. Its architecture descends from two decades of research on underwater telecommunications and sensor networks and from the European AI programmes AI4DI and EdgeAI.",
     layersTitle: "Five layers",
     schematic: {
       alt: "Animated vertical section of a berth: sensing on the bed and piles, cognitive robotic units and a survey unit, a quay gateway with edge intelligence, the cloud engine and the operator interfaces, with data packets travelling along the links",
@@ -543,315 +542,231 @@ export const en = {
     research: {
       eyebrow: "RESEARCH DNA",
       title: "Research DNA",
-      text: "High-frequency electronics, photonics, underwater telecommunications, signal processing and AI — a laboratory culture in Monaco and Florianópolis dedicated to the sub-surface environment.",
+      text: "High-frequency electronics, photonics, underwater telecommunications, signal processing and AI — a laboratory culture in Monaco and Florianópolis dedicated to the sub-surface environment, rooted in 27 years of research: doctoral work at the L3i laboratory (La Rochelle) and at Orléans, IEEE OCEANS and EuCAP publications on high-data-rate underwater sensors and antennas, reviewing for the IEEE Journal of Oceanic Engineering, two patent applications on AI-driven underwater communication, and the European AI programmes AI4DI and EdgeAI.",
     },
   },
   company: {
     eyebrow: "COMPANY",
     title: "A global deep-tech group dedicated to the sub-surface world.",
     about:
-      "Much of the world's most important infrastructure sits partly under water, and it is managed almost blind. Serenitech builds the AI cognitive robotics — sensing, connectivity, artificial intelligence and cloud services — that give port authorities, offshore operators, subsea asset owners and the naval industry continuous sight, memory and foresight beyond the waterline. The name says it: serenity through technology.",
-    foundersEyebrow: "THE CO-FOUNDERS",
-    foundersTitle: "Two founders. One obsession: intelligence beyond the waterline.",
-    foundersIntro: "Engineering in water environments, AI at the edge and 25+ years of building technology and financial businesses — in one founding team. Thierry designed underwater sensor and telecommunication networks and led the European AI programmes AI4DI and EdgeAI; Rodrigo built and ran technology and financial businesses for more than two decades and leads the group's strategy, structure and expansion.",
+      "Much of the world's critical infrastructure sits partly under water, and it is supervised almost blind. Serenitech builds the AI cognitive robotics — sensing, connectivity, artificial intelligence and cloud services — on three decades of research in underwater telecommunications, sensors and embedded AI, giving port authorities, offshore operators, subsea asset owners and the naval industry continuous sight, memory and foresight beyond the waterline. The name says it: serenity through technology.",
+    technicalEyebrow: "TECHNICAL & SCIENTIFIC DIRECTION",
+    technicalTitle: "Three decades of research in underwater sensing, telecommunications and embedded AI — at the head of our engineering.",
+    technicalIntro: "Serenitech is a specialised technical-services company. Its technology, laboratories and product architecture are directed by Dr. Thierry Deschamps de Paillette — agrégé in electrical engineering and electronics, doctor in high-frequency electronics, photonics and systems, with doctoral research in signal and image computing, and 27 years of advanced research applied to cross-medium telecommunication systems, underwater sensor networks, signal processing and edge AI. Industrial products, IEEE publications, patent applications and the European AI programmes AI4DI and EdgeAI form the technical foundation of every service on this page.",
+    proofPoints: [
+      { value: "27 years", label: "of advanced research — high-frequency electronics, photonics, systems and AI" },
+      { value: "Agrégé · Ph.D.", label: "France's most selective national examination in the discipline; doctorate awarded with félicitations du jury" },
+      { value: "IEEE", label: "publications at OCEANS and EuCAP; reviewer for the IEEE Journal of Oceanic Engineering" },
+      { value: "2 patent applications", label: "AI-driven selection of the underwater communication mode (EP · PCT), sole inventor" },
+      { value: "AI4DI · EdgeAI", label: "European AI programmes led with large industrial groups and startups" },
+      { value: "20 years", label: "of industrial product design — Crouzet, Micrelec, TECHNEXT" },
+    ],
     photoCaptionShort: "Passeio Sapiens, Florianópolis — Brazil headquarters and laboratory.",
     showMore: "Show more",
     showLess: "Show less",
     linkedin: "LinkedIn →",
     openLabel: "Open",
-    leaders: [
-      {
-        name: "Rodrigo Füchter",
-        role: "CEO & Co-founder",
-        bio: "Entrepreneur since his high-school years, with 25+ years building and running technology and financial businesses. He started out assembling and maintaining microcomputers and networks, moved into building online platforms, and spent nearly two decades inside his family's group as CFO and Head of Compliance, where he gained deep financial and regulatory experience. Throughout, he kept his own in-house development team, shipping countless solutions for the automotive and cross-border financial markets: Serenitech, MonFinance, DebitoPago, CarroPago and Lanet Tecnologia. Based in Monaco, he leads Serenitech's strategy, corporate structure, finance and the group's expansion across Brazil and the United States.",
-        link: "https://www.linkedin.com/in/rodrigofuchter/",
-        panels: [
-          {
-            title: "Education",
-            items: [
-              {
-                year: "2000 — 2004",
-                title: "Universidade do Estado de Santa Catarina — ESAG",
-                venue: "BSc, Business Administration and Management · Florianópolis, Brazil",
-              },
-              {
-                year: "2009",
-                title: "FIA — Fundação Instituto de Administração",
-                venue: "Automotive dealership financial management · São Paulo, Brazil",
-              },
-              {
-                year: "2008",
-                title: "Trevisan Escola de Negócios",
-                venue: "Automotive dealership management · São Paulo, Brazil",
-              },
-              {
-                year: "2007",
-                title: "ESPM — Escola Superior de Propaganda e Marketing",
-                venue: "Automotive dealership management · São Paulo, Brazil",
-              },
-            ],
-          },
-          {
-            title: "Experience",
-            items: [
-              {
-                year: "2025 — Present",
-                title: "Serenitech Global Corporation",
-                venue: "Co-founder and CEO — AI cognitive robotics for underwater management",
-              },
-              {
-                year: "2024 — Present",
-                title: "Lanet Tecnologia",
-                venue: "Founder · Brazil — data services, APIs and payment processing for the automotive sector",
-              },
-              {
-                year: "2024 — Present",
-                title: "ACATE — Associação Catarinense de Tecnologia",
-                venue: "Startup mentor · Florianópolis, Brazil — pro bono mentoring for early-stage technology founders",
-              },
-              {
-                year: "2012 — Present",
-                title: "CarroPago",
-                venue: "Founder · Florianópolis, Brazil — vehicle payment intermediation and inventory financing",
-              },
-              {
-                year: "2024 — 2026",
-                title: "MonFinance",
-                venue: "Founder · Brazil — corporate digital bank for companies, their partners, staff and supply chains",
-              },
-              {
-                year: "2020 — 2025",
-                title: "Reejay",
-                venue: "Founder · United States — white-label streaming, ticketing and betting platform for sports and live events",
-              },
-              {
-                year: "2017 — 2026",
-                title: "CarPrix",
-                venue: "Founder · United States — automotive marketplace and dealer-to-dealer trading platform",
-              },
-              {
-                year: "2001 — 2019",
-                title: "Grupo Le Monde",
-                venue: "CFO and Founder · Florianópolis, Brazil — internationally recognised authorised dealership and used-vehicle group",
-              },
-              {
-                year: "1999 — 2001",
-                title: "Aclive Internet",
-                venue: "Founder · Florianópolis, Brazil — websites and online business solutions",
-              },
-            ],
-          },
-          {
-            title: "Patents",
-            items: [
-              {
-                year: "WO2019183501A1",
-                title: "System and Method for Operating a Social Network for Automotive Quotes",
-                venue: "PCT international application PCT/US2019/023629 · applicant Carprix LLC · sole inventor · published 26 September 2019",
-                link: "https://patents.google.com/patent/WO2019183501A1/en",
-              },
-              {
-                year: "US20210049650A1",
-                title: "System and Method for Operating a Social Network for Automotive Quotes",
-                venue: "US national phase, application 16/982,868 · entered 21 September 2020 · published 18 February 2021",
-                link: "https://patents.google.com/patent/US20210049650A1/en",
-              },
-            ],
-            footnote: "Two published patent applications covering one invention, sole inventor, claiming priority from US provisional 62/646,828 filed 22 March 2018. A social network for vehicle valuation: the application distributes vehicle data to a selected group of known individuals and collects their price estimates. Filed for Carprix LLC.",
-          },
-        ],
-      },
-      {
-        name: "Dr. Thierry Deschamps de Paillette",
-        role: "CTO & Co-founder",
-        bio: "Dr. Thierry Deschamps de Paillette is agrégé in electrical engineering and electronics — France's most selective national competitive examination in the discipline — and holds a doctorate from the Université de La Rochelle awarded with félicitations du jury, the highest distinction. He brings a 27-year track record in advanced research across high-frequency electronics, photonics and systems, applied to AI, cybernetics and cross-medium telecommunication systems in cooperation with large industrial groups. His recent research and engineering work covers a new generation of underwater telecommunication and sensor networks. He has designed industrial products for two decades — Crouzet, Micrelec, TECHNEXT — and is the named inventor on patent applications for AI-driven selection of underwater communication mode. A higher-chair professor within the French national academic system, he sat on the national boards that recruit agrégés in engineering sciences. He publishes at IEEE and reviews for the IEEE Journal of Oceanic Engineering, and as an AI advisor, speaker and expert in clusters including Institut EuropIA and Cluster-IA he led the European AI programmes AI4DI and EdgeAI with large industrial groups and startups. At Serenitech he leads technology, laboratories and product architecture — the cognitive robotic units, the underwater communication stack and the AI sensing and edge-intelligence layers.",
-        link: "https://www.linkedin.com/in/thierry-deschamps-de-paillette-b1669821/",
-        panels: [
-          {
-            title: "Credentials",
-            items: [
-              {
-                title: "Reviewer, IEEE Journal of Oceanic Engineering",
-              },
-              {
-                title: "Expert, AI & Oceans — Institut EuropIA",
-                link: "https://instituteuropia.eu/experts",
-              },
-              {
-                title: "Vice-President — Cluster-IA",
-              },
-              {
-                title: "AI4DI — Artificial Intelligence for Digitizing Industry · H2020 / ECSEL JU, grant agreement 826060",
-                link: "https://ai4di.eu/",
-              },
-              {
-                title: "EdgeAI — Edge AI Technologies for Optimised Performance Embedded Processing · Horizon Europe / KDT JU, grant agreement 101097300",
-                link: "https://cordis.europa.eu/project/id/101097300",
-              },
-              {
-                title: "Jury member, French national Agrégation boards for the recruitment of associate professors in engineering sciences",
-                link: "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/833/833-rapport-jury-agreg-ext-ssi-et-ingenierie-electrique.pdf",
-              },
-              {
-                title: "Industrial product design for Crouzet, Micrelec and TECHNEXT",
-              },
-              {
-                title: "EWTS HYD energy and water metering system — teaching material in the French national engineering curriculum",
-                link: "https://sti.eduscol.education.fr/ressources_techniques/ewts-hyd-systeme-de-comptage-energetique",
-              },
-              {
-                title: "Designer of wideband underwater wireless modems — hardware, firmware and commissioning",
-              },
-              {
-                title: "INPI Soleau anteriority deposit DSO2019007239 (2019) — wideband underwater wireless link with OFDM modulation",
-              },
-              {
-                title: "Edge-to-cloud intelligence architectures and AI for severe environments",
-              },
-            ],
-          },
-          {
-            title: "Education",
-            items: [
-              {
-                year: "2015 — 2020",
-                title: "Université de La Rochelle — L3i laboratory",
-                venue: "Ph.D., High-Frequency Electronics, Photonics and Systems · awarded with félicitations du jury · La Rochelle, France · defended 22 October 2020 · supervisor Prof. Alain Gaugue",
-                link: "https://theses.hal.science/tel-03349746",
-              },
-              {
-                year: "2011 — 2012",
-                title: "Approved Training Organisation (ATO)",
-                venue: "PPL-A private pilot licence, single-engine — glass cockpit and FADEC · France",
-              },
-              {
-                year: "2007 — 2008",
-                title: "Université d'Orléans",
-                venue: "Research doctorate, signal and image computing · target tracking in video sequences under severe conditions · Orléans, France",
-              },
-              {
-                year: "1998",
-                title: "Ministère de l'Éducation nationale",
-                venue: "Agrégation externe — electrical engineering, electronics and industrial computing · admitted · France",
-              },
-              {
-                year: "1996 — 1997",
-                title: "Université Blaise Pascal (Clermont-II)",
-                venue: "DEA, master's by research in electronics and systems — vision for robotic systems · Clermont-Ferrand, France",
-              },
-              {
-                year: "1995 — 1996",
-                title: "Université Blaise Pascal (Clermont-II)",
-                venue: "Master's, electrical engineering — microelectronics · Clermont-Ferrand, France",
-              },
-              {
-                year: "1995 — 1996",
-                title: "Université Blaise Pascal (Clermont-II)",
-                venue: "Licence, electrical engineering (EEA) — electronics, electromechanical systems, control theory · Clermont-Ferrand, France",
-              },
-              {
-                year: "1993 — 1994",
-                title: "Institut Universitaire de Technologie, Université Blaise Pascal",
-                venue: "DUT, electrical engineering — control and industrial computing, C3/C4I systems · Clermont-Ferrand, France",
-              },
-              {
-                year: "1990 — 1992",
-                title: "Lycée Godefroy de Bouillon",
-                venue: "Baccalauréat F3, electromechanics · France",
-              },
-            ],
-          },
-          {
-            title: "Experience",
-            items: [
-              {
-                year: "2013 — 2026",
-                title: "Ministère de l'Éducation nationale",
-                venue: "Professor of electrical engineering and computer science, higher chair (professeur de chaire supérieure) · France",
-              },
-              {
-                year: "2007 — 2026",
-                title: "TECHNEXT",
-                venue: "Scientific advisor · Cannes, France",
-              },
-              {
-                year: "2015 — 2020",
-                title: "L3i laboratory, Université de La Rochelle",
-                venue: "Researcher — underwater telecommunications and submarine telemetry networks · La Rochelle, France",
-              },
-              {
-                year: "2011 — 2015",
-                title: "Concours national d'Agrégation",
-                venue: "Jury member, external recruitment board for associate professors in engineering sciences · France",
-              },
-              {
-                year: "2011 — 2014",
-                title: "TECHNEXT",
-                venue: "Author — embedded systems, task scheduling and complex algorithm design · Cannes, France",
-              },
-              {
-                year: "2005 — 2009",
-                title: "Concours national d'Agrégation",
-                venue: "Jury member, internal recruitment board for associate professors in engineering sciences · France",
-              },
-              {
-                year: "1998 — 2011",
-                title: "Ministère de l'Éducation nationale",
-                venue: "Teacher, electrical engineering — Mathématiques spéciales · France",
-              },
-            ],
-          },
-          {
-            title: "Patents",
-            items: [
-              {
-                year: "EP4645718A1",
-                title: "Method and device for selecting underwater communication mode",
-                venue: "European patent application · sole inventor · filed 29 April 2024, published 5 November 2025",
-                link: "https://patents.google.com/patent/EP4645718A1/en",
-              },
-              {
-                year: "WO2025228988A1",
-                title: "Method and device for selecting underwater communication mode",
-                venue: "PCT international application PCT/EP2025/061717 · sole inventor · published 6 November 2025",
-                link: "https://patents.google.com/patent/WO2025228988A1/en",
-              },
-            ],
-            footnote: "Two published patent applications covering one invention, sole inventor. The invention selects among acoustic, optical and other underwater communication modes using a neural network fed by sensor readings, channel characteristics and network feedback. IPC H04B 11/00 and H04B 13/02.",
-          },
-          {
-            title: "Academic",
-            items: [
-              {
-                year: "2024",
-                title: "Enhancing Communication in Multi-Domain Ad-Hoc Networks for Maritime Critical Infrastructure Protection",
-                venue: "OCEANS 2024 Halifax, IEEE · with K. Brandl, J. Weid and A. Hahn",
-                link: "https://doi.org/10.1109/OCEANS55160.2024.10754334",
-              },
-              {
-                year: "2020",
-                title: "Transmissions numériques sans-fil pour la surveillance environnementale en milieu sous-marin",
-                venue: "Doctoral thesis, Université de La Rochelle · HAL tel-03349746",
-                link: "https://theses.hal.science/tel-03349746",
-              },
-              {
-                year: "2019",
-                title: "High Data Rate Wireless Underwater Sensors for Environmental Monitoring",
-                venue: "MTS/IEEE OCEANS 2019, Marseille, pp. 1–10 · with A. Gaugue",
-                link: "https://doi.org/10.1109/OCEANSE.2019.8867364",
-              },
-              {
-                year: "2017",
-                title: "Antenna design for underwater wireless telemetry systems",
-                venue: "11th European Conference on Antennas and Propagation (EuCAP), Paris, IEEE, pp. 2251–2255 · with A. Gaugue, E. Parlier and S. Dardenne",
-                link: "https://doi.org/10.23919/EuCAP.2017.7928513",
-              },
-            ],
-            footnote: "Research areas: underwater wireless communication, antenna design and impedance matching, OFDM for underwater links, multi-domain ad-hoc networks, and AI for severe environments.",
-          },
-        ],
-      },
-    ],
+    lead: {
+      name: "Dr. Thierry Deschamps de Paillette",
+      role: "Chief Technology Officer · Technical & scientific direction",
+      bio: "Dr. Thierry Deschamps de Paillette is agrégé in electrical engineering and electronics — France's most selective national competitive examination in the discipline — and holds a doctorate from the Université de La Rochelle awarded with félicitations du jury, the highest distinction. He brings a 27-year track record in advanced research across high-frequency electronics, photonics and systems, applied to AI, cybernetics and cross-medium telecommunication systems in cooperation with large industrial groups. His recent research and engineering work covers a new generation of underwater telecommunication and sensor networks. He has designed industrial products for two decades — Crouzet, Micrelec, TECHNEXT — and is the named inventor on patent applications for AI-driven selection of underwater communication mode. A higher-chair professor within the French national academic system, he sat on the national boards that recruit agrégés in engineering sciences. He publishes at IEEE and reviews for the IEEE Journal of Oceanic Engineering, and as an AI advisor, speaker and expert in clusters including Institut EuropIA and Cluster-IA he led the European AI programmes AI4DI and EdgeAI with large industrial groups and startups. At Serenitech he leads technology, laboratories and product architecture — the cognitive robotic units, the underwater communication stack and the AI sensing and edge-intelligence layers.",
+      link: "https://www.linkedin.com/in/thierry-deschamps-de-paillette-b1669821/",
+      panels: [
+        {
+          title: "Credentials",
+          items: [
+            {
+              title: "Reviewer, IEEE Journal of Oceanic Engineering",
+            },
+            {
+              title: "Expert, AI & Oceans — Institut EuropIA",
+              link: "https://instituteuropia.eu/experts",
+            },
+            {
+              title: "Vice-President — Cluster-IA",
+            },
+            {
+              title: "AI4DI — Artificial Intelligence for Digitizing Industry · H2020 / ECSEL JU, grant agreement 826060",
+              link: "https://ai4di.eu/",
+            },
+            {
+              title: "EdgeAI — Edge AI Technologies for Optimised Performance Embedded Processing · Horizon Europe / KDT JU, grant agreement 101097300",
+              link: "https://cordis.europa.eu/project/id/101097300",
+            },
+            {
+              title: "Jury member, French national Agrégation boards for the recruitment of associate professors in engineering sciences",
+              link: "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/833/833-rapport-jury-agreg-ext-ssi-et-ingenierie-electrique.pdf",
+            },
+            {
+              title: "Industrial product design for Crouzet, Micrelec and TECHNEXT",
+            },
+            {
+              title: "EWTS HYD energy and water metering system — teaching material in the French national engineering curriculum",
+              link: "https://sti.eduscol.education.fr/ressources_techniques/ewts-hyd-systeme-de-comptage-energetique",
+            },
+            {
+              title: "Designer of the 400 kHz FSK and wideband magneto-inductive underwater modems — hardware, firmware and commissioning",
+            },
+            {
+              title: "INPI Soleau anteriority deposit DSO2019007239 (2019) — wideband magneto-inductive underwater link with OFDM modulation",
+            },
+            {
+              title: "Edge-to-cloud intelligence architectures and AI for severe environments",
+            },
+          ],
+        },
+        {
+          title: "Education",
+          items: [
+            {
+              year: "2015 — 2020",
+              title: "Université de La Rochelle — L3i laboratory",
+              venue: "Ph.D., High-Frequency Electronics, Photonics and Systems · awarded with félicitations du jury · La Rochelle, France · defended 22 October 2020 · supervisor Prof. Alain Gaugue",
+              link: "https://theses.hal.science/tel-03349746",
+            },
+            {
+              year: "2011 — 2012",
+              title: "Approved Training Organisation (ATO)",
+              venue: "PPL-A private pilot licence, single-engine — glass cockpit and FADEC · France",
+            },
+            {
+              year: "2007 — 2008",
+              title: "Université d'Orléans",
+              venue: "Research doctorate, signal and image computing · target tracking in video sequences under severe conditions · Orléans, France",
+            },
+            {
+              year: "1998",
+              title: "Ministère de l'Éducation nationale",
+              venue: "Agrégation externe — electrical engineering, electronics and industrial computing · admitted · France",
+            },
+            {
+              year: "1996 — 1997",
+              title: "Université Blaise Pascal (Clermont-II)",
+              venue: "DEA, master's by research in electronics and systems — vision for robotic systems · Clermont-Ferrand, France",
+            },
+            {
+              year: "1995 — 1996",
+              title: "Université Blaise Pascal (Clermont-II)",
+              venue: "Master's, electrical engineering — microelectronics · Clermont-Ferrand, France",
+            },
+            {
+              year: "1995 — 1996",
+              title: "Université Blaise Pascal (Clermont-II)",
+              venue: "Licence, electrical engineering (EEA) — electronics, electromechanical systems, control theory · Clermont-Ferrand, France",
+            },
+            {
+              year: "1993 — 1994",
+              title: "Institut Universitaire de Technologie, Université Blaise Pascal",
+              venue: "DUT, electrical engineering — control and industrial computing, C3/C4I systems · Clermont-Ferrand, France",
+            },
+            {
+              year: "1990 — 1992",
+              title: "Lycée Godefroy de Bouillon",
+              venue: "Baccalauréat F3, electromechanics · France",
+            },
+          ],
+        },
+        {
+          title: "Experience",
+          items: [
+            {
+              year: "2013 — 2026",
+              title: "Ministère de l'Éducation nationale",
+              venue: "Professor of electrical engineering and computer science, higher chair (professeur de chaire supérieure) · France",
+            },
+            {
+              year: "2007 — 2026",
+              title: "TECHNEXT",
+              venue: "Scientific advisor · Cannes, France",
+            },
+            {
+              year: "2015 — 2020",
+              title: "L3i laboratory, Université de La Rochelle",
+              venue: "Researcher — underwater telecommunications and submarine telemetry networks · La Rochelle, France",
+            },
+            {
+              year: "2011 — 2015",
+              title: "Concours national d'Agrégation",
+              venue: "Jury member, external recruitment board for associate professors in engineering sciences · France",
+            },
+            {
+              year: "2011 — 2014",
+              title: "TECHNEXT",
+              venue: "Author — embedded systems, task scheduling and complex algorithm design · Cannes, France",
+            },
+            {
+              year: "2005 — 2009",
+              title: "Concours national d'Agrégation",
+              venue: "Jury member, internal recruitment board for associate professors in engineering sciences · France",
+            },
+            {
+              year: "1998 — 2011",
+              title: "Ministère de l'Éducation nationale",
+              venue: "Teacher, electrical engineering — Mathématiques spéciales · France",
+            },
+          ],
+        },
+        {
+          title: "Patents",
+          items: [
+            {
+              year: "EP4645718A1",
+              title: "Method and device for selecting underwater communication mode",
+              venue: "European patent application · sole inventor · filed 29 April 2024, published 5 November 2025",
+              link: "https://patents.google.com/patent/EP4645718A1/en",
+            },
+            {
+              year: "WO2025228988A1",
+              title: "Method and device for selecting underwater communication mode",
+              venue: "PCT international application PCT/EP2025/061717 · sole inventor · published 6 November 2025",
+              link: "https://patents.google.com/patent/WO2025228988A1/en",
+            },
+          ],
+          footnote: "Two published patent applications covering one invention, sole inventor. The invention selects between acoustic, electromagnetic and optical underwater communication using a neural network fed by sensor readings, channel characteristics and network feedback. IPC H04B 11/00 and H04B 13/02.",
+        },
+        {
+          title: "Academic",
+          items: [
+            {
+              year: "2024",
+              title: "Enhancing Communication in Multi-Domain Ad-Hoc Networks for Maritime Critical Infrastructure Protection",
+              venue: "OCEANS 2024 Halifax, IEEE · with K. Brandl, J. Weid and A. Hahn",
+              link: "https://doi.org/10.1109/OCEANS55160.2024.10754334",
+            },
+            {
+              year: "2020",
+              title: "Antenna Adaptation Circuits for High Data Rate Magneto-Inductive Underwater Communications",
+              venue: "14th European Conference on Antennas and Propagation (EuCAP), Copenhagen, IEEE, pp. 1–5 · with A. Gaugue",
+              link: "https://doi.org/10.23919/EuCAP48036.2020.9135359",
+            },
+            {
+              year: "2020",
+              title: "Transmissions numériques sans-fil pour la surveillance environnementale en milieu sous-marin",
+              venue: "Doctoral thesis, Université de La Rochelle · HAL tel-03349746",
+              link: "https://theses.hal.science/tel-03349746",
+            },
+            {
+              year: "2019",
+              title: "High Data Rate Wireless Underwater Sensors for Environmental Monitoring",
+              venue: "MTS/IEEE OCEANS 2019, Marseille, pp. 1–10 · with A. Gaugue",
+              link: "https://doi.org/10.1109/OCEANSE.2019.8867364",
+            },
+            {
+              year: "2017",
+              title: "Antenna design for underwater wireless telemetry systems",
+              venue: "11th European Conference on Antennas and Propagation (EuCAP), Paris, IEEE, pp. 2251–2255 · with A. Gaugue, E. Parlier and S. Dardenne",
+              link: "https://doi.org/10.23919/EuCAP.2017.7928513",
+            },
+            {
+              year: "2017",
+              title: "Télémétrie sous-marine à ondes électromagnétiques",
+              venue: "XXèmes Journées Nationales Micro-ondes, Saint-Malo · with A. Gaugue",
+            },
+          ],
+          footnote: "Research areas: underwater electromagnetic and magneto-inductive communication, antenna design and impedance matching, OFDM for underwater links, multi-domain ad-hoc networks, and AI for severe environments.",
+        },
+      ],
+    },
     presenceTitle: "Global presence",
     presence: [
       {
@@ -876,7 +791,7 @@ export const en = {
   contact: {
     eyebrow: "CONTACT",
     title: "Request a technical briefing.",
-    text: "Tell us about your channel, terminal, platform or asset. Our engineers will come back with an engagement proposal and the scope and budget of the initial audit and feasibility study.",
+    text: "Tell us about your channel, terminal, platform or critical asset. Our technical direction will come back with an engagement proposal and the scope and budget of the initial audit and feasibility study.",
     fields: {
       name: "Name",
       email: "E-mail",
