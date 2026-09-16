@@ -1,4 +1,7 @@
-import type { Dict } from "./en";
+import { en, type Dict } from "./en";
+
+// Rule (16/09/2026): texts that belong to AI-generated images and to the animated drawings (hero HUD,
+// system schematic, live console readouts) stay in the original English in every language.
 
 export const pt: Dict = {
   htmlLang: "pt-BR",
@@ -57,21 +60,7 @@ export const pt: Dict = {
     ctaSecondary: "Conhecer os serviços",
     heroAlt:
       "Vista dividida de um porta-contêineres atracado em um cais de concreto: proa e guindastes acima da linha d'água; abaixo, o casco, as estacas do cais, o fundo arenoso do canal com algas, uma tartaruga marinha, um cardume e dois golfinhos",
-    hud: {
-      tide: ["maré · nível d'água", "+0,90 m · PM 15:41"],
-      auv: ["AUV-1 · unidade móvel", "faixa MBES · grade 0,5 m"],
-      draft: ["navio · calado e squat", "13,8 m · −0,31 m · AIS verificado"],
-      hydrophone: ["HY-01 · hidrofone", "142 dB re 1 µPa · pás 14,2 Hz"],
-      pile: ["QW-02 · estaca do cais", "deformação 0,11 m/s · 1 650 kN"],
-      pile2: ["QW-03 · estaca do cais", "vibração 2,4 mm/s · sem impacto"],
-      bed: ["CH-04S · leito do canal", "−15,2 m CD · UKC 2,68 m"],
-      siltation: ["CH-03P · assoreamento", "+0,42 m · 4,3 cm/mês"],
-      fauna: ["fauna marinha · 2 golfinhos", "tartaruga · cardume · SPL ≤ limite"],
-      water: ["coluna d'água", "24,1 °C · 30,2 PSU · 1 521 m/s"],
-      current: ["corrente", "0,62 kn @ 142°"],
-      gateway: ["gateway de cais · IA de borda", "LTE-5G · TLS → gêmeo em nuvem"],
-      legend: "● unidade cognitiva fixa   ▲ unidade móvel   ◯ frente de onda acústica   ⋯ enlace de dados",
-    },
+    hud: en.home.hud,
     trustSectors: [
       "Portos e terminais",
       "Offshore óleo e gás",
@@ -261,15 +250,9 @@ export const pt: Dict = {
         "Bacia 3 · ao vivo",
       ],
       console: {
-        title: "Console cognitivo · gêmeo digital",
-        live: "Ao vivo",
+        ...en.home.twin.console,
         open: "Abrir a tela do console em tamanho real",
         alt: "Console cognitivo Serenitech: vista 3D de levantamento de um canal de acesso e bacia de evolução — batimetria multifeixe em escala de cores de profundidade, nuvens de pontos lidar do cais, guindastes e navios — com numéricos, perfil transversal, espectro acústico e registro de eventos",
-        ukc: "UKC dinâmico",
-        tide: "Maré",
-        sog: "Navio entrando",
-        spl: "Frequência de pá 14,2 Hz",
-        pings: "Pings MBES · unidades",
         caption: "Bacia de demonstração sintética — o traçado é fictício; canal a −15,0 m CD, 220 m de largura, taludes 1:3, bacia de evolução Ø 600 m, navios de 347 m / 294 m e maré +0,9 m são valores da classe Miami/Santos. Renderizado como levantamento multifeixe e lidar a partir do mesmo modelo de dados que o console serve.",
       },
     },
@@ -495,20 +478,10 @@ export const pt: Dict = {
     headerLine:
       "A Serenitech é um sistema de robótica cognitiva com IA: unidades que percebem, raciocinam e agem, orquestradas por um motor cognitivo em nuvem. Sua arquitetura descende de duas décadas de pesquisa em telecomunicações e redes de sensores subaquáticos e dos programas europeus de IA AI4DI e EdgeAI.",
     layersTitle: "Cinco camadas",
+    // Drawing texts stay English (rule above); only the accessible description is localised.
     schematic: {
+      ...en.technology.schematic,
       alt: "Seção vertical animada de um berço: sensoriamento no leito e nas estacas, unidades robóticas cognitivas e uma unidade de levantamento, gateway de cais com inteligência de borda, motor cognitivo em nuvem e interfaces do operador, com pacotes de dados percorrendo os enlaces",
-      layers: ["Interfaces", "Motor em nuvem", "Inteligência de borda", "Unidades robóticas cognitivas", "Sensoriamento"],
-      cloud: "motor cognitivo em nuvem",
-      interfaces: "REST · WebSocket · painéis · gêmeo 3D · VTMIS / SCADA / ERP",
-      gateway: "gateway de cais",
-      gatewayLink: "LTE-5G / fibra · TLS · medições assinadas",
-      unitsLink: "acústico · óptico · malha",
-      units: "unidades cognitivas",
-      auv: "unidade de levantamento · faixa MBES",
-      phenomena: "acústica · vibração · batimetria · hidrodinâmica · coluna d'água",
-      edge: "IA de borda · classificação na origem",
-      federated: "atualizações de modelo ↓",
-      readouts: ["0,11 m/s", "1 650 kN", "142 dB re 1 µPa", "UKC 2,68 m"],
     },
     layers: [
       {

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/i18n";
 import { brand } from "@/content/site";
-import { LanguageSwitch } from "./LanguageSwitch";
+import { LanguageMenu } from "./LanguageMenu";
 
 export function Footer() {
   const { t, lang } = useI18n();
@@ -20,7 +20,7 @@ export function Footer() {
               loading="lazy"
             />
             <p className="max-w-xs text-sm text-steel">{t.footer.descriptor}</p>
-            <LanguageSwitch className="w-fit" />
+            <LanguageMenu align="left" direction="up" className="w-fit" />
           </div>
 
           <div>

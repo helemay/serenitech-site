@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useI18n } from "@/i18n";
 import { brand, navRoutes } from "@/content/site";
 import { CtaLink } from "./CtaLink";
-import { LanguageSwitch } from "./LanguageSwitch";
+import { LanguageMenu } from "./LanguageMenu";
 import { cn } from "@/lib/utils";
 
 const hashScroll = { behavior: "smooth", block: "start" } as const;
@@ -107,7 +107,7 @@ export function Header() {
             window.scrollTo(0, 0);
             window.location.reload();
           }}
-          className="flex shrink-0 items-center py-1"
+          className="flex min-w-0 shrink items-center py-1 lg:shrink-0"
           aria-label="Serenitech — home"
         >
           <img
@@ -117,16 +117,19 @@ export function Header() {
             width={lang === "pt" ? 1042 : 1014}
             height={76}
           />
+          {/* Below lg the logo may scale down (max-h + max-w) so the flag selector and the menu
+              button always fit the bar on narrow phones (≤390px). */}
           <img
             src={brand.logoCompact}
             alt={t.brand.alt}
-            className="glow-img h-9 w-auto min-[1400px]:hidden"
+            className="glow-img h-auto max-h-9 w-auto max-w-full min-[1400px]:hidden"
             width={528}
             height={76}
           />
         </a>
 
-        <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
+        {/* gap-5 (not 6): with the wide logo from 1400px the German labels need the extra room. */}
+        <nav aria-label="Main" className="hidden items-center gap-5 lg:flex">
           {navRoutes.map((r) => (
             <Link
               key={r.hash}
@@ -147,8 +150,10 @@ export function Header() {
           ))}
         </nav>
 
+        {/* Header selector is flag-only: the bar is capped at 1400px, and in German the language
+            name would push the CTA past the container. The names live in the list and the footer. */}
         <div className="hidden items-center gap-4 lg:flex">
-          <LanguageSwitch />
+          <LanguageMenu compact />
           <CtaLink
             to="/"
             hash="contact"
@@ -159,15 +164,18 @@ export function Header() {
           </CtaLink>
         </div>
 
-        <button
-          type="button"
-          className="rounded-md border border-ocean p-2 text-surface-white lg:hidden"
-          aria-expanded={open}
-          aria-label={open ? t.nav.close : t.nav.menu}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={18} /> : <Menu size={18} />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <LanguageMenu compact />
+          <button
+            type="button"
+            className="rounded-md border border-ocean p-2 text-surface-white"
+            aria-expanded={open}
+            aria-label={open ? t.nav.close : t.nav.menu}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={18} /> : <Menu size={18} />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -195,8 +203,7 @@ export function Header() {
                 {t.nav[r.key]}
               </Link>
             ))}
-            <div className="mt-3 flex items-center justify-between gap-4">
-              <LanguageSwitch />
+            <div className="mt-3 flex items-center justify-end gap-4">
               <CtaLink
                 to="/"
                 hash="contact"
