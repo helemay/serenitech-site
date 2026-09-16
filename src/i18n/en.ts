@@ -358,7 +358,7 @@ export const en = {
           "Multi-frequency acoustic backscatter mapping suspended sediment; full-swath bathymetric depth matrices across channels and berthing pockets; local flow velocities and bottom shear-stress vectors.",
         get: "Siltation Deposition Velocity Vectors predicting cubic metres of accumulation per grid coordinate per unit time; real-time volumetric deviation charts against historical baselines; automated critical dredging alerts prioritising zones approaching regulatory safety thresholds.",
         matters:
-          "Dredging planned on prediction rather than on periodic surveys — lower cost, no surprise shoaling, documented safety.",
+          "Dredging planned on prediction rather than on periodic surveys — lower dredging cost, no surprise shoaling, documented safety.",
         bullets: [] as { label: string; text: string }[],
       },
       {

@@ -362,7 +362,7 @@ export const pt: Dict = {
           "Retroespalhamento acústico multifrequência (sedimento em suspensão); matrizes batimétricas de varredura completa em canais e bolsões de berço; velocidades de fluxo e tensão de cisalhamento no fundo.",
         get: "Vetores de Velocidade de Deposição prevendo metros cúbicos acumulados por coordenada e por unidade de tempo; gráficos de desvio volumétrico em tempo real contra linhas de base históricas; alertas automáticos de dragagem crítica priorizando zonas próximas aos limites regulatórios.",
         matters:
-          "Dragagem planejada por previsão e não por levantamento periódico — menor custo, sem surpresas, segurança documentada.",
+          "Dragagem planejada por previsão e não por levantamento periódico — menor custo de dragagem, sem surpresas, segurança documentada.",
         bullets: [],
       },
       {
