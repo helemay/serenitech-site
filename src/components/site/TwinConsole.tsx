@@ -4,9 +4,9 @@ import { useI18n } from "@/i18n";
 import { images } from "@/content/site";
 
 /**
- * The cognitive console — a rendered screen of the digital twin (synthetic demo basin with
- * Miami/Santos-class channel parameters) with a live HUD: ticking readouts, pulsing units and a
- * survey sweep, so the panel reads as a running system rather than a still.
+ * The cognitive console — a survey-grade render of the digital twin (multibeam bathymetry and lidar
+ * point clouds of a synthetic demo basin with Miami/Santos-class channel parameters) with a live HUD:
+ * ticking readouts, pulsing units and a survey sweep, so the panel reads as a running system.
  */
 export function TwinConsole() {
   const { t } = useI18n();
@@ -32,11 +32,11 @@ export function TwinConsole() {
   const mm = String(clock.getUTCMinutes()).padStart(2, "0");
   const ss = String(clock.getUTCSeconds()).padStart(2, "0");
 
-  // Unit positions (percent of the image) — three cognitive units on the 3D view
+  // Unit positions (percent of the image) — three cognitive units on the survey view: QW-03 (quay), TB-02 (basin), CH-05P (channel)
   const nodes = [
-    { x: 31.2, y: 40.6 },
-    { x: 36.8, y: 47.5 },
-    { x: 43.0, y: 59.8 },
+    { x: 37.8, y: 31.3 },
+    { x: 25.1, y: 45.5 },
+    { x: 61.3, y: 56.7 },
   ];
 
   return (
@@ -74,7 +74,7 @@ export function TwinConsole() {
             {/* survey sweep across the 3D view */}
             <span
               aria-hidden="true"
-              className="twin-sweep pointer-events-none absolute top-[8%] bottom-[32%] w-px bg-gradient-to-b from-transparent via-cyan/70 to-transparent"
+              className="twin-sweep pointer-events-none absolute top-[7%] bottom-[36%] w-px bg-gradient-to-b from-transparent via-cyan/70 to-transparent"
             />
             {/* pulsing cognitive units */}
             {nodes.map((n, i) => (

@@ -1,0 +1,6 @@
+{
+  "name": "serenitech-twin3d",
+  "private": true,
+  "description": "Survey-grade renderer of the Serenitech digital-twin images (Three.js in headless Chromium)",
+  "dependencies": { "three": "0.170.0" }
+}

@@ -162,10 +162,10 @@ export const en = {
           caption: "Mega-ship propeller — noise and cavitation signature, wavefronts propagating astern.",
         },
         {
-          caption: "Cognitive console — digital twin of a demonstration basin: 3D bathymetry with vessels and units, plan view, UKC numerics, cross-section, acoustic spectrum and events.",
+          caption: "Cognitive console — digital twin of a demonstration basin as a survey render: multibeam bathymetry and lidar point clouds with vessels and units, UKC numerics, cross-section, acoustic spectrum and events.",
         },
         {
-          caption: "3D twin view — access channel and turning basin at −15.0 m CD, 220 m wide, with the inbound vessel, the berthed ship and 24 cognitive units (synthetic layout).",
+          caption: "3D twin view — berth B12 and turning basin at −15.0/−16.0 m CD: quay face, berthed ship and cognitive units scanned on a 0.5 m grid (synthetic layout).",
         },
       ],
     },
@@ -260,13 +260,13 @@ export const en = {
         title: "Cognitive console · digital twin",
         live: "Live",
         open: "Open the console screen at full size",
-        alt: "Serenitech cognitive console: 3D bathymetric view of an access channel and turning basin with vessels and cognitive units, plan view, numerics, cross-section profile, acoustic spectrum and event log",
+        alt: "Serenitech cognitive console: survey-grade 3D view of an access channel and turning basin — multibeam bathymetry in a depth colour ramp, lidar point clouds of quay, cranes and vessels — with numerics, cross-section profile, acoustic spectrum and event log",
         ukc: "UKC dynamic",
         tide: "Tide",
         sog: "Inbound vessel",
         spl: "Blade rate 14.2 Hz",
         pings: "MBES pings · units",
-        caption: "Synthetic demonstration basin — layout is fictional; channel −15.0 m CD, 220 m wide, 1:3 slopes, Ø 600 m turning basin, 347 m / 294 m vessels and tide +0.9 m are Miami/Santos-class figures. Rendered from the same data model the console serves.",
+        caption: "Synthetic demonstration basin — layout is fictional; channel −15.0 m CD, 220 m wide, 1:3 slopes, Ø 600 m turning basin, 347 m / 294 m vessels and tide +0.9 m are Miami/Santos-class figures. Rendered as a multibeam and lidar survey from the same data model the console serves.",
       },
     },
     ai: {

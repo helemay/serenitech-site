@@ -34,3 +34,9 @@ dist-ssr
 # brand tooling scratch (originals without logo live outside the repo)
 scripts/brand/originals/
 scripts/brand/logo-horizontal-glow-1800.png
+
+# twin renderer scratch
+scripts/twin3d/node_modules/
+scripts/twin3d/out/
+scripts/twin3d/data/
+scripts/twin3d/__pycache__/

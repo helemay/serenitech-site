@@ -166,10 +166,10 @@ export const pt: Dict = {
           caption: "Hélice de mega navio — assinatura de ruído e cavitação, frentes de onda propagando-se para ré.",
         },
         {
-          caption: "Console cognitivo — gêmeo digital de uma bacia de demonstração: batimetria 3D com navios e unidades, planta, numéricos de UKC, perfil transversal, espectro acústico e eventos.",
+          caption: "Console cognitivo — gêmeo digital de uma bacia de demonstração como levantamento: batimetria multifeixe e nuvens de pontos lidar com navios e unidades, numéricos de UKC, perfil transversal, espectro acústico e eventos.",
         },
         {
-          caption: "Vista 3D do gêmeo — canal de acesso e bacia de evolução a −15,0 m CD, 220 m de largura, com o navio entrando, o navio atracado e 24 unidades cognitivas (traçado sintético).",
+          caption: "Vista 3D do gêmeo — berço B12 e bacia de evolução a −15,0/−16,0 m CD: muro de cais, navio atracado e unidades cognitivas varridos em grade de 0,5 m (traçado sintético).",
         },
       ],
     },
@@ -264,13 +264,13 @@ export const pt: Dict = {
         title: "Console cognitivo · gêmeo digital",
         live: "Ao vivo",
         open: "Abrir a tela do console em tamanho real",
-        alt: "Console cognitivo Serenitech: vista 3D batimétrica de um canal de acesso e bacia de evolução com navios e unidades cognitivas, planta, numéricos, perfil transversal, espectro acústico e registro de eventos",
+        alt: "Console cognitivo Serenitech: vista 3D de levantamento de um canal de acesso e bacia de evolução — batimetria multifeixe em escala de cores de profundidade, nuvens de pontos lidar do cais, guindastes e navios — com numéricos, perfil transversal, espectro acústico e registro de eventos",
         ukc: "UKC dinâmico",
         tide: "Maré",
         sog: "Navio entrando",
         spl: "Frequência de pá 14,2 Hz",
         pings: "Pings MBES · unidades",
-        caption: "Bacia de demonstração sintética — o traçado é fictício; canal a −15,0 m CD, 220 m de largura, taludes 1:3, bacia de evolução Ø 600 m, navios de 347 m / 294 m e maré +0,9 m são valores da classe Miami/Santos. Renderizado a partir do mesmo modelo de dados que o console serve.",
+        caption: "Bacia de demonstração sintética — o traçado é fictício; canal a −15,0 m CD, 220 m de largura, taludes 1:3, bacia de evolução Ø 600 m, navios de 347 m / 294 m e maré +0,9 m são valores da classe Miami/Santos. Renderizado como levantamento multifeixe e lidar a partir do mesmo modelo de dados que o console serve.",
       },
     },
     ai: {
