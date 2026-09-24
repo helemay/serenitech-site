@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/i18n";
-import { brand } from "@/content/site";
+import { brand, groupSites } from "@/content/site";
 import { LanguageMenu } from "./LanguageMenu";
 
 export function Footer() {
@@ -84,6 +84,22 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-steel">
               {t.footer.group.map((g) => (
                 <li key={g}>{g}</li>
+              ))}
+            </ul>
+            {/* Other sites of the group — external links, opened in a new tab. */}
+            <ul className="mt-3 space-y-2 font-mono text-[13px]">
+              {groupSites.map((s) => (
+                <li key={s.href}>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-steel transition-colors hover:text-surface-white"
+                  >
+                    {s.label}
+                    <span aria-hidden="true" className="ml-1 text-cyan">↗</span>
+                  </a>
+                </li>
               ))}
             </ul>
           </div>

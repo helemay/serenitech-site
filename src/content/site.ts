@@ -33,6 +33,13 @@ export const brand = {
   contactEndpoint: "https://9pch0bp0m7.execute-api.eu-west-3.amazonaws.com/",
 } as const;
 
+/** Other sites of the group, listed under "Group" in the footer (same in every language). */
+export const groupSites = [
+  { label: "serenitech.me", href: "https://serenitech.me" },
+  { label: "monbleue.com", href: "https://monbleue.com" },
+  { label: "monbleue.ai", href: "https://monbleue.ai" },
+] as const;
+
 export const images = {
   heroPort: "/images/hero-port-quay-v3.jpg",
   heroClean: "/images/hero-quay-clean.jpg",
