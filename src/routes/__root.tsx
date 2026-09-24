@@ -91,7 +91,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Serenitech" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
-      { property: "og:locale:alternate", content: "pt_BR" },
       // Link-preview card (WhatsApp, LinkedIn, iMessage, Slack…): whole logo on the site's dark blue.
       // 1200×630 JPEG (~70 KB) — WhatsApp ignores images above ~300 KB and crops transparent PNGs.
       {
@@ -142,6 +141,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "/brand/favicon-192.png",
       },
       { rel: "apple-touch-icon", href: "/brand/favicon-180.png" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://serenitech.global/" },
+      { rel: "alternate", hrefLang: "en", href: "https://serenitech.global/" },
     ],
   }),
   shellComponent: RootShell,
@@ -155,6 +156,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        {/* Rendered directly: the router de-duplicates meta tags sharing the same property. */}
+        {["de_DE", "es_ES", "fr_FR", "pt_BR"].map((loc) => (
+          <meta key={loc} property="og:locale:alternate" content={loc} />
+        ))}
       </head>
       <body>
         {children}
