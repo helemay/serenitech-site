@@ -15,7 +15,7 @@ const family = [
 export function FamilyBar() {
   const { t } = useI18n();
   return (
-    <div className="bg-[#1B1B1B] text-[12px] leading-none" role="navigation" aria-label={t.family.label}>
+    <div className="bg-[#1B1B1B] text-[12px] leading-none" translate="no" role="navigation" aria-label={t.family.label}>
       <div className="mx-auto flex min-h-8 max-w-[1400px] items-center px-5 md:px-10">
         <nav className="flex min-w-0 items-center gap-[18px] overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <b className="font-bold text-white">{t.family.label}</b>
