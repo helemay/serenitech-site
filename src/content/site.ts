@@ -35,7 +35,7 @@ export const brand = {
 
 /** Other sites of the group, listed under "Group" in the footer (same in every language). */
 export const groupSites = [
-  { label: "serenitech.me", href: "https://serenitech.me" },
+  { label: "serenitech.services", href: "https://serenitech.services" },
   { label: "monbleue.com", href: "https://monbleue.com" },
   { label: "monbleue.ai", href: "https://monbleue.ai" },
 ] as const;

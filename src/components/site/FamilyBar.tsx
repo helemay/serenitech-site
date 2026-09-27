@@ -1,14 +1,14 @@
 import { useI18n } from "@/i18n";
 
-// Serenitech DS v1.0 — family bar shared by every site of the group (serenitech.me, the Mon family,
+// Serenitech DS v1.0 — family bar shared by every site of the group (serenitech.services, the Mon family,
 // serenitech.global). Neutral greyscale with the family red underline on the current site, so it
 // reads the same on every site regardless of each site's own palette.
 const family = [
-  { name: "Serenitech", href: "https://serenitech.me" },
+  { name: "Serenitech", href: "https://serenitech.services" },
   { name: "MonPanier", href: "https://monpanier.me" },
-  { name: "MonInvoice", href: "https://moninvoice.me" },
+  { name: "MonInvoice", href: "https://moninvoice.eu" },
   { name: "MonCréance", href: "https://moncreance.eu" },
-  { name: "MonConformité", href: "https://monconformite.me" },
+  { name: "MonConformité", href: "https://monconformite.eu" },
   { name: "Serenitech Global", href: "https://serenitech.global", current: true },
 ];
 
