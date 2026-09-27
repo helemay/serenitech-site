@@ -8,6 +8,9 @@ export const fr: Dict = {
   brand: {
     alt: "Serenitech — La sérénité au-delà de la ligne de flottaison",
   },
+  family: {
+    label: "Famille Serenitech",
+  },
   nav: {
     home: "Accueil",
     services: "Services",

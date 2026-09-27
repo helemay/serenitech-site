@@ -15,7 +15,7 @@ export function SectorsSection() {
   ] as const;
 
   return (
-    <section id="sectors" className="scroll-mt-20 md:scroll-mt-24">
+    <section id="sectors" className="scroll-mt-28 md:scroll-mt-32">
       <SectionHeader
         eyebrow={t.sectors.eyebrow}
         title={t.sectors.title}

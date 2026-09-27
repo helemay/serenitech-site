@@ -13,7 +13,7 @@ export function TechnologySection() {
   const count = t.technology.layers.length;
 
   return (
-    <section id="technology" className="scroll-mt-20 md:scroll-mt-24">
+    <section id="technology" className="scroll-mt-28 md:scroll-mt-32">
       <SectionHeader
         eyebrow={t.technology.eyebrow}
         title={t.technology.title}

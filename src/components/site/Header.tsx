@@ -5,6 +5,7 @@ import { useI18n } from "@/i18n";
 import { brand, navRoutes } from "@/content/site";
 import { CtaLink } from "./CtaLink";
 import { LanguageMenu } from "./LanguageMenu";
+import { FamilyBar } from "./FamilyBar";
 import { cn } from "@/lib/utils";
 
 const hashScroll = { behavior: "smooth", block: "start" } as const;
@@ -89,6 +90,7 @@ export function Header() {
           : "bg-abyss/55 backdrop-blur-md",
       )}
     >
+      <FamilyBar />
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 md:px-10 md:py-3">
         {/* The logo does one thing: a full reload of the home page, landing at the very top. A plain
             href="/" is not enough — from "/#section" the browser treats it as a fragment change (no

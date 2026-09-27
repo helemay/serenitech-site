@@ -104,7 +104,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="scroll-mt-20 md:scroll-mt-24">
+    <section id="contact" className="scroll-mt-28 md:scroll-mt-32">
       <CtaBand />
 
       <div className="section-y">

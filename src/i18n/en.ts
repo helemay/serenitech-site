@@ -3,6 +3,9 @@ export const en = {
   brand: {
     alt: "Serenitech — Serenity beyond the waterline",
   },
+  family: {
+    label: "Serenitech Family",
+  },
   nav: {
     home: "Home",
     services: "Services",

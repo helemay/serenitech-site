@@ -10,7 +10,7 @@ export function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="pt-24 pb-4 md:pt-26 md:pb-8">
+    <section className="pt-32 pb-4 md:pt-34 md:pb-8">
       <div className="mx-auto max-w-[1400px] px-5 md:px-10">
         <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">

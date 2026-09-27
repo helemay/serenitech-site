@@ -11,7 +11,7 @@ export function ServicesSection() {
   const { t } = useI18n();
 
   return (
-    <section id="services" className="scroll-mt-20 md:scroll-mt-24">
+    <section id="services" className="scroll-mt-28 md:scroll-mt-32">
       <SectionHeader
         eyebrow={t.services.eyebrow}
         title={t.services.title}
