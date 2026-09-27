@@ -5,7 +5,7 @@ import { useI18n } from "@/i18n";
 // reads the same on every site regardless of each site's own palette.
 const family = [
   { name: "Serenitech", href: "https://serenitech.services" },
-  { name: "MonPanier", href: "https://monpanier.me" },
+  { name: "MonPanier", href: "https://monpanier.boutique" },
   { name: "MonInvoice", href: "https://moninvoice.eu" },
   { name: "MonCréance", href: "https://moncreance.eu" },
   { name: "MonConformité", href: "https://monconformite.eu" },
