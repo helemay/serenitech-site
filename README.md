@@ -16,7 +16,7 @@ Every push to `main` runs `.github/workflows/deploy-pages.yml`:
 2. `npm run build:pages` → `vite build --config vite.config.pages.ts` prerenders every route into `dist/client` (TanStack Start prerender, no server runtime), then `scripts/postbuild-pages.mjs` copies it to `dist/pages` and adds `CNAME` (serenitech.global), `.nojekyll`, `404.html`, `sitemap.xml` and the `Sitemap:` line in `robots.txt`.
 3. `actions/deploy-pages` publishes `dist/pages`.
 
-Custom domain: `serenitech.global` (A/AAAA records → GitHub Pages, `www` CNAME → `helemay.github.io`), DNS in Route 53 (AWS account …0770). `serenitech.com.br` redirects to `serenitech.global` (repository `serenitech-com-br`).
+Custom domain: `serenitech.global` (A/AAAA records → GitHub Pages, `www` CNAME → `helemay.github.io`), DNS in Route 53 (AWS account …0770). `serenitech.com.br` (and `www`) redirects to `serenitech.services`, same path (repository `helemay/serenitech-com-br`, GitHub Pages; changed from serenitech.global on 06/10/2026 at Rodrigo's request).
 
 ## Local
 ```bash
